@@ -1,0 +1,67 @@
+package com.game.weichi;
+
+import android.content.Context;
+import android.content.res.Resources;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Paint.Style;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class WeiChiView extends View{
+
+	public WeiChiView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+
+
+
+
+
+	protected static int GRID_SIZE = 10;
+    protected static int GRID_WIDTH = 30; 
+    protected static int CHESS_DIAMETER = 26; 
+    protected static int mStartX=0;// 
+    protected static int mStartY=0;// 
+   
+	
+
+	
+	 
+	 
+	    
+	
+	 
+   public void ondraw(Canvas canvas)
+   {      super.onDraw(canvas);
+
+	   canvas.drawColor(Color.YELLOW);	
+	   {
+           Paint paintRect = new Paint();
+           paintRect.setColor(Color.GRAY);
+           paintRect.setStrokeWidth(2);
+           paintRect.setStyle(Style.STROKE);
+           canvas.drawText("YO!", 0, 25, paintRect);   
+          
+           }
+          
+         
+//           paintRect.setStrokeWidth(4);
+//           canvas.drawRect(mStartX, mStartY, mStartX + GRID_WIDTH*GRID_SIZE, mStartY + GRID_WIDTH*GRID_SIZE, paintRect);
+       }
+	   
+	 
+   }
+	   
+   
+
+

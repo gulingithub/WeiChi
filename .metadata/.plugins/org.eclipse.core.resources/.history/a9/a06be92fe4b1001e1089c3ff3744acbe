@@ -1,0 +1,101 @@
+package com.game.weichi;
+
+import android.content.Context;
+import android.content.res.Resources;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Paint.Style;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
+
+ class WeiChiView extends View{
+
+	 protected static int GRID_SIZE = 10;
+	    protected static int GRID_WIDTH = 30; 
+	    protected static int CHESS_DIAMETER = 26; 
+	    protected static int mStartX;// 
+	    protected static int mStartY;// 
+
+	    private Bitmap[] mChessBW; // 
+	    private static int[][] mGridArray; 
+	   
+	    boolean key = false;
+
+	    int wbflag = 1; 
+	    int mLevel = 1; 
+	    int mWinFlag = 0;
+	
+	  
+	   
+	    int mGameState = GAMESTATE_RUN; 
+	    static final int GAMESTATE_PRE = 0;
+	    static final int GAMESTATE_RUN = 1;
+	    static final int GAMESTATE_PAUSE = 2;
+	    static final int GAMESTATE_END = 3;
+	   
+	    //private TextView mStatusTextView; 
+	    public TextView mStatusTextView; 
+	   
+	
+	   
+	    public WeiChiView(Context context, AttributeSet attrs, int defStyle) {
+	        super(context, attrs, defStyle);
+	      }
+
+	    public WeiChiView(Context context, AttributeSet attrs) { 
+	        super(context, attrs);
+	        this.setFocusable(true);  //20090530
+	        this.setFocusableInTouchMode(true);
+	       
+//	        init();
+	    }
+
+	 
+	    
+	   
+
+	    @Override
+	    public void onDraw(Canvas canvas) {
+
+	        canvas.drawColor(Color.YELLOW);
+
+	  
+	        {
+	            Paint paintRect = new Paint();
+	            paintRect.setColor(Color.GRAY);
+	            paintRect.setStrokeWidth(2);
+	            paintRect.setStyle(Style.STROKE);
+
+	            for (int i = 0; i < GRID_SIZE; i++) {
+	                for (int j = 0; j < GRID_SIZE; j++) {
+	                    int mLeft = i * GRID_WIDTH ;
+	                    int mTop = j * GRID_WIDTH ;
+	                    int mRright = mLeft + GRID_WIDTH;
+	                    int mBottom = mTop + GRID_WIDTH;
+	                    canvas.drawRect(mLeft, mTop, mRright, mBottom, paintRect);
+	                }
+	            }
+	           
+	          
+          
+	        }
+
+	      
+	      
+	     
+	        }
+	    }
+	   
+	   
+	   
+
+
+

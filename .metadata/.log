@@ -1,0 +1,2653 @@
+!SESSION 2009-10-04 20:51:08.875 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2009-10-04 20:52:05.953
+!MESSAGE Invalid preference page path: Cache
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:52:39.859
+!MESSAGE An Android SDK is already being loaded. Please try again later.
+
+!ENTRY org.eclipse.jface 2 0 2009-10-04 20:54:11.890
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-04 20:54:11.890
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@269133)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:31.500
+!MESSAGE AndroidManifest: Ignoring unknown 'LineaLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:31.765
+!MESSAGE AndroidManifest: Ignoring unknown 'LinLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:32.125
+!MESSAGE AndroidManifest: Ignoring unknown 'LLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:32.546
+!MESSAGE AndroidManifest: Ignoring unknown 'fLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:33.640
+!MESSAGE AndroidManifest: Ignoring unknown 'FLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:34.234
+!MESSAGE AndroidManifest: Ignoring unknown 'FrMLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:34.703
+!MESSAGE AndroidManifest: Ignoring unknown 'FrMLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:36.015
+!MESSAGE AndroidManifest: Ignoring unknown 'FraLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:43.046
+!MESSAGE AndroidManifest: Ignoring unknown 'FLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 20:56:44.265
+!MESSAGE AndroidManifest: Ignoring unknown 'FraLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:09.578
+!MESSAGE AndroidManifest: Ignoring unknown 'r' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:10.921
+!MESSAGE AndroidManifest: Ignoring unknown 'R' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:11.765
+!MESSAGE AndroidManifest: Ignoring unknown 'Rel' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:12.156
+!MESSAGE AndroidManifest: Ignoring unknown 'Relat' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:12.921
+!MESSAGE AndroidManifest: Ignoring unknown 'Relativ' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:13.906
+!MESSAGE AndroidManifest: Ignoring unknown 'RelativeL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:14.781
+!MESSAGE AndroidManifest: Ignoring unknown 'RelativeLay' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:01:15.187
+!MESSAGE AndroidManifest: Ignoring unknown 'RelativeLayou' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:43.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.example.android.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:52.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.g.android.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:52.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.ga.android.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:52.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.gam.android.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:53.031
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.android.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:57.437
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.androi.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:57.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.andro.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:57.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.andr.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:57.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.and.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:58.078
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.an.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:58.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.a.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:58.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game..snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:58.828
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.w.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:58.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.we.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:59.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.wei.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:28:59.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.we.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:00.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.w.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:00.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game..snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:01.437
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.w.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:01.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.we.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:01.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.wei.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:01.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weic.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:01.953
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weich.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:02.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.snake.SnakeView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:36.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.View' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:37.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.iew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:38.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.Wiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:40.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.Weiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:40.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.Weiiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:44.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiCiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:49.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:49.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:51.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:52.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiViiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:52.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiVieiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:52.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiViewiew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:53.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiViewew' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:53.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiVieww' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:53.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:29:56.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:02.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:02.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:02.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:02.953
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:03.328
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:03.703
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:04.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:04.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:05.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:06.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:06.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:06.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:06.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:07.703
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:07.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:07.953
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:08.062
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:30:10.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:29.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:29.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:45.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:45.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:45.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:45.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:46.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:46.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:46.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:46.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:46.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:46.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:47.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:47.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:50.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:50.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:57.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:51:57.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:54:04.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:54:04.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:54:08.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-04 21:54:08.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY org.eclipse.ui 4 4 2009-10-04 23:22:21.390
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+!SESSION 2009-10-05 00:58:07.500 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2009-10-05 00:58:16.406
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 00:58:33.328
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:33.328
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:33.328
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 00:58:33.437
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:33.437
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:33.437
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 00:58:37.906
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:37.906
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:37.906
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 00:58:37.953
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:38.000
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 00:58:38.000
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.jface 2 0 2009-10-05 00:59:00.156
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-05 00:59:00.156
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@1b3a0c9)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2009-10-05 14:14:23.781 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2009-10-05 14:14:35.562
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-05 14:14:35.562
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@123e82b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 14:14:36.156
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:36.156
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:36.156
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 14:14:36.265
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:36.265
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:36.265
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 14:14:37.640
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:37.640
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:37.640
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 14:14:37.640
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:37.640
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 14:14:37.640
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.ui 4 4 2009-10-05 14:17:32.859
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 14:59:43.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 14:59:49.828
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:00:53.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:00:53.734
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:00:54.328
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:00:54.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:01:29.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:01:35.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:13:42.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 15:13:44.156
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 16:58:54.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 16:59:39.312
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 16:59:39.593
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: 'aapt' error. Pre Compiler Build aborted.
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 16:59:39.593
+!MESSAGE 'aapt' error. Pre Compiler Build aborted.
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 16:59:39.593
+!MESSAGE 'aapt' error. Pre Compiler Build aborted.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:16.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:17.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:18.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:18.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:18.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:18.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:19.109
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:19.437
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:19.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:19.953
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:22.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:01:32.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:25.171
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:25.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:25.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:26.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:26.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:26.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:26.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:27.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:28.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:28.312
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:29.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:30.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:32.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:32.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:33.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:35.171
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:36.109
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:36.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:02:51.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:17.171
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:19.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:23.953
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:24.109
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:24.265
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:24.421
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:24.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:25.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:25.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:26.156
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:26.328
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:26.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:03:45.421
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:03.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:04.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:09.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:09.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:12.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:12.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:17.312
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:04:19.187
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:05:18.187
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:05:21.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:05:49.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:05:58.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:12.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:13.078
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:19.156
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:19.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:19.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:19.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:19.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:20.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:20.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:21.531
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:26.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:32.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:36.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:43.531
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:44.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:45.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:45.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:45.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:46.062
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:46.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:51.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:06:53.703
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:07:25.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:07:27.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:13.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:15.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:15.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:16.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:16.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:16.828
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:17.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:17.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:17.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:19.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:08:49.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:09:12.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:09:19.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:19:22.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:19:27.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:19:29.421
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:19:33.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:05.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:11.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:12.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:14.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:58.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:59.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:59.031
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:59.062
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:59.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:59.421
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:59.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:20:59.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:21:00.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:21:44.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:21:45.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:21:49.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:21:53.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:31.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:31.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:31.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:31.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:31.984
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:32.156
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:32.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:32.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:32.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:32.828
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:32.984
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:33.171
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.515
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.703
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.734
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:34.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:35.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:35.953
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:36.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:36.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:36.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:36.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:37.109
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:37.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:37.171
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:37.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:37.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:38.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:38.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:43.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:46.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:47.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:22:47.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:13.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:37.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:38.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:38.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:39.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:39.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:39.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:39.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:39.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:39.984
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:24:40.687
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:25:27.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:25:28.734
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:25:32.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 17:26:28.265
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:12.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:14.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:14.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:15.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:15.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:15.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:15.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:16.031
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:16.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:25.187
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:30.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:30.437
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:31.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:31.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:31.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:32.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:32.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:32.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:44.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:45.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:12:48.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:00.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:00.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:01.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:03.031
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:03.187
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:03.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:03.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:03.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:06.265
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:37.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:39.109
+!MESSAGE AndroidManifest: Ignoring unknown 'l' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:40.343
+!MESSAGE AndroidManifest: Ignoring unknown 'L' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:41.343
+!MESSAGE AndroidManifest: Ignoring unknown 'Lin' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:41.718
+!MESSAGE AndroidManifest: Ignoring unknown 'Linea' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:42.375
+!MESSAGE AndroidManifest: Ignoring unknown 'LinearL' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:43.640
+!MESSAGE AndroidManifest: Ignoring unknown 'LinearLay' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:13:44.578
+!MESSAGE AndroidManifest: Ignoring unknown 'LinearLayou' XML element
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-05 20:14:36.078
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in an XML file: aborting build.
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 20:14:36.078
+!MESSAGE Error in an XML file: aborting build.
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-05 20:14:36.078
+!MESSAGE Error in an XML file: aborting build.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:14:47.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:14:49.703
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:22:58.062
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:23:04.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-05 20:23:08.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+!SESSION 2009-10-07 00:05:40.000 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2009-10-07 00:06:06.281
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-07 00:06:06.281
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@19febb9)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 00:06:07.593
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:07.593
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:07.593
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 00:06:07.625
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:07.625
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:07.625
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 00:06:09.203
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:09.203
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:09.203
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 00:06:09.234
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:09.234
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:06:09.234
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 00:33:06.093
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: 'aapt' error. Pre Compiler Build aborted.
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:33:06.093
+!MESSAGE 'aapt' error. Pre Compiler Build aborted.
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:33:06.093
+!MESSAGE 'aapt' error. Pre Compiler Build aborted.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:18.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:20.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:22.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:24.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:40.421
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:40.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:40.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:41.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:43.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:48.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.437
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.531
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.687
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:49.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:51.421
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:51.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:52.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:52.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:53.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:53.984
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:55.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:56.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:58.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:33:58.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:00.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:00.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:01.421
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:01.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:02.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:02.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:03.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:04.734
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.312
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.437
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.531
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:05.984
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:06.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:06.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:06.687
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:07.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:07.187
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:07.734
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:07.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:09.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:24.031
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:35.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:34:39.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:38:30.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:38:38.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:12.156
+!MESSAGE AndroidManifest: Ignoring unknown 'FramLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:12.468
+!MESSAGE AndroidManifest: Ignoring unknown 'FrLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:12.781
+!MESSAGE AndroidManifest: Ignoring unknown 'Layout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:14.218
+!MESSAGE AndroidManifest: Ignoring unknown 'LiLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:16.421
+!MESSAGE AndroidManifest: Ignoring unknown 'LineLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:22.062
+!MESSAGE AndroidManifest: Ignoring unknown 'FramLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:22.375
+!MESSAGE AndroidManifest: Ignoring unknown 'FrLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:22.968
+!MESSAGE AndroidManifest: Ignoring unknown 'Layout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:24.296
+!MESSAGE AndroidManifest: Ignoring unknown 'LiLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:41:25.046
+!MESSAGE AndroidManifest: Ignoring unknown 'LineLayout' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:44:05.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 00:44:09.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 00:47:25.609
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in an XML file: aborting build.
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:47:25.609
+!MESSAGE Error in an XML file: aborting build.
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 00:47:25.609
+!MESSAGE Error in an XML file: aborting build.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:38.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:39.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:39.031
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:39.062
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:39.093
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:39.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:39.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:39.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:40.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:47.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:50.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:51.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.531
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.687
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:53.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:55.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:56.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:58.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:58.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:59.109
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:59.265
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:59.437
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:59.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:59.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:00:59.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:00.093
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:00.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:00.812
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:00.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:01.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:01.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:01.734
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:01.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:02.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:04.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:06.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:06.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:07.093
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:07.171
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:07.312
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:08.390
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:09.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:09.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:09.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:10.156
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:10.343
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:12.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:18.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:19.218
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:21.187
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:21.265
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:22.265
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:22.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:22.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:23.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:23.984
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:24.312
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:24.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:24.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:24.687
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:24.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:25.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:25.531
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:28.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:35.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:01:37.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:13.703
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:14.375
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:15.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:16.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:18.484
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:18.953
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:19.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:21.078
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:23.531
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:24.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:24.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:25.156
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:25.625
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:26.015
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:26.453
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:28.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:28.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:29.859
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:31.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:31.734
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:02:40.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:03:02.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:03:05.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:03:10.593
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:03:56.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:03:58.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:09.390
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:09.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:09.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:10.125
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:11.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:49.500
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:50.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:50.546
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:50.703
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:52.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:52.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:52.687
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:52.921
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:53.093
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:53.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:53.359
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:04:55.281
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:05:10.078
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:05:20.609
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:05:22.203
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:06:02.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:06:33.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:44.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:44.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:45.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:45.968
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:46.187
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:46.296
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:50.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:51.062
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:51.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:51.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:51.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:51.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:51.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:52.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:52.765
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:52.875
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:55.140
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:07:58.671
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:04.890
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:33.984
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:41.171
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:49.750
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:49.937
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:50.093
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:50.250
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:50.406
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:50.562
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:50.718
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:50.828
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:51.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:51.578
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:51.687
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:51.796
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:52.156
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:08:54.640
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:09:19.000
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:09:19.843
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:09:20.781
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:09:21.234
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:09:22.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:09:22.656
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2009-10-07 01:09:23.468
+!MESSAGE AndroidManifest: Ignoring unknown 'com.game.weichi.WeiChiView' XML element
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 01:10:28.328
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in an XML file: aborting build.
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 01:10:28.328
+!MESSAGE Error in an XML file: aborting build.
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 01:10:28.328
+!MESSAGE Error in an XML file: aborting build.
+!SESSION 2009-10-07 09:24:28.312 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2009-10-07 09:26:09.031
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-07 09:26:09.031
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@1eaf25d)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 09:26:10.250
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:10.250
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:10.250
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 09:26:10.281
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:10.281
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:10.281
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 09:26:11.500
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:11.500
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:11.500
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-07 09:26:11.500
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:11.500
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-07 09:26:11.500
+!MESSAGE SDK is not loaded yet
+!SESSION 2009-10-08 15:21:47.812 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2009-10-08 15:22:01.671
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-08 15:22:01.671
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@62e8c8)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-08 15:22:03.031
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:03.031
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:03.031
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-08 15:22:03.078
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:03.078
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:03.078
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-08 15:22:04.187
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:04.187
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:04.187
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-08 15:22:04.187
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:04.187
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-08 15:22:04.187
+!MESSAGE SDK is not loaded yet
+!SESSION 2009-10-09 13:07:07.203 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jface 2 0 2009-10-09 13:07:57.125
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2009-10-09 13:07:57.125
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@ce374a)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.cloudgarden.jigloo.commands.openJiglooPrefs,Open Jigloo Preferences Page,
+		Open Jigloo Preferences Page,
+		Category(com.cloudgarden.jigloo.actions.category,Jigloo,Jigloo Actions,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-09 13:07:58.468
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:07:58.468
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:07:58.468
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-09 13:07:58.515
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:07:58.515
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:07:58.515
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-09 13:08:02.562
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.ResourceManagerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:08:02.562
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:08:02.562
+!MESSAGE SDK is not loaded yet
+
+!ENTRY org.eclipse.core.resources 8 2 2009-10-09 13:08:02.578
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: SDK is not loaded yet
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.stopBuild(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.BaseBuilder.abortOnBadSetup(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:08:02.578
+!MESSAGE SDK is not loaded yet
+!SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2009-10-09 13:08:02.578
+!MESSAGE SDK is not loaded yet
