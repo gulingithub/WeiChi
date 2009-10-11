@@ -18,7 +18,7 @@ import android.widget.TextView;
 
  class WeiChiView extends View{
 
-	 protected static int GRID_SIZE = 10;
+	 protected static int GRID_SIZE = 8;
 	    protected static int GRID_WIDTH = 30; 
 	    protected static int CHESS_DIAMETER = 26; 
 	    protected static int mStartX;// 
@@ -134,22 +134,13 @@ import android.widget.TextView;
 	                    int mTop = j * GRID_WIDTH + mStartY;
 	                    int mRright = mLeft + GRID_WIDTH;
 	                    int mBottom = mTop + GRID_WIDTH;
-	                    if (i==0 || j==0){
-	                    	canvas.drawRect(mRright, mBottom, mRright, mBottom, paintRect);
-	                    }
-	                    else if ((i+1)==GRID_SIZE || (j+1)==GRID_SIZE){
-	                    	canvas.drawRect(mLeft, mTop, mLeft, mTop, paintRect);
-	                    }
-	                    else{
 	                    canvas.drawRect(mLeft, mTop, mRright, mBottom, paintRect);
-	                    }
-	                    
 	                }
 	            }
 	           
 	          
 	            paintRect.setStrokeWidth(4);
-	            canvas.drawRect(mStartX+ GRID_WIDTH, mStartY+ GRID_WIDTH, mStartX + GRID_WIDTH*(GRID_SIZE-1), mStartY + GRID_WIDTH*(GRID_SIZE-1), paintRect);
+	            canvas.drawRect(mStartX, mStartY, mStartX + GRID_WIDTH*GRID_SIZE, mStartY + GRID_WIDTH*GRID_SIZE, paintRect);
 	        }
 
 	      

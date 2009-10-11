@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="41" version="2.0">
+<workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="88" y="2">
 <fastViewData fastViewLocation="1024"/>
@@ -40,13 +40,13 @@
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChi.java" partName="WeiChi.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/WeiChi.java" title="WeiChi.java" tooltip="WeiChi/src/com/game/weichi/WeiChi.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="297"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="548"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChiView.java" partName="WeiChiView.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/WeiChiView.java" title="WeiChiView.java" tooltip="WeiChi/src/com/game/weichi/WeiChiView.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChiView.java" partName="WeiChiView.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/WeiChiView.java" title="WeiChiView.java" tooltip="WeiChi/src/com/game/weichi/WeiChiView.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/WeiChiView.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="668"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="3062"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="F:/courses/Software Engineering/androidweichi/WeiChi/res/layout/main.xml" title="main.xml" tooltip="WeiChi/res/layout/main.xml" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="F:/courses/Software Engineering/androidweichi/WeiChi/res/layout/main.xml" title="main.xml" tooltip="WeiChi/res/layout/main.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/res/layout/main.xml"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" partName="strings.xml" path="F:/courses/Software Engineering/androidweichi/WeiChi/res/values/strings.xml" title="strings.xml" tooltip="WeiChi/res/values/strings.xml" workbook="DefaultEditorWorkbook">
@@ -130,7 +130,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="com.android.ide.eclipse.editors.layout.LayoutEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -222,7 +222,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="252" ratioRight="756" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.77190334" ratioLeft="511" ratioRight="151" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -369,45 +369,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/WeiChi/res/values/strings.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChiView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/WeiChi/res/layout/main.xml"/>
 </editors>
-<item historyLabel="WeiChiView.java" index="0">
-<position info="not_deleted" x="509" y="10"/>
-</item>
-<item historyLabel="WeiChiView.java" index="0">
-<position info="not_deleted" x="1112" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="0">
-<position info="not_deleted" x="1047" y="8"/>
-</item>
-<item historyLabel="WeiChiView.java" index="0">
-<position info="not_deleted" x="1244" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="0">
-<position/>
-</item>
-<item historyLabel="WeiChiView.java" index="0">
-<position/>
-</item>
-<item historyLabel="WeiChiView.java" index="0">
-<position/>
-</item>
-<item historyLabel="R.java" index="1">
-<position/>
-</item>
-<item historyLabel="WeiChi.java" index="2">
-<position info="not_deleted" x="425" y="0"/>
-</item>
-<item historyLabel="WeiChi.java" index="2">
-<position info="not_deleted" x="550" y="0"/>
-</item>
-<item historyLabel="main.xml" index="3"/>
-<item historyLabel="WeiChiView.java" index="0">
-<position info="not_deleted" x="3095" y="0"/>
-</item>
-<item historyLabel="WeiChi.java" index="2">
-<position/>
-</item>
-<item historyLabel="main.xml" index="3"/>
 <item historyLabel="strings.xml" index="4"/>
 <item historyLabel="WeiChiView.java" index="0">
 <position info="not_deleted" x="2726" y="0"/>
@@ -491,9 +455,43 @@
 <item historyLabel="WeiChiView.java" index="9">
 <position/>
 </item>
-<item active="true" historyLabel="WeiChiView.java" index="9">
+<item historyLabel="WeiChiView.java" index="9">
 <position/>
 </item>
+<item historyLabel="WeiChi.java" index="10">
+<position info="not_deleted" x="297" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="9">
+<position info="not_deleted" x="1357" y="0"/>
+</item>
+<item historyLabel="main.xml" index="11"/>
+<item historyLabel="WeiChiView.java" index="9">
+<position info="not_deleted" x="3688" y="0"/>
+</item>
+<item historyLabel="WeiChi.java" index="10">
+<position info="not_deleted" x="297" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="9">
+<position info="not_deleted" x="3688" y="0"/>
+</item>
+<item historyLabel="main.xml" index="11"/>
+<item historyLabel="WeiChi.java" index="10">
+<position info="not_deleted" x="297" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="9">
+<position info="not_deleted" x="3688" y="0"/>
+</item>
+<item historyLabel="WeiChi.java" index="10">
+<position info="not_deleted" x="297" y="0"/>
+</item>
+<item historyLabel="main.xml" index="11"/>
+<item historyLabel="WeiChi.java" index="10">
+<position info="not_deleted" x="548" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="9">
+<position info="not_deleted" x="3062" y="0"/>
+</item>
+<item active="true" historyLabel="main.xml" index="11"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>

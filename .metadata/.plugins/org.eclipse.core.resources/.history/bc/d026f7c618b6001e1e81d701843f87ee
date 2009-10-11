@@ -18,7 +18,7 @@ import android.widget.TextView;
 
  class WeiChiView extends View{
 
-	 protected static int GRID_SIZE = 10;
+	 protected static int GRID_SIZE = 9;
 	    protected static int GRID_WIDTH = 30; 
 	    protected static int CHESS_DIAMETER = 26; 
 	    protected static int mStartX;// 

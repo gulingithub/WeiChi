@@ -116,7 +116,7 @@ import android.widget.TextView;
 	   
 	 
 	   
-	    @Override
+	   
 	    public void onDraw(Canvas canvas) {
 
 	        canvas.drawColor(Color.YELLOW);

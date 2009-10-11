@@ -18,7 +18,7 @@ import android.widget.TextView;
 
  class WeiChiView extends View{
 
-	 protected static int GRID_SIZE = 10;
+	 protected static int GRID_SIZE = 8;
 	    protected static int GRID_WIDTH = 30; 
 	    protected static int CHESS_DIAMETER = 26; 
 	    protected static int mStartX;// 
@@ -58,7 +58,7 @@ import android.widget.TextView;
 	        mGameState = 1; 
 	        wbflag = BLACK; 
 	        
-	        mGridArray = new int[GRID_SIZE-1][GRID_SIZE-1];
+	        mGridArray = new int[GRID_SIZE][GRID_SIZE];
 	       
 	       
 	  }
@@ -85,15 +85,27 @@ import android.widget.TextView;
 	                if (x0 < GRID_WIDTH / 2) {
 	                    x = (int) ((event.getX() - mStartX) / GRID_WIDTH);
 	                } else {
-	                    x = (int) ((event.getX() - mStartX) / GRID_WIDTH) - 1;
+	                    if(x0==GRID_WIDTH && (int) (event.getX() - mStartX)<GRID_WIDTH)
+	                    {
+	                    	x=0;
+	                    }
+	                    else{
+	                    	x = (int) ((event.getX() - mStartX) / GRID_WIDTH) - 0;
+	                    }
 	                }
 	                if (y0 < GRID_WIDTH / 2) {
 	                    y = (int) ((event.getY() - mStartY) / GRID_WIDTH);
 	                } else {
-	                    y = (int) ((event.getY() - mStartY) / GRID_WIDTH) - 1;
+	                	if(y0==GRID_WIDTH && (int) (event.getY() - mStartY)<GRID_WIDTH)
+	                	{
+	                	y=0;
+	                	}
+	                	else {
+	                    y = (int) ((event.getY() - mStartY) / GRID_WIDTH) - 0;
+	                	}
 	                }
-	                if ((x >= 0 && x < GRID_SIZE-1 )
-	                        && (y >= 0 && y < GRID_SIZE-1)) {
+	                if ((x >= 0 && x < GRID_SIZE )
+	                        && (y >= 0 && y < GRID_SIZE)) {
 	                	 if (mGridArray[x][y] == 0) {
 	                         if (wbflag == BLACK) {
 	                             putChess(x, y, BLACK);
@@ -134,28 +146,19 @@ import android.widget.TextView;
 	                    int mTop = j * GRID_WIDTH + mStartY;
 	                    int mRright = mLeft + GRID_WIDTH;
 	                    int mBottom = mTop + GRID_WIDTH;
-	                    if (i==0 || j==0){
-	                    	canvas.drawRect(mRright, mBottom, mRright, mBottom, paintRect);
-	                    }
-	                    else if ((i+1)==GRID_SIZE || (j+1)==GRID_SIZE){
-	                    	canvas.drawRect(mLeft, mTop, mLeft, mTop, paintRect);
-	                    }
-	                    else{
 	                    canvas.drawRect(mLeft, mTop, mRright, mBottom, paintRect);
-	                    }
-	                    
 	                }
 	            }
 	           
 	          
 	            paintRect.setStrokeWidth(4);
-	            canvas.drawRect(mStartX+ GRID_WIDTH, mStartY+ GRID_WIDTH, mStartX + GRID_WIDTH*(GRID_SIZE-1), mStartY + GRID_WIDTH*(GRID_SIZE-1), paintRect);
+	            canvas.drawRect(mStartX, mStartY, mStartX + GRID_WIDTH*GRID_SIZE, mStartY + GRID_WIDTH*GRID_SIZE, paintRect);
 	        }
 
 	      
 	      
-	        for (int i = 0; i < GRID_SIZE-1; i++) {
-	            for (int j = 0; j < GRID_SIZE-1; j++) {
+	        for (int i = 0; i < GRID_SIZE; i++) {
+	            for (int j = 0; j < GRID_SIZE; j++) {
 	                if(mGridArray[i][j] == BLACK){
 	                    
 	                    //canvas.drawBitmap(mChessBW[0], mStartX + (i+1) * GRID_WIDTH - CHESS_DIAMETER/2 , mStartY + (j+1)* GRID_WIDTH - CHESS_DIAMETER/2 , mPaint);
