@@ -1,4 +1,4 @@
-package goplayer;
+package com.game.weichi;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -372,19 +372,81 @@ public class GoGame {
 		// this.printBoard();
 		isBsTurn = !isBsTurn;
 	}
+	
+	public void move(int x, int y)
+	{
+		GoMove theMove=null;
+		if(x ==-1) theMove = GoMove.pass;
+		else
+			theMove = allMoves[x][y];
+		if (theMove.equals(GoMove.pass)) {
+			if (ko)
+				board[koMove.x][koMove.y] = 0;
+			ko = false;
+
+			koMove = GoMove.pass;
+
+			if (firstPass == true) {
+				secondPass = true;
+			}
+			firstPass = true;
+			isBsTurn = !isBsTurn;
+		}
+		
+
+		movesSoFar++;
+
+		//int ind = nextGame.legalMoves.indexOf(theMove);
+		//System.out.println("index of move " + ind);
+		// System.out.println( "Size of myLegalMoves " + nextGame.legalMoves.size());
+		legalMoves.remove(theMove);
+		//System.out.println( "Size of myLegalMoves " + nextGame.legalMoves.size());
+		int stoneColor = isBsTurn ? 1 : -1;
+
+		// add this stone to the board
+		board[theMove.x][theMove.y] = stoneColor;
+
+//		 System.out.println( "Board after placing stone " );
+//		 nextGame.printBoard();
+		 
+		// resolve kos
+		resolveKos(theMove);
+//		System.out.println( "Board after resolve kos");
+//		nextGame.printBoard();
+		
+		
+		// check if any opposing groups are captured, and update points which
+		// had this as liberty
+		checkLibertiesOtherColor(theMove, -stoneColor);
+
+//		System.out.println( "Board after checking other color liberties");
+//		nextGame.printBoard();
+
+		// check for suicide, and update any points which had this as last
+		// liberty
+		checkLibertiesSameColor(theMove, stoneColor);
+
+//		System.out.println( "Board after checking same color liberties");
+//		nextGame.printBoard();
+		isBsTurn = !isBsTurn;
+		
+
+	}
 	public GoGame move(GoMove aMove) {
 		// aMove.printMove();
 //
 //		 System.out.println("Moving " );
 //		 theMove.printMove();
 
+		if(board[aMove.x][aMove.y] ==1 || board[aMove.x][aMove.y] == -1|| board[aMove.x][aMove.y] == 2) return this;
 		GoGame nextGame = this.clone();
 //
 //		System.out.println("clonedGame ");
 //		nextGame.printBoard();
 
-		GoMove theMove;
-		if(theMove.x ==-1) theMove = GoMove.pass;
+		
+		GoMove theMove=null;
+		if(aMove.x==-1) theMove = GoMove.pass;
 		else
 			theMove = allMoves[aMove.x][aMove.y];
 		if (theMove.equals(GoMove.pass)) {

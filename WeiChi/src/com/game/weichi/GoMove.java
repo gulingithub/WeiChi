@@ -1,4 +1,4 @@
-package goplayer;
+package com.game.weichi;
 
 public class GoMove implements Comparable<GoMove> {
 	

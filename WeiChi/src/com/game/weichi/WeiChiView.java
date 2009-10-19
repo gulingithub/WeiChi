@@ -22,12 +22,13 @@ import android.widget.TextView;
 	    protected static int GRID_WIDTH = 30; 
 	    protected static int CHESS_DIAMETER = 26; 
 	    protected static int mStartX;// 
-	    protected static int mStartY;// 
+	    protected static int mStartY;// \
 
+	    private boolean playComputer =false;
 	    private static int[][] mGridArray; 
 	   
 	    private final int BLACK=1;
-	    private final int WHITE=2;
+	    private final int WHITE=-1;
 	    int wbflag = 1; //
 	    boolean key = false;
 	   
@@ -40,7 +41,7 @@ import android.widget.TextView;
 	    //private TextView mStatusTextView; 
 	    public TextView mStatusTextView; 
 	   
-	    
+	    GoPlayer gp = new GoPlayer(GRID_SIZE);
 	   
 	    public WeiChiView(Context context, AttributeSet attrs, int defStyle) {
 	        super(context, attrs, defStyle);
@@ -59,6 +60,8 @@ import android.widget.TextView;
 	        wbflag = BLACK; 
 	        
 	        mGridArray = new int[GRID_SIZE-1][GRID_SIZE-1];
+	       
+	       
 	       
 	       
 	  }
@@ -94,19 +97,40 @@ import android.widget.TextView;
 	                }
 	                if ((x >= 0 && x < GRID_SIZE-1 )
 	                        && (y >= 0 && y < GRID_SIZE-1)) {
-	                	 if (mGridArray[x][y] == 0) {
-	                         if (wbflag == BLACK) {
-	                             putChess(x, y, BLACK);
-	                             wbflag = WHITE;
-	                         } 
-	                         else if (wbflag == WHITE) {
-	                             putChess(x, y, WHITE);
-	                             wbflag = BLACK;
-	                         }
+	                	    	 System.out.println("moving");
+	                	    	 System.out.flush();
+	                	    	 if(true)
+	                	    	 {
+	                	    		 gp.playMoveOnCurrentGame(new GoMove(x,y));
+	                	    		// g = g.move(new GoMove(x,y));
+	                	    		 // send move to server
+	                	    	 }
+	                	    	 else
+	                	    	 {
+	                	    		 
+	                	    		//GoMove bestMove = search for move on server;
+	                				
+	                				//g = g.move(bestMove);
+	                	    	 }
+	                //        	putChess(x,y, g.board[x][y])
+
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	                        	 
+	      
 	                     }
 	            
-	                 }
 	   	         
+	                
 	   	           
 	   	   
 	        this.invalidate();
@@ -156,7 +180,8 @@ import android.widget.TextView;
 	      
 	        for (int i = 0; i < GRID_SIZE-1; i++) {
 	            for (int j = 0; j < GRID_SIZE-1; j++) {
-	                if(mGridArray[i][j] == BLACK){
+	            	int[][] theBoard = gp.myCurrentGame.board;
+	                if(theBoard[i][j] == BLACK){
 	                    
 	                    //canvas.drawBitmap(mChessBW[0], mStartX + (i+1) * GRID_WIDTH - CHESS_DIAMETER/2 , mStartY + (j+1)* GRID_WIDTH - CHESS_DIAMETER/2 , mPaint);
 	                   
@@ -167,7 +192,8 @@ import android.widget.TextView;
 	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
 	                    }
 	                   
-	                }else if(mGridArray[i][j] == WHITE){
+	                }
+	                else if(theBoard[i][j] == WHITE){
 	                   
 	                    //canvas.drawBitmap(mChessBW[1], mStartX + (i+1) * GRID_WIDTH - CHESS_DIAMETER/2 , mStartY + (j+1)* GRID_WIDTH - CHESS_DIAMETER/2 , mPaint);
 	                   
@@ -178,13 +204,23 @@ import android.widget.TextView;
 	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
 	                    }
 	                }
+	                else if( theBoard[i][j] ==2)
+	                {
+	                	Paint paintCircle = new Paint();
+                        paintCircle.setColor(Color.RED);
+                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
+	                    
+                    
+	                }
 	            }
 	        }
 	    }
-	   
-	    public void putChess(int x, int y, int blackwhite){
-	        mGridArray[x][y] = blackwhite;
-	    }
+//	   
+//	    public void putChess(int x, int y, int blackwhite){
+//	        mGridArray[x][y] = blackwhite;
+////	        g.board[x][y] = blackwhite;
+//	        
+//	    }
 	   
 	   
 	   

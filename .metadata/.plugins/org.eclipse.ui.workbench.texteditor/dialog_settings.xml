@@ -2,20 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="243" key="DIALOG_WIDTH"/>
-		<item value="148" key="DIALOG_Y_ORIGIN"/>
+		<item value="55" key="DIALOG_Y_ORIGIN"/>
+		<item value="794" key="DIALOG_X_ORIGIN"/>
 		<item value="362" key="DIALOG_HEIGHT"/>
-		<item value="523" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="oldw" key="selection"/>
+		<item value="koMove" key="selection"/>
 		<list key="findhistory">
-			<item value="oldw"/>
+			<item value="koMove"/>
+			<item value="Gmove"/>
+			<item value="gmove"/>
+			<item value="Move"/>
+			<item value="getgomove"/>
+			<item value="move"/>
+			<item value="board"/>
+			<item value="white"/>
 		</list>
 		<list key="replacehistory">
 		</list>

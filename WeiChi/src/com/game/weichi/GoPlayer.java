@@ -1,4 +1,4 @@
-package goplayer;
+package com.game.weichi;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,14 +13,26 @@ public class GoPlayer {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		GoPlayer myPlayer = new GoPlayer();
+		GoPlayer myPlayer = new GoPlayer(9);
 		myPlayer.play();
 
 	}
+	
+	public GoPlayer()
+	{
+		myCurrentGame = new GoGame(9);
+		myCurrentGameTreeNode = new GoGameTreeNode(myCurrentGame);
+	}
+	
+	public GoPlayer(int boardSize)
+	{
+		myCurrentGame = new GoGame(boardSize);
+		myCurrentGameTreeNode = new GoGameTreeNode(myCurrentGame);
+	}
 
-	GoGame myCurrentGame = new GoGame(9);
+	GoGame myCurrentGame;
 
-	GoGameTreeNode myCurrentGameTreeNode = new GoGameTreeNode(myCurrentGame);
+	GoGameTreeNode myCurrentGameTreeNode ;
 
 	public void play() {
 
@@ -137,7 +149,7 @@ public class GoPlayer {
 
 	public GoMove bestMoveSearch() {
 		GoGameTreeNode futureGame = new GoGameTreeNode(myCurrentGame);
-		int thinkTime = 15;
+		int thinkTime = 30;
 		ArrayList<Thread> myThreads = new ArrayList<Thread>();
 		for (int i = 0; i < 1; ++i) {
 
@@ -147,8 +159,8 @@ public class GoPlayer {
 			aThinkThread.start();
 
 		}
-		
-		
+//		
+//		
 		try {
 			Thread.sleep(1000*thinkTime);
 		} catch (InterruptedException e) {
