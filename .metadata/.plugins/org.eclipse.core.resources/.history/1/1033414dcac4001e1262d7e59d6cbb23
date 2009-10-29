@@ -44,7 +44,7 @@ import android.widget.TextView;
 //	    private Paint linePaint;
 	    
 //	   
-	   
+	    int mGameState = GAMESTATE_RUN; 
 	   
 //	    
 	    CharSequence mText;
@@ -71,7 +71,7 @@ import android.widget.TextView;
 	    }
 
 	    public void init() {
-	      
+	        mGameState = 1; 
 	        
 	       
 	        
@@ -154,13 +154,62 @@ import android.widget.TextView;
 	    }
 	   
 	    
-
+//	     @Override
+//	     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+//	     {
+//	    	 int measureHeight = measureHeight(heightMeasureSpec);
+//	    	 int measureWidth = measureWidth(widthMeasureSpec);
+//	    	 setMeasuredDimension(measureHeight, measureWidth);
+//	    	 
+//	     }
+//	     private int measureHeight(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=700;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
+//	     private int measureWidth(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=350;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
 	  
 	   @Override
 	    public void onDraw(Canvas canvas) {
             
 	        canvas.drawColor(Color.YELLOW);
-
+//	        int height= getMeasuredHeight();
+//	        int width= getMeasuredWidth();
+//	        int px= width/2;
+//	        int py= height/2;
+//	        Paint mTextPaint = new Paint (Paint.ANTI_ALIAS_FLAG);
+//	        mTextPaint.setColor(Color.BLUE);
+//	        String displayText = "hello~~~~~";
+//	        float textWidth = mTextPaint.measureText(displayText);
+//	        canvas.drawText(displayText,px-textWidth/2,py,mTextPaint);
+//	        canvas.getHeight();
+//	        canvas.getWidth();
 	  //start to draw game board
 	        {
 	            Paint paintRect = new Paint();

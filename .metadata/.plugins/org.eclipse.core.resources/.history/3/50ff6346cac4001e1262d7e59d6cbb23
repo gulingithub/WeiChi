@@ -33,19 +33,18 @@ import android.widget.TextView;
 	   
 	    private final int BLACK=1;
 	    private final int WHITE=-1;
-	    private final int ILLEGAL=-2;
-	    private final int MARK_WHITE=-3;//White stone with black dot
-	    private final int WHITE_DOT=3;
-	    private final int MARK_BLACK=-4;
-	    private final int BLACK_DOT=-4;
-	   
+	    boolean wbflag = false; 
+	    boolean key = false;
 	    
 	    Canvas canvas;
 //	    private Paint linePaint;
 	    
 //	   
-	   
-	   
+	    int mGameState = GAMESTATE_RUN; 
+	    static final int GAMESTATE_PRE = 0;
+	    static final int GAMESTATE_RUN = 1;
+	    static final int GAMESTATE_PAUSE = 2;
+	    static final int GAMESTATE_END = 3;
 //	    
 	    CharSequence mText;
 	    CharSequence White_Win = "White Win!";
@@ -71,7 +70,7 @@ import android.widget.TextView;
 	    }
 
 	    public void init() {
-	      
+	        mGameState = 1; 
 	        
 	       
 	        
@@ -154,13 +153,62 @@ import android.widget.TextView;
 	    }
 	   
 	    
-
+//	     @Override
+//	     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+//	     {
+//	    	 int measureHeight = measureHeight(heightMeasureSpec);
+//	    	 int measureWidth = measureWidth(widthMeasureSpec);
+//	    	 setMeasuredDimension(measureHeight, measureWidth);
+//	    	 
+//	     }
+//	     private int measureHeight(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=700;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
+//	     private int measureWidth(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=350;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
 	  
 	   @Override
 	    public void onDraw(Canvas canvas) {
             
 	        canvas.drawColor(Color.YELLOW);
-
+//	        int height= getMeasuredHeight();
+//	        int width= getMeasuredWidth();
+//	        int px= width/2;
+//	        int py= height/2;
+//	        Paint mTextPaint = new Paint (Paint.ANTI_ALIAS_FLAG);
+//	        mTextPaint.setColor(Color.BLUE);
+//	        String displayText = "hello~~~~~";
+//	        float textWidth = mTextPaint.measureText(displayText);
+//	        canvas.drawText(displayText,px-textWidth/2,py,mTextPaint);
+//	        canvas.getHeight();
+//	        canvas.getWidth();
 	  //start to draw game board
 	        {
 	            Paint paintRect = new Paint();
@@ -207,7 +255,6 @@ import android.widget.TextView;
 	                   
 	                 
 	                     {
-	                    	 
 	                        Paint paintCircle = new Paint();
 	                        paintCircle.setColor(Color.BLACK);
 	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
@@ -224,12 +271,12 @@ import android.widget.TextView;
 	                        Paint paintCircle = new Paint();
 	                        paintCircle.setColor(Color.WHITE);
 	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
-//	                        paintCircle.setColor(Color.BLACK);
-//	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/4, paintCircle);
-                        
+	                        paintCircle.setColor(Color.BLACK);
+	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/4, paintCircle);
+	                        
 	                    }
 	                }
-	                else if( theBoard[i][j] ==ILLEGAL)
+	                else if( theBoard[i][j] ==2)
 	                {
 	                	Paint paintCircle = new Paint();
                         paintCircle.setColor(Color.RED);
@@ -237,43 +284,6 @@ import android.widget.TextView;
 	                    
                     
 	                }
-	                else if( theBoard[i][j] ==MARK_BLACK)
-	                {
-	                	Paint paintCircle = new Paint();
-	                	paintCircle.setColor(Color.WHITE);
-                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
-                        paintCircle.setColor(Color.BLACK);
-                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/4, paintCircle);
-                        
-                    
-	                }
-	                else if( theBoard[i][j] ==MARK_WHITE)
-	                {
-	                	Paint paintCircle = new Paint();
-	                	paintCircle.setColor(Color.BLACK);
-                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
-                        paintCircle.setColor(Color.WHITE);
-                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/4, paintCircle);
-                        
-                    
-	                }
-	                else if( theBoard[i][j] ==WHITE_DOT)
-	                {
-	                	Paint paintCircle = new Paint();
-	                	paintCircle.setColor(Color.WHITE);
-                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/3, paintCircle);
-                        
-                    
-	                }
-	                else if( theBoard[i][j] ==BLACK_DOT)
-	                {
-	                	Paint paintCircle = new Paint();
-	                	paintCircle.setColor(Color.BLACK);
-                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/3, paintCircle);
-                        
-                    
-	                }
-	                
 	                
 	            }
 	        }
