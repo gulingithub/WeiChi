@@ -30,6 +30,7 @@ public class GoGameTreeNode {
 		GoGame nextGame = myGame.move(theMove);
 		GoGameTreeNode nextTreeNode = new GoGameTreeNode(nextGame);
 		children.put(theMove.toString(), nextTreeNode);
+		nextTreeNode.parent = this;
 		return nextTreeNode;
 
 	}
@@ -94,7 +95,6 @@ public class GoGameTreeNode {
 				GoGameTreeNode nextNode = new GoGameTreeNode(nextGame);
 				nextNode.gamesAtThisPoint++;
 				nextNode.bWins += result;
-				nextNode.parent = this;
 				children.put(move.toString(), nextNode);
 
 				overallResult += result;

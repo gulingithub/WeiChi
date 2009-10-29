@@ -136,10 +136,16 @@ public class GoPlayer {
 	}
 
 	public void undoMove() {
+		
 		if (myCurrentGameTreeNode.parent != null) {
+			boolean turn = myCurrentGame.isBsTurn;
 			myCurrentGameTreeNode = myCurrentGameTreeNode.parent;
+			myCurrentGame = myCurrentGameTreeNode.myGame;
+			if(turn = myCurrentGame.isBsTurn) System.exit(0);
 		}
-		myCurrentGame = myCurrentGameTreeNode.myGame;
+		else
+			System.exit(0);
+		
 	}
 
 	public void playMoveOnCurrentGame(GoMove theMove) {
@@ -147,6 +153,14 @@ public class GoPlayer {
 		myCurrentGame = myCurrentGameTreeNode.myGame;
 	}
 
+	public GoMove receiveMoveAndFindBestMove(int x, int y)
+	{
+		playMoveOnCurrentGame(new GoMove(x,y));
+		GoMove bestMove = bestMoveSearch();
+		playMoveOnCurrentGame(bestMove);
+		return bestMove;
+	}
+	
 	public GoMove bestMoveSearch() {
 		GoGameTreeNode futureGame = new GoGameTreeNode(myCurrentGame);
 		int thinkTime = 30;

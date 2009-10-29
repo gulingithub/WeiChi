@@ -1,0 +1,317 @@
+package com.game.weichi;
+
+import android.content.Context;
+import android.content.res.Resources;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Paint.Style;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+ class WeiChiView extends View{
+
+	 protected static int GRID_SIZE = 10;
+	    protected static int GRID_WIDTH = 30; 
+	    protected static int CHESS_DIAMETER = 26; 
+	    protected static int mStartX;// 
+	    protected static int mStartY;// 
+
+	    private boolean playComputer =true;
+//	    private static int[][] mGridArray; 
+	   
+	   
+	    private final int BLACK=1;
+	    private final int WHITE=-1;
+	    boolean wbflag = false; 
+	    boolean key = false;
+	    
+	    Canvas canvas;
+//	    private Paint linePaint;
+	    
+	   
+	    int mGameState = GAMESTATE_RUN; 
+	    static final int GAMESTATE_PRE = 0;
+	    static final int GAMESTATE_RUN = 1;
+	    static final int GAMESTATE_PAUSE = 2;
+	    static final int GAMESTATE_END = 3;
+	    
+	    CharSequence mText;
+	    CharSequence White_Win = "White Win!";
+	    CharSequence Black_Win = "Black Win";
+	   
+	    //private TextView mStatusTextView; 
+	    public TextView mStatusTextView; 
+	   
+	    GoPlayer gp = new GoPlayer(GRID_SIZE-1);
+	    GoGame g= new GoGame(GRID_SIZE-1);
+	    
+	    public WeiChiView(Context context, AttributeSet attrs, int defStyle) {
+	        super(context, attrs, defStyle);
+	      }
+
+	    public WeiChiView(Context context, AttributeSet attrs) { 
+	        super(context, attrs);
+	        this.setFocusable(true);  //20090530
+	        this.setFocusableInTouchMode(true);
+	        init();
+
+	    }
+
+	    public void init() {
+	        mGameState = 1; 
+	       
+	        
+//           Resources myresources = getResources();
+//           linePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+//	       linePaint.setColor(myresources.getColor(R.color.notepad_lines)); 
+       
+	       
+	       
+	       
+	  }
+	    
+        
+	    public void setTextView(TextView tv){
+	        mStatusTextView =tv;
+	        mStatusTextView.setVisibility(View.INVISIBLE);
+	    }
+
+	    @Override
+	    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+	        mStartX = w / 2 - GRID_SIZE * GRID_WIDTH / 2;
+	        mStartY = h / 2 - GRID_SIZE * GRID_WIDTH / 2;
+	        
+	    }
+	   
+	    
+	    
+	     @Override
+	    public boolean onTouchEvent(MotionEvent event){
+	       
+	                int x;
+	                int y;
+	                float x0 = GRID_WIDTH - (event.getX() - mStartX) % GRID_WIDTH;
+	                float y0 = GRID_WIDTH - (event.getY() - mStartY) % GRID_WIDTH;
+	                if (x0 < GRID_WIDTH / 2) {
+	                    x = (int) ((event.getX() - mStartX) / GRID_WIDTH);
+	                } else {
+	                    x = (int) ((event.getX() - mStartX) / GRID_WIDTH) - 1;
+	                }
+	                if (y0 < GRID_WIDTH / 2) {
+	                    y = (int) ((event.getY() - mStartY) / GRID_WIDTH);
+	                } else {
+	                    y = (int) ((event.getY() - mStartY) / GRID_WIDTH) - 1;
+	                }
+	                if ((x >= 0 && x < GRID_SIZE-1 )
+	                        && (y >= 0 && y < GRID_SIZE-1)) {
+	               
+	                	     	 if(!playComputer || gp.myCurrentGame.isBsTurn)
+	                	    	 {
+	                	    		 gp.playMoveOnCurrentGame(new GoMove(x,y));
+	                	    		 
+	                	    		 if(playComputer)
+	                	    		 {
+	                	    			 GoMove bestMove =
+	                	    				 sendMoveToComputerAndGetBestMove(x,y);
+	                	    			 gp.playMoveOnCurrentGame(bestMove);
+	                	    		 }
+	                	    		// g = g.move(new GoMove(x,y));
+	                	    		 // send move to server
+	                	    	 }
+	              
+
+	                        	 
+	                	 
+	      
+	                     }
+	            
+	   	         
+	                
+	   	           
+	   	   
+	        this.invalidate();
+	        return true;
+	       
+	    }
+	   
+	    
+//	     @Override
+//	     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+//	     {
+//	    	 int measureHeight = measureHeight(heightMeasureSpec);
+//	    	 int measureWidth = measureWidth(widthMeasureSpec);
+//	    	 setMeasuredDimension(measureHeight, measureWidth);
+//	    	 
+//	     }
+//	     private int measureHeight(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=700;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
+//	     private int measureWidth(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=350;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
+	   @Override
+	    public void onDraw(Canvas canvas) {
+            
+	        canvas.drawColor(Color.YELLOW);
+//	        int height= getMeasuredHeight();
+//	        int width= getMeasuredWidth();
+//	        int px= width/2;
+//	        int py= height/2;
+//	        Paint mTextPaint = new Paint (Paint.ANTI_ALIAS_FLAG);
+//	        mTextPaint.setColor(Color.BLUE);
+//	        String displayText = "hello~~~~~";
+//	        float textWidth = mTextPaint.measureText(displayText);
+//	        canvas.drawText(displayText,px-textWidth/2,py,mTextPaint);
+//	        canvas.getHeight();
+//	        canvas.getWidth();
+	  
+	        {
+	            Paint paintRect = new Paint();
+	            paintRect.setColor(Color.GRAY);
+	            paintRect.setStrokeWidth(2);
+	            paintRect.setStyle(Style.STROKE);
+
+	            for (int i = 0; i < GRID_SIZE; i++) {
+	                for (int j = 0; j < GRID_SIZE; j++) {
+	                    int mLeft = i * GRID_WIDTH + mStartX;
+	                    int mTop = j * GRID_WIDTH + mStartY;
+	                    int mRright = mLeft + GRID_WIDTH;
+	                    int mBottom = mTop + GRID_WIDTH;
+	                    if (i==0 || j==0){
+	                    	canvas.drawRect(mRright, mBottom, mRright, mBottom, paintRect);
+//	                    	canvas.drawLine(mRright, mBottom, mRright, mBottom, linePaint);
+	                    }
+	                    else if ((i+1)==GRID_SIZE || (j+1)==GRID_SIZE){
+	                    	canvas.drawRect(mLeft, mTop, mLeft, mTop, paintRect);
+//	                    	canvas.drawLine(mRright, mBottom, mRright, mBottom, linePaint);
+	                    }
+	                    else{
+	                    canvas.drawRect(mLeft, mTop, mRright, mBottom, paintRect);
+//	                    canvas.drawLine(mRright, mBottom, mRright, mBottom, linePaint);
+	                    }
+	                    
+	                }
+	            }
+	           
+	          
+	            paintRect.setStrokeWidth(4);
+	            canvas.drawRect(mStartX+ GRID_WIDTH, mStartY+ GRID_WIDTH, mStartX + GRID_WIDTH*(GRID_SIZE-1), mStartY + GRID_WIDTH*(GRID_SIZE-1), paintRect);
+	        }
+
+            
+	      
+	        for (int i = 0; i < GRID_SIZE-1; i++) {
+	            for (int j = 0; j < GRID_SIZE-1; j++) {
+	            	
+	            	int[][] theBoard = gp.myCurrentGame.board;
+	                if(theBoard[i][j] == BLACK){
+	                    
+	                    //canvas.drawBitmap(mChessBW[0], mStartX + (i+1) * GRID_WIDTH - CHESS_DIAMETER/2 , mStartY + (j+1)* GRID_WIDTH - CHESS_DIAMETER/2 , mPaint);
+	                   
+	                 
+	                     {
+	                        Paint paintCircle = new Paint();
+	                        paintCircle.setColor(Color.BLACK);
+	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
+	                        
+	                    }
+	                   
+	                }
+	                else if(theBoard[i][j] == WHITE){
+	                   
+	                    //canvas.drawBitmap(mChessBW[1], mStartX + (i+1) * GRID_WIDTH - CHESS_DIAMETER/2 , mStartY + (j+1)* GRID_WIDTH - CHESS_DIAMETER/2 , mPaint);
+	                   
+	               
+	                    {
+	                        Paint paintCircle = new Paint();
+	                        paintCircle.setColor(Color.WHITE);
+	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
+	                    }
+	                }
+	                else if( theBoard[i][j] ==2)
+	                {
+	                	Paint paintCircle = new Paint();
+                        paintCircle.setColor(Color.RED);
+                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
+	                    
+                    
+	                }
+	                
+	            }
+	        }
+	        
+	    }
+	    public void restart()
+		 {
+
+	    	for (int i = 0; i < GRID_SIZE-1; i++) {
+	            for (int j = 0; j < GRID_SIZE-1; j++) {
+	            	
+          	   gp.myCurrentGame.board[i][j]=0;
+          	   
+
+	            this.invalidate();
+	            this.showTextView(White_Win); 
+	          
+	            }
+	            
+	            }
+	    	
+	    	
+		 }
+	    public void pass()
+		 {
+	    	gp.playMoveOnCurrentGame(new GoMove(-1,0));
+//			 g = g.move(new GoMove(-1,0));
+			// this.setVisibility(View.VISIBLE);
+//			 this.mStatusTextView.setVisibility(View.INVISIBLE);
+			
+		 }
+		 
+		 public void Undo()
+		 {
+			 
+			gp.undoMove();
+		 }
+		   
+		 public void showTextView(CharSequence mT){
+		        this.mStatusTextView.setText(mT);
+		        mStatusTextView.setVisibility(View.VISIBLE);
+		       
+		    }
+	}

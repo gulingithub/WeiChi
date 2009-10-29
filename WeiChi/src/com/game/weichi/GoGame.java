@@ -432,24 +432,29 @@ public class GoGame {
 		
 
 	}
+	
 	public GoGame move(GoMove aMove) {
 		// aMove.printMove();
 //
 //		 System.out.println("Moving " );
 //		 theMove.printMove();
 
-		if(board[aMove.x][aMove.y] ==1 || board[aMove.x][aMove.y] == -1|| board[aMove.x][aMove.y] == 2) return this;
+		GoMove theMove=null;
+		if(aMove.x==-1) theMove = GoMove.pass;
+		else if(board[aMove.x][aMove.y] ==1 || 
+				board[aMove.x][aMove.y] == -1|| 
+				board[aMove.x][aMove.y] == 2) return this;
+		 else
+			theMove = allMoves[aMove.x][aMove.y];
 		GoGame nextGame = this.clone();
 //
 //		System.out.println("clonedGame ");
 //		nextGame.printBoard();
 
 		
-		GoMove theMove=null;
-		if(aMove.x==-1) theMove = GoMove.pass;
-		else
-			theMove = allMoves[aMove.x][aMove.y];
-		if (theMove.equals(GoMove.pass)) {
+		
+		
+		if (aMove.x==-1) {
 			if (ko)
 				board[koMove.x][koMove.y] = 0;
 			ko = false;
@@ -460,7 +465,7 @@ public class GoGame {
 				secondPass = true;
 			}
 			firstPass = true;
-			nextGame.isBsTurn = !nextGame.isBsTurn;
+			nextGame.isBsTurn = !isBsTurn;
 			return nextGame;
 		}
 

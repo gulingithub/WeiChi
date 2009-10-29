@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="243" key="DIALOG_WIDTH"/>
-		<item value="55" key="DIALOG_Y_ORIGIN"/>
-		<item value="794" key="DIALOG_X_ORIGIN"/>
+		<item value="19" key="DIALOG_Y_ORIGIN"/>
 		<item value="362" key="DIALOG_HEIGHT"/>
+		<item value="720" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="koMove" key="selection"/>
+		<item value="parent" key="selection"/>
 		<list key="findhistory">
-			<item value="koMove"/>
-			<item value="Gmove"/>
-			<item value="gmove"/>
-			<item value="Move"/>
-			<item value="getgomove"/>
-			<item value="move"/>
+			<item value="parent"/>
+			<item value="myCurrentGame"/>
+			<item value="myCurrentGame.board"/>
+			<item value="gp.myCurrentGame.board"/>
+			<item value="the"/>
 			<item value="board"/>
-			<item value="white"/>
+			<item value="theBoard"/>
+			<item value="theball"/>
 		</list>
 		<list key="replacehistory">
 		</list>

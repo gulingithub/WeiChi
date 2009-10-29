@@ -1,0 +1,26 @@
+package com.game.weichi;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class Welcome extends Activity {
+	Button start;	
+@Override
+public void onCreate(Bundle savedInstanceState){
+	setContentView(R.layout.welcome);
+	start = (Button)this.findViewById(R.id.player);
+	 start.setOnClickListener(new View.OnClickListener() {
+         public void onClick(View v) {
+             
+         	
+         	Toast.makeText(Welcome.this, "start", Toast.LENGTH_SHORT).show();
+         	
+         }
+     });
+	
+}
+
+}

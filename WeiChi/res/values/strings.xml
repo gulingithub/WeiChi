@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World, WeiChi!</string>
     <string name="app_name">androidWeiChi</string>
+    <string name="text">"this is a text"</string>
 </resources>

@@ -9,40 +9,53 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
  class WeiChiView extends View{
-
-	 protected static int GRID_SIZE = 10;
+	 WeiChi weichi;
+	
+	    protected static int GRID_SIZE = 10;
 	    protected static int GRID_WIDTH = 30; 
 	    protected static int CHESS_DIAMETER = 26; 
 	    protected static int mStartX;// 
-	    protected static int mStartY;// \
+	    protected static int mStartY;// 
 
 	    private boolean playComputer =false;
-	    private static int[][] mGridArray; 
+//	    private static int[][] mGridArray; 
+	   
 	   
 	    private final int BLACK=1;
 	    private final int WHITE=-1;
-	    int wbflag = 1; //
+	    boolean wbflag = false; 
 	    boolean key = false;
-	   
+	    
+	    Canvas canvas;
+//	    private Paint linePaint;
+	    
+//	   
 	    int mGameState = GAMESTATE_RUN; 
 	    static final int GAMESTATE_PRE = 0;
 	    static final int GAMESTATE_RUN = 1;
 	    static final int GAMESTATE_PAUSE = 2;
 	    static final int GAMESTATE_END = 3;
+//	    
+	    CharSequence mText;
+	    CharSequence White_Win = "White Win!";
+	    CharSequence Black_Win = "Black Win";
 	   
 	    //private TextView mStatusTextView; 
 	    public TextView mStatusTextView; 
 	   
-	    GoPlayer gp = new GoPlayer(GRID_SIZE);
-	   
+	    GoPlayer gp = new GoPlayer(GRID_SIZE-1);
+	    GoGame g= new GoGame(GRID_SIZE-1);
+	    
 	    public WeiChiView(Context context, AttributeSet attrs, int defStyle) {
 	        super(context, attrs, defStyle);
 	      }
@@ -52,20 +65,30 @@ import android.widget.TextView;
 	        this.setFocusable(true);  //20090530
 	        this.setFocusableInTouchMode(true);
 	        init();
+	        
 
 	    }
 
 	    public void init() {
 	        mGameState = 1; 
-	        wbflag = BLACK; 
 	        
-	        mGridArray = new int[GRID_SIZE-1][GRID_SIZE-1];
 	       
+	        
+//           Resources myresources = getResources();
+//           linePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+//	       linePaint.setColor(myresources.getColor(R.color.notepad_lines)); 
+       
 	       
 	       
 	       
 	  }
-
+	    public void setBoardSize(int size)
+	    {
+	    	GRID_SIZE=size;
+	    }
+	  
+	    
+        
 	    public void setTextView(TextView tv){
 	        mStatusTextView =tv;
 	        mStatusTextView.setVisibility(View.INVISIBLE);
@@ -78,6 +101,8 @@ import android.widget.TextView;
 	        
 	    }
 	   
+	    
+	    
 	     @Override
 	    public boolean onTouchEvent(MotionEvent event){
 	       
@@ -97,35 +122,24 @@ import android.widget.TextView;
 	                }
 	                if ((x >= 0 && x < GRID_SIZE-1 )
 	                        && (y >= 0 && y < GRID_SIZE-1)) {
-	                	    	 System.out.println("moving");
-	                	    	 System.out.flush();
-	                	    	 if(true)
+	               
+	                	     	 if(!playComputer || gp.myCurrentGame.isBsTurn)
 	                	    	 {
 	                	    		 gp.playMoveOnCurrentGame(new GoMove(x,y));
+	                	    		 
+//	                	    		 if(playComputer)
+//	                	    		 {
+//	                	    			 GoMove bestMove =
+//	                	    				 sendMoveToComputerAndGetBestMove(x,y);
+//	                	    			 gp.playMoveOnCurrentGame(bestMove);
+//	                	    		 }
 	                	    		// g = g.move(new GoMove(x,y));
 	                	    		 // send move to server
 	                	    	 }
-	                	    	 else
-	                	    	 {
-	                	    		 
-	                	    		//GoMove bestMove = search for move on server;
-	                				
-	                				//g = g.move(bestMove);
-	                	    	 }
-	                //        	putChess(x,y, g.board[x][y])
+	              
 
 	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
-	                        	 
+	                	 
 	      
 	                     }
 	            
@@ -138,14 +152,64 @@ import android.widget.TextView;
 	       
 	    }
 	   
-	 
-	   
-	    @Override
-	    public void onDraw(Canvas canvas) {
-
-	        canvas.drawColor(Color.YELLOW);
-
+	    
+//	     @Override
+//	     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+//	     {
+//	    	 int measureHeight = measureHeight(heightMeasureSpec);
+//	    	 int measureWidth = measureWidth(widthMeasureSpec);
+//	    	 setMeasuredDimension(measureHeight, measureWidth);
+//	    	 
+//	     }
+//	     private int measureHeight(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=700;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
+//	     private int measureWidth(int measureSpec)
+//	     {
+//	    	 int specMode = MeasureSpec.getMode(measureSpec);
+//	    	 int specSize = MeasureSpec.getSize(measureSpec);
+//	    	 int result = 0;
+//	    	 if(specMode == MeasureSpec.AT_MOST)
+//	    	 {
+//	    		 result=350;
+//	    		 
+//	    	 }
+//	    	 else if(specMode==MeasureSpec.EXACTLY)
+//	    	 {
+//	    		 result=specSize;
+//	    	 }
+//	    	 return result;
+//	     }
 	  
+	   @Override
+	    public void onDraw(Canvas canvas) {
+            
+	        canvas.drawColor(Color.YELLOW);
+//	        int height= getMeasuredHeight();
+//	        int width= getMeasuredWidth();
+//	        int px= width/2;
+//	        int py= height/2;
+//	        Paint mTextPaint = new Paint (Paint.ANTI_ALIAS_FLAG);
+//	        mTextPaint.setColor(Color.BLUE);
+//	        String displayText = "hello~~~~~";
+//	        float textWidth = mTextPaint.measureText(displayText);
+//	        canvas.drawText(displayText,px-textWidth/2,py,mTextPaint);
+//	        canvas.getHeight();
+//	        canvas.getWidth();
+	  //start to draw game board
 	        {
 	            Paint paintRect = new Paint();
 	            paintRect.setColor(Color.GRAY);
@@ -160,12 +224,15 @@ import android.widget.TextView;
 	                    int mBottom = mTop + GRID_WIDTH;
 	                    if (i==0 || j==0){
 	                    	canvas.drawRect(mRright, mBottom, mRright, mBottom, paintRect);
+//	                    	canvas.drawLine(mRright, mBottom, mRright, mBottom, linePaint);
 	                    }
 	                    else if ((i+1)==GRID_SIZE || (j+1)==GRID_SIZE){
 	                    	canvas.drawRect(mLeft, mTop, mLeft, mTop, paintRect);
+//	                    	canvas.drawLine(mRright, mBottom, mRright, mBottom, linePaint);
 	                    }
 	                    else{
 	                    canvas.drawRect(mLeft, mTop, mRright, mBottom, paintRect);
+//	                    canvas.drawLine(mRright, mBottom, mRright, mBottom, linePaint);
 	                    }
 	                    
 	                }
@@ -176,10 +243,11 @@ import android.widget.TextView;
 	            canvas.drawRect(mStartX+ GRID_WIDTH, mStartY+ GRID_WIDTH, mStartX + GRID_WIDTH*(GRID_SIZE-1), mStartY + GRID_WIDTH*(GRID_SIZE-1), paintRect);
 	        }
 
-	      
-	      
+            
+	    //start to draw stones  
 	        for (int i = 0; i < GRID_SIZE-1; i++) {
 	            for (int j = 0; j < GRID_SIZE-1; j++) {
+	            	
 	            	int[][] theBoard = gp.myCurrentGame.board;
 	                if(theBoard[i][j] == BLACK){
 	                    
@@ -190,6 +258,7 @@ import android.widget.TextView;
 	                        Paint paintCircle = new Paint();
 	                        paintCircle.setColor(Color.BLACK);
 	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
+	                        
 	                    }
 	                   
 	                }
@@ -202,6 +271,9 @@ import android.widget.TextView;
 	                        Paint paintCircle = new Paint();
 	                        paintCircle.setColor(Color.WHITE);
 	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/2, paintCircle);
+	                        paintCircle.setColor(Color.BLACK);
+	                        canvas.drawCircle(mStartX + (i+1) * GRID_WIDTH, mStartY + (j+1)* GRID_WIDTH, CHESS_DIAMETER/4, paintCircle);
+	                        
 	                    }
 	                }
 	                else if( theBoard[i][j] ==2)
@@ -212,18 +284,60 @@ import android.widget.TextView;
 	                    
                     
 	                }
+	                
 	            }
 	        }
+	        
 	    }
-//	   
-//	    public void putChess(int x, int y, int blackwhite){
-//	        mGridArray[x][y] = blackwhite;
-////	        g.board[x][y] = blackwhite;
-//	        
-//	    }
-	   
-	   
-	   
-	  
-	  
+	    public void restart()
+		 {
+
+	    	for (int i = 0; i < GRID_SIZE-1; i++) {
+	            for (int j = 0; j < GRID_SIZE-1; j++) {
+	            	
+          	   gp.myCurrentGame.board[i][j]=0;
+          	   
+
+	            this.invalidate();
+	            this.showTextView(White_Win); 
+	          
+	            }
+	            
+	            }
+	    	
+	    	
+		 }
+	    int timesCalled = 0;
+	    public void pass()
+		 {
+//	    	System.exit(0);
+//	    	timesCalled++;
+//	    	gp.myCurrentGame.board= null;
+//	    	gp.myCurrentGame.board[0][0]=5;
+	    	boolean currentMove = gp.myCurrentGame.isBsTurn;
+	    	gp.playMoveOnCurrentGame(GoMove.pass);
+	    	if(currentMove == gp.myCurrentGame.isBsTurn) gp.myCurrentGame.board[-1][0] = 2;
+	    	//this.invalidate();
+//			 g = g.move(new GoMove(-1,0));
+			// this.setVisibility(View.VISIBLE);
+//			 this.mStatusTextView.setVisibility(View.INVISIBLE);
+			
+		 }
+		 
+		 public void undo()
+		 {
+
+		    	//System.exit(0);
+			 boolean bTurn = gp.myCurrentGame.isBsTurn;
+			 
+			gp.undoMove();
+			//if(bTurn == gp.myCurrentGame.isBsTurn) System.exit(0);
+			this.invalidate();
+		 }
+		   
+		 public void showTextView(CharSequence mT){
+		        this.mStatusTextView.setText(mT);
+		        mStatusTextView.setVisibility(View.VISIBLE);
+		       
+		    }
 	}
