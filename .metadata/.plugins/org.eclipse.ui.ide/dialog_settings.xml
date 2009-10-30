@@ -2,4 +2,6 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.views.problem">
 	</section>
+	<section name="NewWizardAction">
+	</section>
 </section>

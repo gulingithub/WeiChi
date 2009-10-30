@@ -1,4 +1,4 @@
-package com.game.weichi;
+package goplayer;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Hashtable;
