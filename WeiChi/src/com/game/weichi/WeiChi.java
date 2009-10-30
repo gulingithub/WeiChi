@@ -40,7 +40,6 @@ public class WeiChi extends Activity {
 	        menu.add(0,MENU_UNDO, 0, R.string.menu_undo);
 	        menu.add(0,MENU_GAMEINFO, 0, R.string.menu_info);
 
-	        
 
 
 	return true;
@@ -65,7 +64,8 @@ public class WeiChi extends Activity {
 	        }
 	        case MENU_UNDO:
 	        {
-
+               wcview.undo();
+               return true;
                
 	        }  
 	        case MENU_GAMEINFO:
@@ -110,6 +110,7 @@ public class WeiChi extends Activity {
 //        
 //            wcview.setBoardSize(boardSize);
             wcview = (WeiChiView)this.findViewById(R.id.wcview);
+            
 //            wcview.setTextView((TextView)this.findViewById(R.id.text));
             
             

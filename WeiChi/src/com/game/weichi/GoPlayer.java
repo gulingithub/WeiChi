@@ -141,10 +141,8 @@ public class GoPlayer {
 			boolean turn = myCurrentGame.isBsTurn;
 			myCurrentGameTreeNode = myCurrentGameTreeNode.parent;
 			myCurrentGame = myCurrentGameTreeNode.myGame;
-			if(turn = myCurrentGame.isBsTurn) System.exit(0);
+			if(turn == myCurrentGame.isBsTurn) System.exit(0);
 		}
-		else
-			System.exit(0);
 		
 	}
 

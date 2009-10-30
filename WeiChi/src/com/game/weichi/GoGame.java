@@ -1,5 +1,4 @@
-package goplayer;
-
+package com.game.weichi;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -384,36 +383,7 @@ public class GoGame {
 		isBsTurn = !isBsTurn;
 	}
 
-<<<<<<< HEAD
-		// add this stone to the board
-		board[theMove.x][theMove.y] = stoneColor;
 
-//		 System.out.println( "Board after placing stone " );
-//		 nextGame.printBoard();
-		 
-		// resolve kos
-		resolveKos(theMove);
-//		System.out.println( "Board after resolve kos");
-//		nextGame.printBoard();
-		
-		
-		// check if any opposing groups are captured, and update points which
-		// had this as liberty
-		checkLibertiesOtherColor(theMove, -stoneColor);
-
-//		System.out.println( "Board after checking other color liberties");
-//		nextGame.printBoard();
-
-		// check for suicide, and update any points which had this as last
-		// liberty
-		checkLibertiesSameColor(theMove, stoneColor);
-
-//		System.out.println( "Board after checking same color liberties");
-//		nextGame.printBoard();
-		isBsTurn = !isBsTurn;
-		
-
-	}
 	
 	public GoGame move(GoMove aMove) {
 		// aMove.printMove();
@@ -423,9 +393,9 @@ public class GoGame {
 
 		GoMove theMove=null;
 		if(aMove.x==-1) theMove = GoMove.pass;
-		else if(board[aMove.x][aMove.y] ==1 || 
+		else if((board[aMove.x][aMove.y] ==1 || 
 				board[aMove.x][aMove.y] == -1|| 
-				board[aMove.x][aMove.y] == 2) return this;
+				board[aMove.x][aMove.y] == 2) && !secondPass) return this;
 		 else
 			theMove = allMoves[aMove.x][aMove.y];
 		GoGame nextGame = this.clone();
@@ -437,20 +407,6 @@ public class GoGame {
 		
 		
 		if (aMove.x==-1) {
-=======
-	public GoGame move(GoMove theMove) {
-		theMove.printMove();
-		//
-		// System.out.println("Moving " );
-		// theMove.printMove();
-
-		GoGame nextGame = this.clone();
-		//
-		// System.out.println("clonedGame ");
-		// nextGame.printBoard();
-		if (theMove.x < 0) {
-			System.out.println("its a pass");
->>>>>>> 450d0a2fc92399e01cecfdca703d8aa542c9281f
 			if (ko)
 				board[koMove.x][koMove.y] = 0;
 			ko = false;
@@ -461,13 +417,8 @@ public class GoGame {
 				nextGame.secondPass = true;
 				nextGame.makeFinalBoardState();
 			}
-<<<<<<< HEAD
-			firstPass = true;
-			nextGame.isBsTurn = !isBsTurn;
-=======
 			nextGame.firstPass = true;
 			nextGame.isBsTurn = !nextGame.isBsTurn;
->>>>>>> 450d0a2fc92399e01cecfdca703d8aa542c9281f
 			return nextGame;
 		}
 
@@ -664,6 +615,31 @@ public class GoGame {
 	private void checkLibertiesSameColor(GoMove lastMove, int stoneColor) {
 		checkAndMaybeRemoveGroup(lastMove.x, lastMove.y, stoneColor);
 
+	}
+	
+	public int calculateBFinalScore()
+	{
+		int score = 0;
+		for(int i = 0 ;i < boardSize; ++i)
+		{
+			for(int j = 0 ; j < boardSize; ++j)
+			{
+				if(board[i][j] > 0) score++;
+			}
+		}
+		return score;
+	}
+	public int calculateWFinalScore()
+	{
+		int score = 0;
+		for(int i = 0 ;i < boardSize; ++i)
+		{
+			for(int j = 0 ; j < boardSize; ++j)
+			{
+				if(board[i][j] < 0) score++;
+			}
+		}
+		return score;
 	}
 
 	private void resolveKos(GoMove aMove) {

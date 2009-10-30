@@ -34,10 +34,10 @@ import android.widget.TextView;
 	    private final int BLACK=1;
 	    private final int WHITE=-1;
 	    private final int ILLEGAL=-2;
-	    private final int MARK_WHITE=-3;//White stone with black dot
-	    private final int WHITE_DOT=3;
+	    private final int MARK_WHITE=4;//White stone with black dot
+	    private final int WHITE_DOT=-3;
 	    private final int MARK_BLACK=-4;
-	    private final int BLACK_DOT=-4;
+	    private final int BLACK_DOT=3;
 	   
 	    
 	    Canvas canvas;
@@ -126,7 +126,7 @@ import android.widget.TextView;
 	               
 	                	     	 if(!playComputer || gp.myCurrentGame.isBsTurn)
 	                	    	 {
-	                	    		 gp.playMoveOnCurrentGame(new GoMove(x,y));
+	                	    		 gp.playMoveOnCurrentGame(GoGame.getGoMove(x, y));
 	                	    		 
 //	                	    		 if(playComputer)
 //	                	    		 {
@@ -237,7 +237,7 @@ import android.widget.TextView;
 	                    
                     
 	                }
-	                else if( theBoard[i][j] ==MARK_BLACK)
+	                else if( theBoard[i][j] ==MARK_WHITE)
 	                {
 	                	Paint paintCircle = new Paint();
 	                	paintCircle.setColor(Color.WHITE);
@@ -247,7 +247,7 @@ import android.widget.TextView;
                         
                     
 	                }
-	                else if( theBoard[i][j] ==MARK_WHITE)
+	                else if( theBoard[i][j] ==MARK_BLACK)
 	                {
 	                	Paint paintCircle = new Paint();
 	                	paintCircle.setColor(Color.BLACK);
@@ -282,20 +282,9 @@ import android.widget.TextView;
 	    public void restart()
 		 {
 
-	    	for (int i = 0; i < GRID_SIZE-1; i++) {
-	            for (int j = 0; j < GRID_SIZE-1; j++) {
-	            	
-          	   gp.myCurrentGame.board[i][j]=0;
-          	   
-
-	            this.invalidate();
-	            this.showTextView(White_Win); 
-	          
-	            }
-	            
-	            }
+	    	gp = new GoPlayer(GRID_SIZE-1);
 	    	
-	    	
+	    	this.invalidate();
 		 }
 	    int timesCalled = 0;
 	    public void pass()
@@ -307,17 +296,18 @@ import android.widget.TextView;
 	    	boolean currentMove = gp.myCurrentGame.isBsTurn;
 	    	gp.playMoveOnCurrentGame(GoMove.pass);
 	    	if(currentMove == gp.myCurrentGame.isBsTurn) gp.myCurrentGame.board[-1][0] = 2;
-	    	//this.invalidate();
+	    	this.invalidate();
 //			 g = g.move(new GoMove(-1,0));
 			// this.setVisibility(View.VISIBLE);
 //			 this.mStatusTextView.setVisibility(View.INVISIBLE);
+	    	
 			
 		 }
 		 
 		 public void undo()
 		 {
 
-		    	//System.exit(0);
+		    	
 			 boolean bTurn = gp.myCurrentGame.isBsTurn;
 			 
 			gp.undoMove();
