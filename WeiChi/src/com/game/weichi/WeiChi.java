@@ -20,8 +20,8 @@ import android.widget.Toast;
 public class WeiChi extends Activity {
 	WeiChiView wcview;
 	
-	private String[] alert_list_items;
-	private Resources app_resources;
+//	private String[] alert_list_items;
+//	private Resources app_resources;
 	private static final int MENU_RESTART = Menu.FIRST;
 	private static final int MENU_PASS = Menu.FIRST+1;
 	private static final int MENU_UNDO = Menu.FIRST+2;
@@ -32,7 +32,7 @@ public class WeiChi extends Activity {
 	    public boolean onCreateOptionsMenu(Menu menu)
 	 {
 		 super.onCreateOptionsMenu(menu);
-		 super.onCreateOptionsMenu(menu);
+		 super.onCreateOptionsMenu(menu); 
 
 	        Log.i("info", "NotePad MenuCreate ");
 	        menu.add(0, MENU_RESTART, 0, R.string.menu_restart);
