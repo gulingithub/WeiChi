@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="250" y="-17">
+<window height="768" maximized="true" width="1024" x="174" y="17">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -35,29 +35,42 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Welcome.java" partName="Welcome.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/Welcome.java" title="Welcome.java" tooltip="WeiChi/src/com/game/weichi/Welcome.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Welcome.java" partName="Welcome.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/Welcome.java" title="Welcome.java" tooltip="WeiChi/src/com/game/weichi/Welcome.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/Welcome.java"/>
 <editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChiView.java" partName="WeiChiView.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/WeiChiView.java" title="WeiChiView.java" tooltip="WeiChi/src/com/game/weichi/WeiChiView.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/WeiChiView.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+<editorState selectionHPixel="0" selectionLength="12" selectionOffset="2305"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GoPlayer.java" partName="GoPlayer.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/GoPlayer.java" title="GoPlayer.java" tooltip="WeiChi/src/com/game/weichi/GoPlayer.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/GoPlayer.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="534"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="3502"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GoGame.java" partName="GoGame.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/GoGame.java" title="GoGame.java" tooltip="WeiChi/src/com/game/weichi/GoGame.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/GoGame.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="2982"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="16727"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChi.java" partName="WeiChi.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/WeiChi.java" title="WeiChi.java" tooltip="WeiChi/src/com/game/weichi/WeiChi.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChi.java" partName="WeiChi.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/WeiChi.java" title="WeiChi.java" tooltip="WeiChi/src/com/game/weichi/WeiChi.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1350"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1279"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" partName="strings.xml" path="F:/courses/Software Engineering/androidweichi/WeiChi/res/values/strings.xml" title="strings.xml" tooltip="WeiChi/res/values/strings.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/res/values/strings.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="F:/courses/Software Engineering/androidweichi/WeiChi/res/layout/main.xml" title="main.xml" tooltip="WeiChi/res/layout/main.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/res/layout/main.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GoGameTreeNode.java" partName="GoGameTreeNode.java" path="F:/courses/Software Engineering/androidweichi/WeiChi/src/com/game/weichi/GoGameTreeNode.java" title="GoGameTreeNode.java" tooltip="WeiChi/src/com/game/weichi/GoGameTreeNode.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeiChi/src/com/game/weichi/GoGameTreeNode.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="811"/>
 </editor>
 </editors>
 <views>
@@ -137,7 +150,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -366,163 +379,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/Welcome.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoGame.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoPlayer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChiView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoGameTreeNode.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChiView.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoGame.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoPlayer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/WeiChi/res/layout/welcome.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/WeiChi/res/layout/main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/Welcome.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoGame.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoPlayer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/Welcome.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeiChi/src/com/game/weichi/GoGame.java"/>
 </editors>
 <item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="11030" y="0"/>
-</item>
-<item historyLabel="WeiChi.java" index="1">
-<position info="not_deleted" x="591" y="0"/>
+<position info="not_deleted" x="10452" y="0"/>
 </item>
 <item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="11030" y="0"/>
+<position info="not_deleted" x="11074" y="4"/>
 </item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2409" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2858" y="31"/>
-</item>
-<item historyLabel="GoGame.java" index="3">
-<position info="not_deleted" x="2982" y="0"/>
-</item>
-<item historyLabel="GoPlayer.java" index="4">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="welcome.xml" index="5"/>
-<item historyLabel="WeiChi.java" index="1">
-<position info="not_deleted" x="591" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="3450" y="0"/>
-</item>
-<item historyLabel="GoPlayer.java" index="4">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="welcome.xml" index="5"/>
-<item historyLabel="WeiChi.java" index="1">
-<position info="not_deleted" x="663" y="0"/>
-</item>
-<item historyLabel="GoGame.java" index="3">
-<position info="not_deleted" x="2982" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="3450" y="0"/>
-</item>
-<item historyLabel="WeiChi.java" index="1">
-<position info="not_deleted" x="663" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="9625" y="0"/>
-</item>
-<item historyLabel="WeiChi.java" index="1">
-<position info="not_deleted" x="663" y="0"/>
-</item>
-<item historyLabel="Welcome.java" index="0">
-<position info="not_deleted" x="1113" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="9771" y="0"/>
-</item>
-<item historyLabel="Welcome.java" index="0">
-<position info="not_deleted" x="1113" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2343" y="79"/>
-</item>
-<item historyLabel="Welcome.java" index="0">
-<position info="not_deleted" x="1209" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2429" y="0"/>
-</item>
-<item historyLabel="Welcome.java" index="0">
-<position info="not_deleted" x="1209" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2429" y="0"/>
-</item>
-<item historyLabel="main.xml" index="6"/>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2429" y="0"/>
-</item>
-<item historyLabel="WeiChi.java" index="7">
+<item historyLabel="GoGameTreeNode.java" index="3">
 <position/>
 </item>
-<item historyLabel="Welcome.java" index="0">
-<position info="not_deleted" x="765" y="0"/>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="3590" y="0"/>
 </item>
 <item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2409" y="0"/>
+<position info="not_deleted" x="11254" y="0"/>
 </item>
-<item historyLabel="Welcome.java" index="0">
-<position info="not_deleted" x="765" y="0"/>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="3392" y="0"/>
 </item>
 <item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="2409" y="0"/>
+<position info="not_deleted" x="1031" y="0"/>
 </item>
-<item historyLabel="WeiChi.java" index="7">
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="24" y="0"/>
+</item>
+<item historyLabel="GoPlayer.java" index="1">
+<position info="not_deleted" x="3457" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="2">
+<position info="not_deleted" x="1031" y="0"/>
+</item>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="3392" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="2">
+<position info="not_deleted" x="11097" y="0"/>
+</item>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="1915" y="0"/>
+</item>
+<item historyLabel="GoPlayer.java" index="1">
+<position info="not_deleted" x="3457" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="2">
+<position info="not_deleted" x="11151" y="0"/>
+</item>
+<item historyLabel="GoPlayer.java" index="1">
+<position info="not_deleted" x="3502" y="0"/>
+</item>
+<item historyLabel="GoGameTreeNode.java" index="3">
 <position/>
 </item>
-<item historyLabel="GoGame.java" index="3">
-<position info="not_deleted" x="2982" y="0"/>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="24" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="295" y="4"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="10767" y="0"/>
 </item>
 <item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="9429" y="169"/>
+<position info="not_deleted" x="11151" y="0"/>
 </item>
-<item historyLabel="Welcome.java" index="0">
-<position info="not_deleted" x="765" y="0"/>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="1915" y="0"/>
 </item>
 <item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="9429" y="169"/>
+<position info="not_deleted" x="9005" y="0"/>
 </item>
-<item historyLabel="Welcome.java" index="8">
+<item historyLabel="GoPlayer.java" index="1">
+<position info="not_deleted" x="3502" y="0"/>
+</item>
+<item historyLabel="GoGameTreeNode.java" index="3">
+<position info="not_deleted" x="811" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="10767" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16402" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16462" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16507" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16530" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16533" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16749" y="0"/>
+</item>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="1277" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16749" y="0"/>
+</item>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="1277" y="0"/>
+</item>
+<item historyLabel="GoGame.java" index="0">
+<position info="not_deleted" x="16381" y="20"/>
+</item>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="1277" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="5">
+<position info="not_deleted" x="9005" y="0"/>
+</item>
+<item historyLabel="Welcome.java" index="6">
 <position/>
 </item>
-<item historyLabel="WeiChi.java" index="9">
-<position info="not_deleted" x="1350" y="0"/>
+<item historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="1279" y="0"/>
 </item>
-<item historyLabel="WeiChiView.java" index="2">
+<item historyLabel="WeiChiView.java" index="5">
+<position info="not_deleted" x="11097" y="0"/>
+</item>
+<item historyLabel="Welcome.java" index="6">
 <position/>
 </item>
-<item historyLabel="Welcome.java" index="8">
-<position info="not_deleted" x="848" y="0"/>
+<item historyLabel="WeiChiView.java" index="5">
+<position info="not_deleted" x="11097" y="0"/>
 </item>
-<item historyLabel="WeiChi.java" index="9">
-<position info="not_deleted" x="1350" y="0"/>
+<item historyLabel="GoPlayer.java" index="7">
+<position info="not_deleted" x="3502" y="0"/>
 </item>
-<item historyLabel="GoGame.java" index="10">
-<position info="not_deleted" x="2982" y="0"/>
+<item historyLabel="GoGame.java" index="8">
+<position info="not_deleted" x="16727" y="0"/>
 </item>
-<item historyLabel="GoPlayer.java" index="11">
-<position info="not_deleted" x="534" y="0"/>
+<item historyLabel="WeiChiView.java" index="5">
+<position info="not_deleted" x="11097" y="0"/>
 </item>
-<item historyLabel="Welcome.java" index="8">
-<position info="not_deleted" x="412" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="5850" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
-<position info="not_deleted" x="7377" y="0"/>
-</item>
-<item historyLabel="WeiChiView.java" index="2">
+<item historyLabel="Welcome.java" index="6">
 <position/>
 </item>
-<item active="true" historyLabel="Welcome.java" index="12">
-<position/>
+<item historyLabel="WeiChiView.java" index="5">
+<position info="not_deleted" x="11097" y="0"/>
+</item>
+<item historyLabel="WeiChiView.java" index="5">
+<position info="not_deleted" x="2305" y="12"/>
+</item>
+<item active="true" historyLabel="WeiChi.java" index="4">
+<position info="not_deleted" x="1279" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -541,6 +556,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GoGameTreeNode.java" tooltip="WeiChi/src/com/game/weichi/GoGameTreeNode.java">
+<persistable path="/WeiChi/src/com/game/weichi/GoGameTreeNode.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="WeiChi/res/layout/main.xml">
+<persistable path="/WeiChi/res/layout/main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="WeiChi/res/values/strings.xml">
+<persistable path="/WeiChi/res/values/strings.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChi.java" tooltip="WeiChi/src/com/game/weichi/WeiChi.java">
 <persistable path="/WeiChi/src/com/game/weichi/WeiChi.java"/>
 </file>
@@ -552,9 +576,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="welcome.xml" tooltip="WeiChi/res/layout/welcome.xml">
 <persistable path="/WeiChi/res/layout/welcome.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="WeiChi/res/layout/main.xml">
-<persistable path="/WeiChi/res/layout/main.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeiChiControl.java" tooltip="WeiChi/src/com/game/weichi/WeiChiControl.java">
 <persistable path="/WeiChi/src/com/game/weichi/WeiChiControl.java"/>
@@ -579,12 +600,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="colors.xml" tooltip="WeiChi/res/values/colors.xml">
 <persistable path="/WeiChi/res/values/colors.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="WeiChi/res/values/strings.xml">
-<persistable path="/WeiChi/res/values/strings.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="WeiChi/gen/com/game/weichi/R.java">
-<persistable path="/WeiChi/gen/com/game/weichi/R.java"/>
 </file>
 </mruList>
 </workbench>
