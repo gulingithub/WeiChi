@@ -453,6 +453,7 @@ public class GoGame {
 			}
 			nextGame.makeFinalBoardState();
 			nextGame.secondPass= true;
+			nextGame.isBsTurn = !this.isBsTurn;
 			return nextGame;
 		}
 		nextGame.firstPass = false;

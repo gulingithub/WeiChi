@@ -1,4 +1,6 @@
 package com.game.weichi;
+
+
 import java.util.Hashtable;
 import java.util.Random;
 
@@ -19,6 +21,10 @@ public class GoGameTreeNode {
 
 	public GoGameTreeNode playMove(GoMove theMove) {
 
+		
+		
+		GoGame nextGame = myGame.move(theMove);
+		if(nextGame.isBsTurn == myGame.isBsTurn) return this;
 		if (children == null)
 			children = new Hashtable<String, GoGameTreeNode>();
 		if (children.containsKey(theMove.toString())) {
@@ -27,7 +33,7 @@ public class GoGameTreeNode {
 
 		// have to make new game
 
-		GoGame nextGame = myGame.move(theMove);
+		
 		GoGameTreeNode nextTreeNode = new GoGameTreeNode(nextGame);
 		children.put(theMove.toString(), nextTreeNode);
 		nextTreeNode.parent = this;

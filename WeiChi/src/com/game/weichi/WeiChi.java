@@ -75,8 +75,10 @@ public class WeiChi extends Activity {
 	        }
 	        case MENU_UNDO:
 	        {
-
-              System.exit(0);
+	        	Toast.makeText(WeiChi.this, "undo", Toast.LENGTH_SHORT).show();
+	        	 wcview.undo();
+	        	 
+	               return true;
 	        }  
 	        case MENU_GAMEINFO:
 	        {
@@ -89,15 +91,14 @@ public class WeiChi extends Activity {
 	             String w_Score=null;
 	             if(gp.myCurrentGame.secondPass)       { 
 	            	 int black_Score=gp.myCurrentGame.calculateBFinalScore();
-	            	 int white_Score=gp.myCurrentGame.calculateBFinalScore(); 
-	            	  b_Score = Integer.toString(black_Score); 
-	            	  w_Score = Integer.toString(white_Score); 
-	            	             	 
+	            	 int white_Score=gp.myCurrentGame.calculateWFinalScore(); 
+	            	 
+	            	 infoAlert.setMessage(black_Score+ " : " + white_Score);            	 
 	            	
 	             }
 	           
 //	             infoAlert.setMessage(b_Score);
-	             infoAlert.setMessage(b_Score+ " : " + w_Score);
+	             
 	             
 //           	  infoAlert.setMessage(w_Score);
 	             
@@ -212,9 +213,16 @@ public class WeiChi extends Activity {
 		        mStartY = h / 2 - GRID_SIZE * GRID_WIDTH / 2;
 		        
 		    }
+		    boolean blah = true;
 		    @Override
 		    public boolean onTouchEvent(MotionEvent event){
 		       
+		    	if(blah)
+		    		{
+		    		blah = false;
+		    		return true;
+		    		}
+		    	blah=true;
 		                int x;
 		                int y;
 		                float x0 = GRID_WIDTH - (event.getX() - mStartX) % GRID_WIDTH;
@@ -235,7 +243,7 @@ public class WeiChi extends Activity {
 		                	     	 if(!playComputer || gp.myCurrentGame.isBsTurn)
 		                	    	 {
 //		                	    		 gp.playMoveOnCurrentGame(new GoMove(x,y));
-		                	    		 gp.playMoveOnCurrentGame(GoGame.getGoMove(x, y));
+		                	    		 gp.playOneMoveOnCurrentGame(new GoMove(x,y));
 		                	    		 
 //		                	    		 if(playComputer)
 //		                	    		 {
@@ -249,6 +257,8 @@ public class WeiChi extends Activity {
 	 
 		                     }
 		        this.invalidate();
+
+		        
 		        return true;
 	  	    }
 	  
@@ -368,6 +378,7 @@ public class WeiChi extends Activity {
 		            }
 		        }
 		        
+		        
 		    }
 		    public void restart()
 			 {
@@ -408,10 +419,11 @@ public class WeiChi extends Activity {
 			 {
 
 			    	//System.exit(0);
-				 boolean bTurn = gp.myCurrentGame.isBsTurn;
+
+				 boolean turn = gp.myCurrentGame.isBsTurn;
 				 
 				gp.undoMove();
-				//if(bTurn == gp.myCurrentGame.isBsTurn) System.exit(0);
+				//if(turn == gp.myCurrentGame.isBsTurn) System.exit(0);
 				this.invalidate();
 			 }
 			   

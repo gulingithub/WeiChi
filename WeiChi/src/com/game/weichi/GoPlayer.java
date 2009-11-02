@@ -14,30 +14,27 @@ public class GoPlayer {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		GoPlayer myPlayer = new GoPlayer(9);
-		myPlayer.playMoveOnCurrentGame(new GoMove(2,2));
-		myPlayer.playMoveOnCurrentGame(new GoMove(2,3));
+		myPlayer.playMoveOnCurrentGame(new GoMove(2, 2));
+		myPlayer.playMoveOnCurrentGame(new GoMove(2, 3));
 		myPlayer.myCurrentGame.printBoard();
 		myPlayer.undoMove();
 		myPlayer.myCurrentGame.printBoard();
-		
 
 	}
-	
-	public GoPlayer()
-	{
+
+	public GoPlayer() {
 		myCurrentGame = new GoGame(9);
 		myCurrentGameTreeNode = new GoGameTreeNode(myCurrentGame);
 	}
-	
-	public GoPlayer(int boardSize)
-	{
+
+	public GoPlayer(int boardSize) {
 		myCurrentGame = new GoGame(boardSize);
 		myCurrentGameTreeNode = new GoGameTreeNode(myCurrentGame);
 	}
 
 	GoGame myCurrentGame;
 
-	GoGameTreeNode myCurrentGameTreeNode ;
+	GoGameTreeNode myCurrentGameTreeNode;
 
 	public void play() {
 
@@ -141,14 +138,28 @@ public class GoPlayer {
 	}
 
 	public void undoMove() {
-		
+		if (myCurrentGameTreeNode.parent == myCurrentGameTreeNode)
+			myCurrentGame.board[-1][0] = 4;
 		if (myCurrentGameTreeNode.parent != null) {
-			boolean turn = myCurrentGame.isBsTurn;
+
+			myCurrentGame = myCurrentGameTreeNode.parent.myGame;
 			myCurrentGameTreeNode = myCurrentGameTreeNode.parent;
-			myCurrentGame = myCurrentGameTreeNode.myGame;
-			if(turn == myCurrentGame.isBsTurn) System.exit(0);
 		}
-		
+
+	}
+
+	private GoMove lastMove = GoMove.pass;
+
+	public void playOneMoveOnCurrentGame(GoMove theMove) {
+
+//		if (theMove.equals(lastMove) && lastMove != GoMove.pass)
+//			return;
+
+		GoGame curGame = myCurrentGame;
+		playMoveOnCurrentGame(theMove);
+
+		if (curGame != myCurrentGame)
+			lastMove = theMove;
 	}
 
 	public void playMoveOnCurrentGame(GoMove theMove) {
@@ -156,14 +167,13 @@ public class GoPlayer {
 		myCurrentGame = myCurrentGameTreeNode.myGame;
 	}
 
-	public GoMove receiveMoveAndFindBestMove(int x, int y)
-	{
-		playMoveOnCurrentGame(new GoMove(x,y));
+	public GoMove receiveMoveAndFindBestMove(int x, int y) {
+		playMoveOnCurrentGame(new GoMove(x, y));
 		GoMove bestMove = bestMoveSearch();
 		playMoveOnCurrentGame(bestMove);
 		return bestMove;
 	}
-	
+
 	public GoMove bestMoveSearch() {
 		GoGameTreeNode futureGame = new GoGameTreeNode(myCurrentGame);
 		int thinkTime = 30;
@@ -176,17 +186,16 @@ public class GoPlayer {
 			aThinkThread.start();
 
 		}
-//		
-//		
+		//		
+		//		
 		try {
-			Thread.sleep(1000*thinkTime);
+			Thread.sleep(1000 * thinkTime);
 		} catch (InterruptedException e) {
-			
+
 			e.printStackTrace();
 		}
-		
-		for(Thread t : myThreads)
-		{
+
+		for (Thread t : myThreads) {
 			t.interrupt();
 		}
 		try {
@@ -195,25 +204,21 @@ public class GoPlayer {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 		return futureGame.bestMoveSoFar();
 	}
-	
-	public class ThinkThread implements Runnable
-	{
+
+	public class ThinkThread implements Runnable {
 		GoGameTreeNode myStart;
-		public ThinkThread(GoGameTreeNode startNode)
-		{
+
+		public ThinkThread(GoGameTreeNode startNode) {
 			myStart = startNode;
 		}
-		
-		public void run()
-		{
-			while(true)
-			{
+
+		public void run() {
+			while (true) {
 				myStart.playOneSimulation();
-				if(Thread.interrupted())
+				if (Thread.interrupted())
 					return;
 			}
 		}
