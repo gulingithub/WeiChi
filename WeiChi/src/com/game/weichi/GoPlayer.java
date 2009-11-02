@@ -14,7 +14,12 @@ public class GoPlayer {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		GoPlayer myPlayer = new GoPlayer(9);
-		myPlayer.play();
+		myPlayer.playMoveOnCurrentGame(new GoMove(2,2));
+		myPlayer.playMoveOnCurrentGame(new GoMove(2,3));
+		myPlayer.myCurrentGame.printBoard();
+		myPlayer.undoMove();
+		myPlayer.myCurrentGame.printBoard();
+		
 
 	}
 	

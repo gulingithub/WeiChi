@@ -71,25 +71,36 @@ public class GoGame {
 		// myGo.playRandomGame();
 
 		//        
-		// System.out.println( "NEW GAME");
-		// myGo = new GoGame(9);
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove( 1,4));
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove(2,4));
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove( 2,3) );
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove( 1, 5));
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove( 2, 5));
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove(1, 3));
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove(3, 4));
-		// myGo.printBoard();
-		// myGo=myGo.move( getGoMove( 2, 4));
-		// myGo.printBoard();
+		 System.out.println( "NEW GAME");
+		 myGo = new GoGame(9);
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove( 1,4));
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove(2,4));
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove( 2,3) );
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove( 1, 5));
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove( 2, 5));
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove(1, 3));
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove(3, 4));
+		 myGo.printBoard();
+		 myGo=myGo.move( getGoMove( 2, 4));
+		 myGo.printBoard();
+		 
+			System.out.println(myGo.secondPass);
+			System.out.println(myGo.firstPass);
+			myGo = myGo.move(GoMove.pass);
+			System.out.println(myGo.secondPass);
+			System.out.println(myGo.firstPass);
+			myGo.printBoard();
+			myGo = myGo.move(GoMove.pass);
+			System.out.println(myGo.secondPass);
+			System.out.println(myGo.firstPass);
+			myGo.printBoard();
 		//        
 		// System.out.println( "NEW GAME");
 		// myGo = new GoGame(9);
@@ -497,6 +508,7 @@ public class GoGame {
 
 	public void markDead(GoMove theMove) {
 		int stoneColor = board[theMove.x][theMove.y];
+		if(stoneColor != 1 && stoneColor != -1) return;
 		Hashtable<String, GoMove> alreadyChecked = new Hashtable<String, GoMove>();
 		ArrayList<GoMove> theTerritory = new ArrayList<GoMove>();
 
@@ -831,7 +843,8 @@ public class GoGame {
 			for (int j = 0; j < boardSize; ++j) {
 				//System.out.println("i j " + i + " " + j);
 				//printBoard();
-				pickFinalValue(i, j);
+				if(board[i][j] == 0) pickFinalValue(i, j);
+				if(board[i][j] ==10) board[i][j] = 0;
 			}
 		}
 	}
