@@ -1,4 +1,4 @@
-package goplayer;
+package com.game.weichi;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

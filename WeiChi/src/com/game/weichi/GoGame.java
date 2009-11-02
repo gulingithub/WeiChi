@@ -1,10 +1,10 @@
-package goplayer;
+package com.game.weichi;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Random;
 
-public class GoGame {
+public class GoGame { 
 
 	public static void main(String[] args) {
 		GoGame myGo = new GoGame(6);

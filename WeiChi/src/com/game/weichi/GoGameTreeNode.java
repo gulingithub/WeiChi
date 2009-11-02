@@ -1,4 +1,4 @@
-package goplayer;
+package com.game.weichi;
 import java.util.Hashtable;
 import java.util.Random;
 
