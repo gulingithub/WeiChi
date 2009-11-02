@@ -862,7 +862,7 @@ public class GoGame {
 								allMoves[x - 1][y]);
 					}
 
-				} else if (board[x - 1][y] > 0 && board[x - 1][y] < 10) {
+				} else if (board[x - 1][y] > 0) {
 					foundB = true;
 				} else if (board[x - 1][y] < 0) {
 					foundW = true;
@@ -878,7 +878,7 @@ public class GoGame {
 						theTerritory.add(allMoves[x + 1][y]);
 					}
 
-				} else if (board[x + 1][y] > 0 && board[x + 1][y] < 10) {
+				} else if (board[x + 1][y] > 0) {
 					foundB = true;
 				} else if (board[x + 1][y] < 0) {
 					foundW = true;
@@ -894,7 +894,7 @@ public class GoGame {
 								allMoves[x][y - 1]);
 					}
 
-				} else if (board[x][y - 1] > 0 && board[x][y - 1] < 10) {
+				} else if (board[x][y - 1] > 0) {
 					foundB = true;
 				} else if (board[x][y - 1] < 0) {
 					foundW = true;
@@ -910,7 +910,7 @@ public class GoGame {
 								allMoves[x][y + 1]);
 					}
 
-				} else if (board[x][y + 1] > 0 && board[x][y + 1] < 10) {
+				} else if (board[x][y + 1] > 0) {
 					foundB = true;
 				} else if (board[x][y + 1] < 0) {
 					foundW = true;
@@ -919,7 +919,7 @@ public class GoGame {
 			currentLoc++;
 		}
 
-		int endValue = 10;
+		int endValue = 0;
 
 		if (foundW && !foundB) {
 			endValue = -3;
@@ -940,7 +940,7 @@ public class GoGame {
 
 		for (int i = 0; i < boardSize; ++i) {
 			for (int j = 0; j < boardSize; ++j) {
-				if (board[i][j] %10 == 0) {
+				if (board[i][j] == 0) {
 					System.out.print(" . ");
 				} else if (board[i][j] == 1) {
 					System.out.print(" B ");
