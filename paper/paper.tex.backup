@@ -1,0 +1,72 @@
+%CS6240 Software Engineering project paper
+
+% Ge Gao - Nov. 1, 2009
+
+\documentclass[acmtocl]{acmtrans2m}
+%\documentclass[acmtocl]{}
+%\documentclass{article}
+%\usepackage{times}
+\newcommand{\BibTeX}{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+\begin{document}
+
+% Article top matter
+\title{Enabling Efficient Go Game on Android Platform} %\LaTeX is a macro for printing the Latex logo
+\author{
+ Michael Skalak, Gu Lin, Ge Gao\\
+Department of Computer Science\\
+University of Virginia\\
+\texttt{\{gl2hv, gg5j\}@virginia.edu}\\
+}  %\texttt formats the text to a typewriter style font
+\date{}  %\today is replaced with the current date
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+ 
+Human&Computer interactive go game on cell phone is everywhere today. Our project's "bang for the buck" lies in connecting cell phone users to worldwide weichi players on the Internet in mobile manner and getting a good weichi assistantship on mobile device. This could not be achieved previously due to the relative isolation of individule cell phones from 3G resources and their limited computing capability, which could be overcomed by recent  achievements in wide coverage of the wireless network and 3G networks, ability of cell phones to acess Internet, open APIs of cell phone OS, etc.. Our project is on the way to take advantage of these achievements to upgrade cell phones' game playing environment.
+
+Risks might include:
+ 
+a. limited cell phone computing resources;
+b. open search algorithm;
+c. unfamiliar with KGS server's protocol;
+d. unfamiliar with Android development environment.
+
+\section{Background and Related Work}
+
+\section{System Design}
+
+\subsection{Requirements}
+
+\subsection{Specifications}
+
+\subsection{Design}
+
+\subsection{Implementation}
+
+\section{Evaluation}
+
+\subsection{Usage Scenarios}
+
+\subsection{Test Results}
+
+\section{Conclusion}
+
+
+
+\begin{thebibliography}{9}
+%The \bibitem is to start a new reference.  Ensure that the cite_key is
+%unique.  You don't need to put each element on a new line, but I did
+%simply for readability.
+
+
+\end{thebibliography} %Must end the environment
+
+\end{document}  %End of document.
