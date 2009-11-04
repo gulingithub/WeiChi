@@ -86,29 +86,17 @@ public class WeiChi extends Activity {
 	        	
 	        	 AlertDialog.Builder infoAlert=new AlertDialog.Builder(this);
 	             
-	             infoAlert.setTitle("Game information");
+	             infoAlert.setTitle("this is my dialog");
 	             String b_Score = null;
-	             String w_Score = null;
+	             String w_Score=null;
 	             if(gp.myCurrentGame.secondPass)       { 
 	            	 int black_Score=gp.myCurrentGame.calculateBFinalScore();
 	            	 int white_Score=gp.myCurrentGame.calculateWFinalScore(); 
-	            	 if(black_Score>white_Score)
-	            	 {
-	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by :"+white_Score+"points,"+"White wins");  
-			         }
-	            	 else if(black_Score==white_Score) 
-	            	 {
-	            		 infoAlert.setMessage("Black is captured by: " +black_Score+ " points,"+  "White is captured by : "+white_Score+" points,"+"You are neck by neck");  
-	 	            	 
-	            	 }
-	            	 else
-	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by : "+white_Score+" points,"+"Black wins");  
-		            	
-	             }
-	             else
-	            	 infoAlert.setMessage("It is coming soon...");  
+	            	 
+	            	 infoAlert.setMessage(black_Score+ " : " + white_Score);            	 
 	            	
-	             
+	             }
+	           
 //	             infoAlert.setMessage(b_Score);
 	             
 	             

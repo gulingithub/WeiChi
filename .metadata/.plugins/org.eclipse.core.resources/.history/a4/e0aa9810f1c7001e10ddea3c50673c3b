@@ -138,17 +138,14 @@ public class GoPlayer {
 	}
 
 	public void undoMove() {
+		if (myCurrentGameTreeNode.parent == myCurrentGameTreeNode)
+			myCurrentGame.board[-1][0] = 4;
 		if (myCurrentGameTreeNode.parent != null) {
 
 			myCurrentGame = myCurrentGameTreeNode.parent.myGame;
 			myCurrentGameTreeNode = myCurrentGameTreeNode.parent;
 		}
 
-	}
-	
-	public void redoMove()
-	{
-	
 	}
 
 	private GoMove lastMove = GoMove.pass;

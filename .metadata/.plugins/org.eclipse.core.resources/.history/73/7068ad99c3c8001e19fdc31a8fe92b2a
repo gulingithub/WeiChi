@@ -94,15 +94,15 @@ public class WeiChi extends Activity {
 	            	 int white_Score=gp.myCurrentGame.calculateWFinalScore(); 
 	            	 if(black_Score>white_Score)
 	            	 {
-	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by :"+white_Score+"points,"+"White wins");  
-			         }
+	            	 infoAlert.setMessage("Black is captured by"+black_Score+ " VS " + "White is captured by"+white_Score+"Black wins");  
+	            	 }
 	            	 else if(black_Score==white_Score) 
 	            	 {
-	            		 infoAlert.setMessage("Black is captured by: " +black_Score+ " points,"+  "White is captured by : "+white_Score+" points,"+"You are neck by neck");  
+	            		 infoAlert.setMessage("Black is captured by"+black_Score+ " VS " + "White is captured by"+white_Score+"You are neck by neck");  
 	 	            	 
 	            	 }
 	            	 else
-	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by : "+white_Score+" points,"+"Black wins");  
+	            		 infoAlert.setMessage("Black is captured by"+black_Score+ " VS " + "White is captured by"+white_Score+"White wins");  
 		            	
 	             }
 	             else

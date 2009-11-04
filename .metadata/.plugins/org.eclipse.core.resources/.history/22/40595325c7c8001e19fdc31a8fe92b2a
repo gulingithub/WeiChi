@@ -31,7 +31,7 @@ android:layout_width="fill_parent"
 android:layout_height="30px"
 android:text="Please enter Board Size"
 android:textSize="9pt"
-
+android:textColor="#ff333333"
 android:gravity="left"
 >
 </TextView>

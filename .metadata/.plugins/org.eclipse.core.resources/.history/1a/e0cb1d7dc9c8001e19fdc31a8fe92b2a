@@ -98,11 +98,11 @@ public class WeiChi extends Activity {
 			         }
 	            	 else if(black_Score==white_Score) 
 	            	 {
-	            		 infoAlert.setMessage("Black is captured by: " +black_Score+ " points,"+  "White is captured by : "+white_Score+" points,"+"You are neck by neck");  
+	            		 infoAlert.setMessage("Black is captured by: " +black_Score+ " points,"+  "White is captured by :"+white_Score+"points,"+"You are neck by neck");  
 	 	            	 
 	            	 }
 	            	 else
-	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by : "+white_Score+" points,"+"Black wins");  
+	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by :"+white_Score+"points,"+"Black wins");  
 		            	
 	             }
 	             else
