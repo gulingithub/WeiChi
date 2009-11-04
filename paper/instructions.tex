@@ -1,0 +1,1096 @@
+% acmtr.tex
+% revised 1/20/97
+% updated 06/01/01
+% $Header: acmtr.tex,v 1.5 2/14/96 11:07:57 boyland Exp $
+
+\documentclass[acmtocl]{acmtrans2m}
+%&t&{\tt #}&
+%&v&\verb|#|&
+
+\acmVolume{2}
+\acmNumber{3}
+\acmYear{01}
+\acmMonth{09}
+
+
+\newcommand{\BibTeX}{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\markboth{Leslie Lamport et al.}{Preparing Articles for the ACM 
+Transactions}
+
+\title{Preparing Articles for the ACM Transactions
+with \LaTeX}
+\author{LESLIE LAMPORT\\Digital Equipment Corporation\\
+ANDREW W. APPEL\\Princeton University \and
+JOHN TANG BOYLAND\\University of California, Berkeley}
+\begin{abstract}
+The \LaTeX\ {\tt acmtrans} document style formats articles in 
+the style of the ACM transactions.  Users who have prepared their
+document with \LaTeX\ can, with very little effort, produce
+camera-ready copy for these journals.  
+
+\end{abstract}
+
+\category{D.2.7}{Software Engineering}{Distribution and 
+Main\-ten\-ance}%
+[documentation]
+
+\category{H.4.0}{Information Systems Applications}{General}
+
+\category{I.7.2}{Text Processing}{Document Preparation}[languages \and
+  photocomposition]
+
+\terms{Documentation, Languages}
+
+\keywords{Document preparation, publications, typesetting}
+
+
+
+\begin{document}
+
+
+\setcounter{page}{111}
+
+\begin{bottomstuff}
+Author's address: L. Lamport, System Research Center,
+Digital Equipment Corporation, 130 Lytton Ave., Palo Alto, CA 
+94301.\newline
+Start of a second footnote ...
+\end{bottomstuff}
+\maketitle
+
+
+\section{Introduction}
+
+This article is a description of the \LaTeX\ {\tt acmtrans} document
+style for typesetting articles in the format of the ACM
+transactions---{\em Transactions on Programming Languages and
+Systems}, {\em Transactions on Database Systems}, etc.  It has, of
+course, been typeset using this document style, so it is a
+self-illustrating article.  The reader is assumed to be familiar
+with \LaTeX, as described by~\citeN{lamport:latex}.
+
+This document also describes the {\tt acmtrans} bibliography style.
+
+\LaTeX\ is a document preparation system
+implemented as a macro package in Donald Knuth's
+\TeX\ typesetting system~\cite{knuth:texbook}.  It is based
+upon the premise that the user should describe the logical structure 
+of
+his document and not how the document is to be formatted.  Formatting
+is under the direction of a {\em document style} chosen by the user.
+The user can dramatically change the way the document is formatted by
+simply choosing a different document style.  The idea of separating 
+the
+logical structure from the formatting comes from Brian Reid's {\em
+Scribe\/} system~\cite{reid:scribe}.  
+
+
+It is impossible to provide predefined logical structures to handle 
+all
+situations that may arise in a document, so users must sometimes make
+their own formatting decisions.  \LaTeX\ provides a number of features
+to assist in this task and, if necessary, the user can call upon the
+full power of \TeX, which is probably the most powerful typesetting
+system currently available.  However, very little user formatting is
+necessary for the majority of documents that appear in journals such 
+as
+the ACM transactions.  Consequently, it is quite easy to convert
+an existing \LaTeX\ input file to the {\tt acmtrans} style.
+
+
+\section{The Title Page}\label{sec:pag}
+
+\subsection{The Title, Author(s), and Abstract}
+
+Following order is mandatory to generate a correct title
+page:\footnote{Section~\ref{sec:pag} has been rewritten by Marco
+  Aiello (email: aiellom@acm.org) to explain the new structure of the
+  class file as of 2001/06/01. The major novelty is the introduction
+  of options for the different transactions and the the automatic
+  generation of footers and permission statements.}
+
+% changed w.r.t. original file by K.R.Apt and M.Aiello
+\begin{quote}
+\begin{verbatim}
+\documentclass{acmtrans2m}
+            %\acmVolume{V}
+            %\acmNumber{N}
+            %\acmYear{YY}
+            %\acmMonth{Month}
+            \markboth{}{}
+            \title{}
+            \author{}
+            \begin{abstract} 
+            ...  
+            \end{abstract}
+            \category{}{}{}
+            \terms{} 
+            \keywords{}
+            \begin{document}
+            \begin{bottomstuff} 
+            ... 
+            \end{bottomstuff}
+            \maketitle
+\end{verbatim}
+\end{quote}
+The \verb|\documentclass[journalName]{acmtrans2m}| takes as option the
+specific transaction one is preparing. The transactions currently
+supported are:
+
+\medskip
+\begin{tabular}{l l l}
+        option name & journal\\
+\hline
+        \verb|acmjacm| & Journal of the ACM\\
+        \verb|acmtocl| & Transactions on Computational Logic\\
+        \verb|acmtodaes| & Transactions on Design Automation of Electronic Systems\\
+        \verb|acmtods| & Transactions on Database Systems\\
+        \verb|acmtogs| & Transactions on Graphics\\
+        \verb|acmtoms| & Transactions on Mathematical Software\\
+        \verb|acmtoplas| & Transactions on Programming Languages and Systems\\
+\end{tabular}
+
+\medskip\noindent For example, to prepare a manuscript for the
+Transactions on Compuational Logic the file should begin with
+\begin{quote}
+\begin{verbatim}
+\documentclass[acmtocl]{acmtrans2m}
+\end{verbatim}
+\end{quote}
+
+
+\medskip\noindent
+%The additional option \verb|acmnow| generates the current month and
+%year in the footers and permission information of the paper.  (This is
+%a feature that authors may very well ignore in preparing their
+%manuscripts.)
+%\begin{quote}
+%\begin{verbatim}
+%\documentclass[journalName,acmnow]{acmtrans2m}
+%\end{verbatim}
+%\end{quote}
+The four commands
+\begin{quote}
+\begin{verbatim}
+            %\acmVolume{V}
+            %\acmNumber{N}
+            %\acmYear{YY}
+            %\acmMonth{Month}
+\end{verbatim}
+\end{quote}
+are needed to generate footer and copyright information. The commands
+store the following information: volume number, issue number, last two
+digits of the year of publication, and month name in English,
+respectively. The appropriate values will be communicated by the
+Editor-in-Chief upon acceptance of the final version of the paper.
+
+
+
+
+\subsubsection{Title and Author}
+The \LaTeX\ \verb|\title| and \verb|\author| declarations and the
+\verb|\maketitle| command are employed as usual.  However, the user
+must format the author a little differently to match the ACM standard.
+The following example \cite{6:1:1} illustrates most features:
+\begin{quote}
+\begin{verbatim}
+\author{JAMES E. ARCHER, JR.\\ Rational Machines
+        \and RICHARD CONWAY and FRED B. SCHNEIDER \\ 
+             Cornell University}
+\end{verbatim}
+\end{quote}
+Note that authors' names are in uppercase letters, authors are
+separated from their affiliation by a \verb|\\| command, multiple
+authors with the same affiliation are separated by ``and'' (or commas
+and ``and'' if there are more than two), and authors with different
+affiliations are separated by an \verb|\and| command.  The following
+example \cite{6:3:380} shows what to do if there are more than
+two affiliations:
+\begin{quote}
+\begin{verbatim}
+\author{E. KORACH \\ IBM Israel \\
+        D. ROTEM \\ University of Waterloo
+        \and N. SANTORO \\ Carleton University}
+\end{verbatim}
+\end{quote}
+In both the title and the author, you may have to insert \verb|\\|
+commands if lines need to be broken. 
+
+\subsubsection{Abstract}
+The abstract is typed as usual with the {\tt abstract} environment.
+However, this environment must come before the \verb|\maketitle|
+command.
+
+
+\subsection{Content Indicators and Keywords}
+
+The content indicators and keywords are entered with \LaTeX\ 
+declarations.  The CR categories are indicated with \verb|\category|
+declarations.  The first CR category of this article, appearing
+right below the abstract, was entered with the following command:
+\begin{quote}
+\begin{verbatim}
+\category{D.2.7}{Software Engineering}{Distribution and 
+  Maintenance}[Documentation]
+\end{verbatim}
+\end{quote}
+Note that the last argument (which contains the subject descriptors)
+is optional, since some categories have none.  Multiple subject 
+descriptors
+are separated by \verb|\and| commands, as in the last category of
+this article:
+\begin{quote}
+\begin{verbatim}
+\category{I.7.2}{Text Processing}{Document Preparation}
+         [Languages \and Photocomposition]
+\end{verbatim}
+\end{quote}
+Use a separate \verb|\category| declaration for each CR category;
+they will be listed in the order that the commands appear.  The
+\verb|\category| commands must precede the \verb|\maketitle|
+command.
+
+The General Terms are declared with a (single) \verb|\terms|
+command as in the one for this article:
+\begin{quote}
+\begin{verbatim}
+\terms{Documentation, Languages}
+\end{verbatim}
+\end{quote}
+The \verb|\terms| declaration must come before the \verb|\maketitle|
+command.  The terms {\it must} be chosen from the following list:
+\begin{quote}
+Algorithms; 
+Design; 
+Documentation; 
+Economics; 
+Experimentation; 
+Human factors; 
+Languages; 
+Legal aspects; 
+Management; 
+Measurement; 
+Performance; 
+Reliability; 
+Security; 
+Standardization; 
+Theory; 
+Verification; 
+\end{quote}
+The general terms are
+orthogonal to the Categories, at least theoretically, and so
+may be applied to any elements of the classification tree.
+
+Think of them as `perspectives' from which any topic may
+be approached. Thus you could use {\em Theory} or {\em Performance} 
+for an
+article about {\em C.2.1 Distributed Networks}. However, 
+some of these general terms actually slide over into
+content areas. Thus {\em Legal aspects} is a general term
+applicable to any category, but also an entire node in the tree,
+{\em K.5}, devoted to {\em Legal aspects of computing,} with many 
+sub-topics.
+
+So, though perhaps not perfect, the General Terms are most useful
+in online searches when used in combination with categories.
+
+The ``Additional Keywords and Phrases'' item on the title page
+is provided by the \verb|\keywords| declaration, {\bf listed 
+alphabetically\/}.
+For this article,  
+they were produced by the following command:
+\begin{quote}
+\begin{verbatim}
+\keywords{Document preparation, publications, typesetting}
+\end{verbatim}
+\end{quote}
+There is no prescribed list of ``additional keywords;'' use any that
+you want.
+
+\subsection{The Bottom of the Title Page}\label{sec:permission}
+
+The bottom of the article's title page contains acknowledgment of
+support, the author(s) address(es), a ``permission to copy'' 
+statement,
+and a line containing a copyright symbol (\copyright) and a mysterious
+number.  This is all entered with a {\tt bottomstuff} environment;
+there must be no blank line after the \verb|\begin{bottomstuff}|
+command.  
+
+\subsection{The Page Headers}
+
+\verb|\markboth{}{}| generates the left- and right-page headers. The 
+first 
+argument is the author's name(s):
+
+\begin{itemize}
+\item If there is one author, then use author's full name (ex. Leslie 
+Lamport);
+\item If there are two authors, then abbreviate each author's first 
+name
+           (L.~Lamport and A.~Appel);
+\item If there are more than two authors, then the format is Leslie 
+Lamport et al.
+\end{itemize}
+
+The second argument of \verb|markboth| is the title;
+if the title is too long, 
+contract it by omitting subtitles and phrases, not by abbreviating 
+words.
+
+
+\section{Ordinary Text}
+
+Most of the body of the text is typed just as in an ordinary
+document.  This section lists the differences.
+
+\subsection{Lists}
+
+\subsubsection{Enumeration and Itemization}
+
+Let's begin with enumeration.
+\begin{longenum}
+\item The ACM style has two different formats for 
+itemized lists, which I will call the {\em long\/} and {\em short\/}
+formats.  The long format is generally used when the individual items
+are more than two or three lines long, but ACM has been inconsistent 
+in
+their choice of format, sometimes using the long format for lists 
+whose
+items are all one or two lines long and the short format for lists of
+long items.  This list is an example of the long format.
+
+\item The ordinary {\tt enumerate} environment
+produces the short format.  For the long format, use the
+{\tt longenum} environment.
+\begin{enumerate}\itemindent 10pt
+\item This inner enumeration uses the short format.
+\item It was produced using \LaTeX's ordinary {\tt enumerate}
+      environment.
+\item ACM has no standard for enumerations nested more than
+      two levels deep, so the {\tt acmtrans} style does not
+      handle them well.
+\end{enumerate}
+\end{longenum}
+
+Itemized lists are similar to enumerated ones.
+\begin{longitem}
+\item As with enumerations, there is a long and a short
+format for itemized lists.  This list is in the long format.
+
+\item The long format is produced by the {\tt longitem}
+environment.  The ordinary {\tt itemize} environment
+uses the short format.
+\begin{itemize}
+\item This is an itemized list using the short format.
+
+\item It was produced  with the {\tt itemize} environment
+that is used in ordinary \LaTeX\ input.
+\end{itemize}
+\end{longitem}
+
+It is interesting to observe that the style of tick mark used
+for an itemization changed around 1985 from an en dash
+(--) to an em dash (---). % jtb: changed
+
+\subsubsection{Descriptions}
+
+A list is a sequence of displayed text elements, called items, each
+composed of the following two elements:
+\begin{describe}{{\em item body\/}:}
+\item[{\em label\/}:]
+A marker that identifies or sets off the item.  It
+is a number in an enumerated list and a tick mark in an itemized list.
+
+\item[{\em item body\/}:] The text of the item.  It is usually 
+ordinary prose,
+but sometimes consists of an equation, a program statement, etc.
+
+Or another paragraph, which will be indented like normal paragraphs.
+\end{describe}
+
+When the labels of a list are names rather than numbers or tick marks,
+the list is called a {\em description\/} list.
+The ACM style
+has both long and short description lists.  The above list is a short
+description list; the bodies of all the items are indented enough to
+accommodate the widest label.
+The following list is a long description list.
+The {\tt acmtrans} style provides both kinds of description lists:
+\begin{description}
+\item[short]
+The {\tt describe} environment 
+%that works the
+%same as the {\tt description} environment except that it 
+takes an argument, which should be the same as the argument of the 
+\verb|\item|
+command that produces the widest label.  Thus, the above description
+list was begun with the command
+\begin{quote}
+\begin{verbatim}
+\begin{describe}{{\em item body\/}:}
+\end{verbatim}
+\end{quote}
+
+A description label is often emphasized in some way; in this example I
+used the \LaTeX\ \verb|\em| command, italicized the label.  The ACM
+appears to have no standard convention for formatting the labels of a
+description list, so the {\tt describe} environment leaves the label
+formatting up to you.  An \verb|\hfill| command can be used to produce
+a label like ``{\em gnu \hfill --\/}'' where {\em gnu\/} is flush left
+against the margin and the ``--'' is aligned flush right next to the
+item body.
+
+\item[long]
+The standard \LaTeX\ {\tt description} environment produces a long
+description list.  It italicizes the labels, and puts a period after
+them, which seems to be what is done in the ACM transactions.
+\end{description}
+
+\subsection{Theorems, Etc.}
+
+%\newtheorem{theorem}{Theorem}[subsection]
+%\begin{theorem}
+%testing section counter
+%\end{theorem}
+
+\LaTeX\ provides a single class of theorem-like environments, which 
+are
+defined with the \verb|\newtheorem| command.  
+The ACM transactions
+style divides this class into two subclasses that are formatted
+differently.  The first class includes theorems, corollaries, lemmas,
+and propositions.  It is produced with the \verb|\newtheorem| command.
+Such a theorem-like environment is often followed by a proof, for 
+which
+the {\tt acmtrans} style provides a {\tt proof} environment.
+
+\newtheorem{subtheorem}{Theorem}[subsection]
+\begin{subtheorem}
+Notice that theorems are numbered inside the nearest section\newline 
+subsection.
+\end{subtheorem}
+
+When listing within the theorem environment, this style will now 
+produce
+roman parantheses. Thank you David Sands.
+
+\begin{proof}   
+This theorem is an instance of {\tt subtheorem}, theorems nested in
+subsections.
+\end{proof}
+
+
+
+%The next paragraph added by K.R. Apt
+
+%For the {\it ACM Transactions on Computational Logic} (TOCL) please
+Please use this set of definitions, possibly extended by your
+additional \verb|\newtheorem| items:
+
+\begin{verbatim}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newdef{definition}[theorem]{Definition}
+\newdef{remark}[theorem]{Remark}
+\end{verbatim}
+
+The second subclass of theorem-like environments includes ones for
+definitions, examples, and remarks.  These environments are defined
+with the \verb|\newdef| command, (used just above)
+which works the same as \verb|\newtheorem|.  Here
+is an example of such an environment.
+
+\newdef{subexample}[subtheorem]{Definition}
+
+\begin{subexample}
+This is an example of a Definition, typed with an {\tt subexample}
+environment defined with \verb|\newdef|.
+As you can see theorems are italicized and definitions are not.
+\end{subexample}
+
+\newtheorem{subproperty}[subtheorem]{Property}
+
+Sometimes theorem-like environments are numbered in unusual ways, or
+are identified by a name.  Consider the following example
+from~\citeN{7:3:359}.
+\begin{subproperty}[{\rm Ca}]
+Let syn $\in$ Syn, occ $\in$ Occ be maximal and sta $\in$ Sta.  Then
+Tcol\/{\rm [[}syn\/{\rm ]]} occ sta\hspace{-2pt} $\downarrow\!1$ $=$
+Tsto\/{\rm [[}syn\/{\rm ]]} sta.
+\end{subproperty}
+\begin{proof}[of Property {\rm Ca}]
+By straightforward structural induction, and is \linebreak
+omitted.
+\end{proof}
+It was obtained by giving optional arguments to the
+{\tt property} environment (defined with \verb|\newtheorem|)
+and the {\tt proof} environment and was typed as follows.
+\begin{quote}
+\begin{verbatim}
+\begin{subproperty}[{\rm Ca}] Let ...  \end{subproperty}
+\begin{proof}[of Property {\rm Ca}]  By straightforward ...
+\end{verbatim}
+\end{quote}
+Notice that the optional argument to the {\tt property} environment
+suppresses the automatic numbering.  If a null optional argument
+were given to this environment by typing ``{\tt []}'', then
+it would have produced the label ``{\sc Property.}''  This is
+how unnumbered theorems, etc.\ are produced.
+
+
+
+\subsection{Overfull hbox - Stretching/filling one horizontal line}
+
+To solve a line break due to ``Overfull \verb|\hbox|'', here is a 
+plain \TeX\ 
+solution; here \verb|\hsize| is the default setting of acmtrans.sty:
+
+\begin{center}
+\verb|\hbox to \hsize{line sentence to be stretched}|
+\end{center}
+
+This can be used in a list environment as well but \verb|\hsize| 
+declared to a reduce
+dimension:
+
+\begin{verbatim}
+   \hbox{\vbox{\hsize = less than the default setting
+   \hbox to \hsize{line sentence to be stretched}}}
+\end{verbatim}
+
+\subsection{Programs}
+
+Good formatting of programs requires a knowledge of their semantics,
+and is beyond the scope of a document production system.  While
+``pretty printers'' are useful for handling the many pages of a real
+program, the short examples that are published in articles should be
+formatted by hand to improve their clarity.  The \LaTeX\ {\tt tabbing}
+environment makes the formatting of programs relatively easy,
+especially if the user defines commands for his particular language
+constructs.
+One may also use the {\tt verbatim} environment.
+
+The ACM transactions style requires that programs be formatted with
+different size fonts, depending upon whether they appear in the text 
+or
+in a figure, but that is handled by the figure macro which
+automatically sets the correct font size.
+% The {\tt acmtrans} style provides a {\tt program}
+% environment that is exactly the same as the standard {\tt tabbing}
+% environment except for the size of the fonts it uses.  This 
+% environment
+% should be used for formatting programs, whether they appear in the
+% running text or in a figure.
+Moreover, programs in running text should be indented two ems 
+on each side (as provided by the {\tt quote} environment), and
+programs in regular figures should be centered.
+(Programs in ``narrow figures'' (q.v.) are left or right justified
+automatically).
+
+Here is an example of a program:
+\begin{quote}
+\begin{tabbing}
+{\bf type} date =\\
+\hspace*{1em}\= {\bf record} \= day: 1\,.\,.\,31;\+\+\\
+                                month: 1\,.\,.\,12;\\
+                                year: integer \-\\
+                {\bf end} \-\\
+{\bf var} mybirth, today : date;\\
+{\bf var} myage : integer;
+\end{tabbing}
+\end{quote}
+Figure~\ref{fig:prog} shows how the same program looks in a figure.
+\begin{figure}
+\centerline{\parbox{104pt}{% it's safe to overestimate the size here
+\begin{tabbing}
+{\bf type} date =\\
+\hspace*{1em}\= {\bf record} \= day: 1\,.\,.\,31;\+\+\\
+                                month: 1\,.\,.\,12;\\
+                                year: integer \-\\
+                {\bf end} \-\\
+{\bf var} mybirth, today : date;\\
+{\bf var} myage : integer;
+\end{tabbing}}}
+\caption{An example of a program centered in a figure}
+\label{fig:prog}
+\end{figure}
+
+%The ACM standard calls for the program to start flush at the left
+%margin, with each new level of nesting indented by a distance of one
+%em, and with the continuation of broken lines indented two ems.  
+% However, this standard is not applied consistently.
+
+In addition to formatting programs, the {\tt tabbing} environment may
+be used for similar displayed material such as BNF syntax
+specifications and rewrite rules.
+
+\subsection{User-specified Formatting}
+
+If \LaTeX\ does not provide a particular text structure, the user must
+define it himself and specify how it is to be formatted.  This is most
+easily done by defining the new structure in terms of existing ones;
+the \LaTeX\ {\tt list} and {\tt trivlist} environments are useful
+tools.  However, it is occasionally necessary for the user to provide
+explicit formatting commands.  
+
+The best guide to how something should be formatted is what has been
+done in the ACM transactions.  While horizontal spacing tends to 
+depend
+strongly upon the particular text, there is a standard amount of
+vertical space used to set off text.  The ordinary \LaTeX\ 
+\verb|\medskip| command produces a vertical space of the appropriate
+size.
+
+\section{Figures and Tables}
+
+\subsection{Figures}
+
+The ordinary \LaTeX\ {\tt figure} environment works as usual.
+Figure~\ref{fig:ordinary}, which is Figure~6 of \citeN{7:3:359}, a 
+bogus reference,
+\begin{figure}
+\centering
+\(\begin{array}{c|ccc}
+     & \bot & F & T \\
+\hline
+\bot & \bot & \bot & T \\
+F    & \bot & F    & T \\
+T    & \bot & T    & T
+\end{array}\)
+\caption{The truth table for the parallel-or.}
+\label{fig:ordinary}
+\end{figure}
+was produced in this way.
+Note that figures should never appear in the text or at the bottom of
+a page. (If you use the figure placement optional argument, use only
+\verb"t" or \verb"p" or both; do not use \verb"h" or \verb"b").
+
+Some figures (and tables) have no caption except for the figure 
+number.
+For such figures (and tables), one uses a \verb|\nocaption| command,
+which has no argument, instead of the \verb|\caption| command.
+
+\begin{narrowfig}{3in}
+\begin{tabbing}
+{\bf type} date =\\
+\hspace*{1em}\= {\bf record} \= day: 1\,.\,.\,31;\+\+\\
+                                month: 1\,.\,.\,12;\\
+                                year: integer \-\\
+                {\bf end} \-\\
+{\bf var} mybirth, today : date;\\
+{\bf var} myage : integer;
+\end{tabbing}
+\caption{An example of a program displayed in a figure.}
+\label{fig:narrow}
+\end{narrowfig}
+
+In addition to this method of formatting figures, the ACM transactions
+also uses figures with side captions, as in Figure~\ref{fig:narrow}.
+Such a figure is produced with the {\tt narrowfig} environment.  This
+environment has a single mandatory argument, which is the width of the
+figure.
+Note that if the figure is generated by {\tt tabbing} or {\tt
+tabular}, one can safely overestimate the size.
+It works just like the ordinary {\tt figure} environment,
+except it must contain only one \verb|\caption| or \verb|\nocaption|
+command, which must come after the figure itself.  
+
+The {\tt narrowfig} environment should obviously not be used unless
+the figure is narrow enough to leave a reasonable amount of space
+beside it for the caption.  The ACM seems to have no consistent policy
+for choosing which style of figure to employ.
+
+\subsection{Tables}
+
+The ordinary \LaTeX\ {\tt table} environment can be used, but it
+requires the user to add formatting commands to match the ACM
+transactions style.  This formatting is performed automatically
+if the {\tt acmtable} environment is used instead, producing
+the result shown in Table~\ref{tab:table}, which shows the same
+table displayed in Figure~\ref{fig:ordinary}.
+\begin{acmtable}{100pt}
+\centering
+\(\begin{array}{c|ccc}
+     & \bot & F & T \\
+\hline
+\bot & \bot & \bot & T \\
+F    & \bot & F    & T \\
+T    & \bot & T    & T
+\end{array}\)
+\caption{The truth table for the parallel-or.}
+\label{tab:table}
+\end{acmtable}
+This environment has a mandatory argument that equals the width
+of the table---more precisely, it specifies the width of the rules
+above and below the table.  There must be only one 
+\verb|\caption| or \verb|\nocaption|
+command, which must come after the text of the table.  
+(Even though the table caption is printed above the table, the
+\verb|\caption| command comes after the table in the input file.)
+
+
+\section{The End of the Document}
+
+\subsection{Appendix}
+
+The appendix (if the article has one) should precede the
+acknowledgments (if any) and bibliography.
+If the appendix isn't broken into separate sections,
+then you should add the following commands after the \verb|\appendix|
+command:
+\begin{quote}
+\begin{verbatim}
+\section*{APPENDIX}
+\setcounter{section}{1}
+\end{verbatim}
+\end{quote}
+Setting the counter is necessary so that numbered subsections and
+theorems will have the names ``A.{\em N\/}'' in the text.
+
+For an article with multiple appendices, one begins
+the appendix with an \verb|\appendix| followed by
+\verb|\section*{APPENDIX}|, and then starts each
+appendix with an ordinary \verb|\section| command.
+
+Information about electronic appendices is given in
+Section~\ref{sec:elecappendix} and in the Appendix.
+
+\subsection{Acknowledgments}
+
+An optional acknowledgments section follows all the text of the
+article, including any appendices.  It is produced with the
+{\tt acks} environment.  (Since I can never remember how many
+{\em e\/}'s there are in {\em acknowledgments}, it seemed
+like an abbreviation was in order for the environment name.
+One may also spell out the name as {\tt acknowledgments}).
+Sometimes, there is just a single acknowledgment.
+This may be given using the {\tt ack} or {\tt acknowledgment}
+environment.
+
+\subsection{Bibliography}
+
+The bibliography follows the acknowledgments, and is the last
+significant body of text in the article.  It is produced by the usual
+\LaTeX\ commands. 
+
+In 1993 the ACM changed bibliography styles, from numerical citations 
+[13]
+to author's name and year \cite{7:3:359}. 
+The user is encouraged to let \LaTeX\ produce his bibliography
+with the \verb|\bibliography| command, letting \BibTeX\ handle the
+formatting of the entries.
+The \verb|acmtrans.sty|
+bibliography style file now generates citations in this format.
+Put
+\begin{quote}
+\begin{verbatim}
+\bibliographystyle{acmtrans}
+\end{verbatim}
+\end{quote}
+between the \verb|\begin{document}| and the \verb|\end{document}|.
+
+The conventional \verb|\cite| command will generate citations as 
+usual in
+\LaTeX.
+Note that the style file automatically omits repeating author
+names~\cite{7:3:359,test}.
+If you mention the work explicitly in your prose, you should use
+\verb|\citeN| command. This command generates for example, 
+\citeN{7:3:359}
+discusses denotational program transformations. Or, you use 
+\verb|\citeyear| and say that Nielson \citeyear{7:3:359} discusses
+them.
+The command \verb|\shortcite| is an alias for \verb|\citeyear|.
+Either command may be used in cases where one refers to multiple
+works (of the same authors!).
+For example, \verb|Nielson~\shortcite{7:3:359,test}| generates
+Nielson~\shortcite{7:3:359,test}.
+% To generate author~[year1; year2], give the author's name and then 
+% use the command \verb|\citeNN{year1,year2}|, 
+% which generates ``Nielson~\citeNN{7:3:359,test}.''
+
+More variations of \verb|\cite| are discussed in comments in the
+\verb|acmtrans.sty| file. Here are some {\bf examples} on how to get
+
+\begin{enumerate}
+\item{Appel [1996]} $\rightarrow$ using either \verb|\citeN| or 
+\verb|\citeyear|
+\item{[Kempe 1879]} $\rightarrow$ \verb|\cite{kempe79}|
+\item{Appel [1995; 1996]} $\rightarrow$ 
+\verb|\shortcite{ref1-key,ref2-key}| 
+\item{Fil\'e [1981a; 1981b]} $\rightarrow$ 
+\verb|Fil\'{e}~\shortcite{engelfriet/file:81sweep,|\\
+\hbox{}\kern.2in\verb|engelfriet/file:81passes}| or simply 
+\verb|\shortcite{ref1-key, ref2-key}|
+\item{[Appel and Shao 1992; Shao and Appel 1994]} $\rightarrow$ 
+\verb|\cite{appel-zhong-lsc92,|\\
+\hbox{}\kern3.5in\verb|shao94:clo}|
+\item{Chow and Harrison [1992; 1994]} $\rightarrow$ 
+   Chow~and~Harrison~[\verb|\citeyearNP{CH-popl92};|
+   \hbox{}\kern2in\verb|\citeyearNP{CH-iccl94}|]  
+\item{[Chow and Harrison 1992; 1994; Cousot and Cousot 1984]} 
+$\rightarrow$ 
+\verb|[\citeNP{CH-popl92};|\\
+  \hbox{}\kern1.7in \verb|\citeyearNP{CH-iccl94}; \citeNP{CC-apct77}]|
+\item{[Cytron et al. 1991]} $\rightarrow$ 
+\verb|\cite{cytron-et-al-toplas91}|
+\item{Briggs et al. [1994]} $\rightarrow$ 
+\verb|\citeN{briggs-cooper-torczon-toplas94}| or
+\item{Duri et al. [1993]} $\rightarrow$ 
+\verb|Duri~et~al.~\citeyear{DBDS-sigsoft93}|
+\item{[Chaitin 1982; Chaitin et al. 1981]} $\rightarrow$ 
+\verb|\cite{chaitin-pldi82,chaitin-et-al-cl81}|
+\item{[Alblas 1991; Deransart et al. 1988; Knuth 1868]} $\rightarrow$ 
+\verb|\cite{alblas:91intro,|
+\hbox{}\kern1in\verb|deransart/jourdan/lorho:88ag,knuth:68semantics}|
+\item{[Gary and Johnson 1979]} $\rightarrow$ 
+\verb|\cite{garey-johnson-bk79}|
+\item{[Brand and Zafiropulo 1983; Gouda et al. 1984;1987]} 
+$\rightarrow$ \newline
+\verb|[\citeNP{brand83}; \citeNP{gouda84};\citeyearNP{gouda87}]|
+\end{enumerate}
+\noindent
+The list will be updated as we find unique cases.
+
+\subsection{Received Date}
+
+% This subsection was changed by K.R. Apt
+
+The article should end by the following lines:
+
+\begin{verbatim}
+\begin{received}
+Received Month Year;
+revised Month Year; accepted Month Year
+\end{received}
+\end{document}
+\end{verbatim}
+
+The actual dates will be supplied by the Editor-in-Chief.
+The \verb+\endreceived+ command activates the \verb+@lastpg+ label. Omitting the environment will result in a undefined label warning.
+
+\section{Running Heads and Feet}
+
+The running foot of all but the title page of the article is declared
+with the \linebreak \verb|\runningfoot| command.  It contains the name
+of the journal, volume, number, and date.  The foot for the title page
+contains this information plus the page numbers.  It is declared with
+the \verb|\firstfoot| command.
+
+The \verb|\pages| command prints the page numbers of the article,
+producing something like ``123--132''.  It is implemented with the
+\LaTeX\ \verb|\pageref| command, so it will not produce the correct
+page numbers the first time the file is run through \LaTeX, or if the
+number of the first or last page has changed since the last time.
+
+The default page style for the {\tt acmtrans} style is {\tt
+myheadings}.  Thus, a \verb|\markboth| command is used to set the
+running heads.  The left head contains the author's name (or authors'
+names) and the right head contains the title.  For long titles,
+some contraction of the title is used.
+
+{\bf
+At present, the ACM prefers to strip in their own running heads and
+feet, so it is unnecessary to worry about them when producing
+camera-ready copy.
+}
+
+\section{Interacting with ACM's Production Staff}
+
+% The preamble of this section was irrelevant for the purposes of TOCL and 
+% was removed. K.R.A.
+
+\subsection{ACM Copy Editors' Preferences}
+
+We wish to thank the authors who have mailed to us copies of their 
+page proofs.
+From the page proofs (and explicit requests from ACM), here is a list 
+of items most 
+frequently marked up by the copy editors. 
+
+\begin{description}\itemindent\labelsep  % that is, no indentation
+\item[\bf Center] Displayed items like figures, pieces of program 
+codes, and equations.  Equation numbers to appear right flushed. 
+Remember to add a period if the displayed equation ends in a 
+sentence. 
+\item[\bf Fonts] Following items in regular Roman font:
+\begin{itemize}
+\item such words like et al., e.g., i.e., ad hoc, and bona fide, and 
+\item the body of the definition environment.
+\end{itemize} 
+\item[\bf Etc] No double period when a sentence ends with ``etc.''
+\item[\bf Figure] Spell out the word ``figure'' when using in a 
+sentence, as in Figure 1.
+Use a period as in ``Fig. 1.'' and not a colon as in ``Fig. 1:''
+\item[\bf Contractions] Avoid the use of contractions; for example, 
+use 
+{\em do not} instead of {\em don't}.  
+(If you prefer to use contractions to avoid
+stuffiness, you'll have to tell the copy editor explicitly after you
+get the marked-up proofs.)
+\item[\bf Conference References] Please use {\it 4th International 
+Conf. on
+Document Formatting}, not {\it Fourth International Conference ...}; 
+that
+is, do not spell out the number.
+\item[\bf Journal References] Figure~\ref{fig:abbrev} gives common 
+journal abbreviations; there is a duplicate list in the acmtrans.bst 
+file for your convenience.  Using the {\it abbreviation} feature of 
+\BibTeX\  for journal
+names (and months!) makes it easy to follow the rules.
+\end{description} 
+
+\begin{figure}\noindent
+\begin{tabular}{l|l||l|l}
+\footnotesize
+acmcs&ACM Comput. Surv.&jlp&J. Logic Program.\\
+acmlett&ACM Lett. Program. Lang. Syst.&jcss&J. Comput. Syst. Sci.\\
+acta&Acta Inf.&jsmrp&J. Softw. Maint. Res. Pract.\\
+al&Ada Lett.&jss&J. Syst. Softw.\\
+acr&Adv. Comput. Res.&jlsc&J. Lisp Symb. Comput.\\
+bit&Bit&lpls&Lett. Program. Lang. Syst.\\
+cacm&Commun. ACM&mscs&Math. Struct. Comput. Sci.\\
+cj&Comput. J.&mst&Math. Syst. Theor.\\
+cn&Comput. J.&ngc&New Gen. Comput.\\
+cl&Comput. Lang.&scp&Sci. Comput. Program.\\
+ict&Inf. Contr.&sicomp&SIAM J. Comput.\\
+ieebcs&IEE/BCS Softw. Eng. J.&spe&Softw. Pract. Exper.\\
+ieees&IEEE Softw.&tocs&ACM Trans. Comput. Syst.\\
+ieeese&IEEE Trans. Softw. Eng.&tods&ACM Trans. Database Syst.\\
+ieeetc&IEEE Trans. Comput.&tog&ACM Trans. Graphics\\
+ieeetpds&IEEE Trans. Parall. Distrib. Syst.&toms&ACM Trans. Math. 
+Softw.\\
+ieeetit&IEEE Trans. Inf. Theory&toois&ACM Trans. Office Inf. Syst.\\
+ipl&Inf. Process. Lett.&toplas&ACM Trans. Program. Lang. Syst.\\
+icp&Inf. Comput.&tcs&Theor. Comput. Sci.\\
+ist&Inf. Softw. Tech.&tr&Tech. Rep.\\
+ijsa&Int. J. Supercomput. Appl.&jf&J. Funct. Program.\\
+ijpp&Int. J. Parallel Program.&jlc&J. Logic and Comput.\\
+\end{tabular}
+\caption{Common journal abbreviations.}
+\label{fig:abbrev}
+\end{figure}
+
+% next paragraph modified by K.R. Apt
+% The best method of reducing the number of copy editorial markups is by
+% using a recent issue of the ACM TOCL as a guide to typesetting your article.
+
+
+\section{Electronic Appendices}
+\label{sec:elecappendix}
+
+Because of severe constraints on how many pages it can print,
+some ACM journals accept some articles with {\it electronic appendices:}  appendices
+in Postscript format that will not appear in the printed article but
+will be available separately.  If your article is accepted with an
+electronic appendix, you should put an appendix header where the
+appendix normally belongs (before the ``acknowledgments'').
+The body of the electronic appendix should be given after the
+references.
+The \verb|appendixhead| command is given
+\begin{quote}
+{\tt \verb|\|appendixhead\{{\it URLend}\}}
+\end{quote}
+where {\it URLend} will be determined by the Editor (it is usually the last name of the first author).
+
+% added by K.R. Apt
+
+In case your paper will have an electronic appendix, the part of the
+paper that will appear in print should \LaTeX{} correctly, i.e. in this
+part no \LaTeX{} references (\verb|\ref|) should be made to the
+electronic appendix.
+
+The result of \verb|\appendixhead| looks like this:\footnote{%
+See the end of this document for the remainder of the explanation of
+electronic appendices}
+
+\appendixhead{URLend} Of course, the latter URL is just an example and it corresponds to no actual electronic appendix.
+
+
+\begin{acks}
+We wish to thank Howard Trickey for providing the now-obsolete
+version of the {\tt acmtrans}
+bibliography style, and for giving advice on creating the new one;
+Rebecca Davies for helping to adapt
+Glenn Paulley's ``Chicago'' bibliography
+style to fit the new ACM style; 
+and Marilyn Salmansohn and George Criscione for providing information
+on the official ACM transactions style.
+\end{acks}
+
+\bibliographystyle{acmtrans}
+\bibliography{instructions}
+\begin{received}
+Received February 1986;
+November 1993;
+accepted January 1996
+\end{received}
+
+
+\elecappendix
+
+\medskip
+
+The contents of the electronic appendix is written after the
+references and the ``received'' environment.  The electronic appendix
+is started by an \verb|\elecappendix| command:
+\begin{quote}
+  {\tt \verb|\|elecappendix}
+\end{quote}
+
+
+\section{Splitting off the electronic appendix}
+
+If you have an electronic appendix, only the main body of the
+article, up through and including the description of how to obtain
+the electronic appendix, will be printed in the journal.
+
+It will be necessary to split your dvi or Postscript file into
+two parts: one to be printed, the other to be available by
+FTP.  Please split your Postscript into two separate postscript files 
+using {\tt dvipages},  {\tt pslpr} or {\tt psselect}  and
+email them separately to the Editor.
+
+Note that the pages of the appendix are numbered App-1, App-2, etc.
+so as not to interfere with the normal journal pagination.
+
+\section{Single Appendix}
+
+When an article has a single electronic appendix, then after
+the \verb|\elecappendix| command, type the following.
+\begin{quote}
+\begin{verbatim}
+\setcounter{section}{1}
+\end{verbatim}
+\end{quote}
+If the text starts immediately, add a \verb|\medskip| to set off the
+text from the horizontal rule created by \verb|\elecappendix|.
+
+\section{Multiple appendices}
+
+For an article with multiple electronic appendices, one begins
+the appendix with an \verb|\elecappendix|
+command, then starts each
+appendix with an ordinary \verb|\section| command.  Lower levels of
+sectioning are produced by the ordinary sectioning commands.
+
+\end{document}
+
+
+
+
+
+ are produced by the ordinary sectioning commands.
+
+\end{document}
+
+
+
+
+
