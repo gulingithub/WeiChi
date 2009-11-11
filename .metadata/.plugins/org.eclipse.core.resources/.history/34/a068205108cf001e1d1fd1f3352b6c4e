@@ -99,8 +99,6 @@ public class WeiChi extends Activity {
 	             if(gp.myCurrentGame.secondPass)       { 
 	            	 int black_Score=gp.myCurrentGame.calculateBFinalScore();
 	            	 int white_Score=gp.myCurrentGame.calculateWFinalScore(); 
-	            	 
-			    				    	
 	            	 if(black_Score>white_Score)
 	            	 {
 	            		 infoAlert.setMessage("Black: " +black_Score+ " points, " + "White: "+white_Score+" points, "+"Black wins");  
@@ -464,8 +462,7 @@ public class WeiChi extends Activity {
 		    	boolean currentMove = gp.myCurrentGame.isBsTurn;
 		    	gp.playMoveOnCurrentGame(GoMove.pass);
 		    	if(currentMove == gp.myCurrentGame.isBsTurn) gp.myCurrentGame.board[-1][0] = 2;
-		    
-		    	if (gp.myCurrentGame.isBsTurn)
+		    	 if (gp.myCurrentGame.isBsTurn)
 	        	 	{
 		    		 	Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
 	        	 		gameStatus = "Black's Turn";
