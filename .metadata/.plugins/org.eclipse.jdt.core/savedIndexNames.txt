@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+K:\WeiChi\.metadata\.plugins\org.eclipse.jdt.core
+3270002986.index
+871858854.index
+3000053649.index
