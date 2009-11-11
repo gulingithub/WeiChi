@@ -488,18 +488,6 @@ public class WeiChi extends Activity {
 				 boolean turn = gp.myCurrentGame.isBsTurn;
 				 
 				gp.undoMove();
-				if (gp.myCurrentGame.isBsTurn)
-        	 	{
-	    		 	Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
-        	 		gameStatus = "Black's Turn";
-           
-        	 	}
-	    	 else
-	    	 	{
-	    		 	gameStatus="White's Turn";
-	    	 	}
-	    	 statusText.setText(gameStatus); 
-//	    	 this.invalidate();
 				//if(turn == gp.myCurrentGame.isBsTurn) System.exit(0);
 				this.invalidate();
 			 }

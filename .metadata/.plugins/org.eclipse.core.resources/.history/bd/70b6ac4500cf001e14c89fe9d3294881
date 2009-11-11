@@ -463,20 +463,21 @@ public class WeiChi extends Activity {
 		    	gp.playMoveOnCurrentGame(GoMove.pass);
 		    	if(currentMove == gp.myCurrentGame.isBsTurn) gp.myCurrentGame.board[-1][0] = 2;
 		    	 if (gp.myCurrentGame.isBsTurn)
-	        	 	{
-		    		 	Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
-	        	 		gameStatus = "Black's Turn";
+	        	 {
+	        	 Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
+	        	 gameStatus = "Black's Turn";
 	           
-	        	 	}
-		    	 else
-		    	 	{
-		    		 	gameStatus="White's Turn";
-		    	 	}
+	        	 }
+	         else
+	         {
+	        	 gameStatus="White's Turn";
+	         }
 		    	 statusText.setText(gameStatus); 
 		    	 this.invalidate();
 		    	//this.invalidate();
 //				 g = g.move(new GoMove(-1,0));
-
+				// this.setVisibility(View.VISIBLE);
+//				 this.mStatusTextView.setVisibility(View.INVISIBLE);
 				
 			 }
 			 
@@ -488,18 +489,6 @@ public class WeiChi extends Activity {
 				 boolean turn = gp.myCurrentGame.isBsTurn;
 				 
 				gp.undoMove();
-				if (gp.myCurrentGame.isBsTurn)
-        	 	{
-	    		 	Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
-        	 		gameStatus = "Black's Turn";
-           
-        	 	}
-	    	 else
-	    	 	{
-	    		 	gameStatus="White's Turn";
-	    	 	}
-	    	 statusText.setText(gameStatus); 
-//	    	 this.invalidate();
 				//if(turn == gp.myCurrentGame.isBsTurn) System.exit(0);
 				this.invalidate();
 			 }
