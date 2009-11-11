@@ -17,13 +17,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
  
 public class WeiChi extends Activity {
 	WeiChiView wcview = new WeiChiView(null);
+	TextView statusText;
+	private final int WC = ViewGroup.LayoutParams.WRAP_CONTENT;
+	private final int FP = ViewGroup.LayoutParams.FILL_PARENT;
 	
 //	private String[] alert_list_items;
 //	private Resources app_resources;
@@ -34,8 +39,10 @@ public class WeiChi extends Activity {
 	private static int GRID_SIZE = 25; 
 	 private static int GRID_WIDTH = 10; 
 	 private static int CHESS_DIAMETER = 5; 
-	  GoPlayer gp = new GoPlayer(GRID_SIZE-1);
-	    GoGame g= new GoGame(GRID_SIZE-1); 
+	 private boolean playComputer =false;
+	private static CharSequence gameStatus = ""; 
+	  GoPlayer gp;
+	    GoGame g;
 	
 	 /** Called when the activity is first created. */
 	 @Override
@@ -86,7 +93,7 @@ public class WeiChi extends Activity {
 	        	
 	        	 AlertDialog.Builder infoAlert=new AlertDialog.Builder(this);
 	             
-	             infoAlert.setTitle("Game information");
+	             infoAlert.setTitle("Score caculation");
 	             String b_Score = null;
 	             String w_Score = null;
 	             if(gp.myCurrentGame.secondPass)       { 
@@ -94,25 +101,21 @@ public class WeiChi extends Activity {
 	            	 int white_Score=gp.myCurrentGame.calculateWFinalScore(); 
 	            	 if(black_Score>white_Score)
 	            	 {
-	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by :"+white_Score+"points,"+"White wins");  
+	            		 infoAlert.setMessage("Black: " +black_Score+ " points, " + "White: "+white_Score+" points, "+"Black wins");  
 			         }
 	            	 else if(black_Score==white_Score) 
 	            	 {
-	            		 infoAlert.setMessage("Black is captured by: " +black_Score+ " points,"+  "White is captured by : "+white_Score+" points,"+"You are neck by neck");  
+	            		 infoAlert.setMessage("Black: " +black_Score+ " points, "+  "White : "+white_Score+" points,"+"You are neck by neck");  
 	 	            	 
 	            	 }
 	            	 else
-	            		 infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by : "+white_Score+" points,"+"Black wins");  
+	            		 infoAlert.setMessage("Black: " +black_Score+ " points, " + "White: "+white_Score+" points, "+"White wins");  
 		            	
 	             }
 	             else
-	            	 infoAlert.setMessage("It is coming soon...");  
+	            	 infoAlert.setMessage("You need to finish the game before calculating scores.");  
 	            	
 	             
-//	             infoAlert.setMessage(b_Score);
-	             
-	             
-//           	  infoAlert.setMessage(w_Score);
 	             
 
 //	           infoAlert.setPositiveButton("exit", this);
@@ -138,9 +141,39 @@ public class WeiChi extends Activity {
 	 @Override
  	public void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
-         setContentView(wcview); 
+         
+         Log.i("dddd", "in onCreate");
+          
+//         setContentView(wcview); 
+         gp = new GoPlayer(GRID_SIZE-1);
+         g= new GoGame(GRID_SIZE-1); 
+         LinearLayout layout= new LinearLayout(this);
+         layout.setOrientation(LinearLayout.VERTICAL);
+         LinearLayout.LayoutParams param= new LinearLayout.LayoutParams(WC,WC);
+         statusText = new TextView(this);
+        
+         statusText.setHeight(30);
+         statusText.setWidth(500);
+         statusText.setBackgroundColor(Color.GRAY);
+         statusText.setTextColor(Color.YELLOW);
+         statusText.setTextSize(20);
+         statusText.setIncludeFontPadding(true);
+         
+        
+         
+        
+    	
+         param = new LinearLayout.LayoutParams(WC,WC);
+         layout.addView(statusText, param);
+         param = new LinearLayout.LayoutParams(FP,FP);
+         layout.addView(wcview, param);
+         setContentView(layout);
+       
          Bundle myBundle=this.getIntent().getExtras(); 
          int boardSize =myBundle.getInt("size");
+         boolean playmode=myBundle.getBoolean("playmode");
+         playComputer=playmode;
+         
          if (boardSize<=10)
          {
          GRID_SIZE=boardSize+1;
@@ -176,7 +209,7 @@ public class WeiChi extends Activity {
 		    int mStartX;// 
 		    int mStartY;// 
 
-		    private boolean playComputer =false;
+//		    private boolean playComputer =false;
 
 		    private final int BLACK=1;
 		    private final int WHITE=-1;
@@ -256,7 +289,17 @@ public class WeiChi extends Activity {
 		                	    	 {
 //		                	    		 gp.playMoveOnCurrentGame(new GoMove(x,y));
 		                	    		 gp.playOneMoveOnCurrentGame(new GoMove(x,y));
-		                	    		 
+		                	    		 if (gp.myCurrentGame.isBsTurn)
+		                	        	 {
+		                	        	 Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
+		                	        	 gameStatus = "Black's Turn";
+		                	           
+		                	        	 }
+		                	         else
+		                	         {
+		                	        	 gameStatus="White's Turn";
+		                	         }
+		                	    		 statusText.setText(gameStatus); 
 //		                	    		 if(playComputer)
 //		                	    		 {
 //		                	    			 GoMove bestMove =
@@ -419,7 +462,18 @@ public class WeiChi extends Activity {
 		    	boolean currentMove = gp.myCurrentGame.isBsTurn;
 		    	gp.playMoveOnCurrentGame(GoMove.pass);
 		    	if(currentMove == gp.myCurrentGame.isBsTurn) gp.myCurrentGame.board[-1][0] = 2;
-		    	this.invalidate();
+		    	 if (gp.myCurrentGame.isBsTurn)
+	        	 {
+	        	 Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
+	        	 gameStatus = "Black's Turn";
+	           
+	        	 }
+	         else
+	         {
+	        	 gameStatus="White's Turn";
+	         }
+		    	 statusText.setText(gameStatus); 
+		    	 this.invalidate();
 		    	//this.invalidate();
 //				 g = g.move(new GoMove(-1,0));
 				// this.setVisibility(View.VISIBLE);

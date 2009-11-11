@@ -13,18 +13,20 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Canvas" key="selection"/>
+		<item value="statusText" key="selection"/>
 		<list key="findhistory">
+			<item value="statusView"/>
+			<item value="playmode"/>
 			<item value="canvas"/>
 			<item value="slee"/>
 			<item value="kill"/>
 			<item value="playmove"/>
 			<item value="calculate"/>
 			<item value="undo"/>
-			<item value="undoMove"/>
-			<item value="system.ex"/>
 		</list>
 		<list key="replacehistory">
+			<item value="statusText"/>
+			<item value="gameMode"/>
 		</list>
 	</section>
 </section>

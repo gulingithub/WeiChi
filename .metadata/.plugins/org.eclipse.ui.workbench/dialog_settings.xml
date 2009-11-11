@@ -4,4 +4,10 @@
 		<item value="27" key="DIALOG_Y_ORIGIN"/>
 		<item value="331" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="ShowViewDialog">
+		<item value="com.android.ide.eclipse.ddms.views.LogCatView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.android.ide.eclipse.ddms.views.category"/>
+		</list>
+	</section>
 </section>

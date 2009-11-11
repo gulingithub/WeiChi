@@ -16,22 +16,24 @@ public class Welcome extends Activity {
 	
 	        
 @Override
-public void onCreate(Bundle savedInstanceState){
+public void onCreate(Bundle savedInstanceState){ 
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.welcome);
-	bSize= (EditText)this.findViewById(R.id.boardsize);
+	final boolean gameMode =true;
+	bSize= (EditText)this.findViewById(R.id.boardsize); 
 	playermode = (Button)this.findViewById(R.id.player);
 	computermode = (Button)this.findViewById(R.id.computer);
 	 playermode.setOnClickListener(new View.OnClickListener() {
          public void onClick(View v) {
         	 int size = Integer.parseInt(bSize.getText().toString());
-        	 
+        	
          	
          	Toast.makeText(Welcome.this, "Player mode", Toast.LENGTH_SHORT).show();
          	Intent intent =new Intent();
          	intent.setClass(Welcome.this, WeiChi.class);
          	Bundle bundle = new Bundle();
          	bundle.putInt("size", size);
+         	bundle.putBoolean("true", gameMode);
          	intent.putExtras(bundle);
          	startActivity(intent);
          }
@@ -39,9 +41,18 @@ public void onCreate(Bundle savedInstanceState){
 	
 	 computermode.setOnClickListener(new View.OnClickListener() {
          public void onClick(View v) {
-             
+        	 int size = Integer.parseInt(bSize.getText().toString());       	
+          	
+
+          	Toast.makeText(Welcome.this, "Computer mode", Toast.LENGTH_SHORT).show();
+          	Intent intent =new Intent();
+          	intent.setClass(Welcome.this, WeiChi.class);
+          	Bundle bundle = new Bundle();
+          	bundle.putInt("size", size);
+          	bundle.putBoolean("false", gameMode);
+          	intent.putExtras(bundle);
+          	startActivity(intent);
          	
-         	Toast.makeText(Welcome.this, "Computer mode", Toast.LENGTH_SHORT).show();
          	
          }
      });
