@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976126531
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976126625
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976131671
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976134343
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976134343
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976134437
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976150359
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976253375
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976897343
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976931203
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976931203
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976931296
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976935125
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257976945140
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257977016406
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257977023625
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257977023625
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257977023718
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257977044500
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1257977048218
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1257977048468
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1257977048828
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1257977051390
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257977051578
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1257977058546

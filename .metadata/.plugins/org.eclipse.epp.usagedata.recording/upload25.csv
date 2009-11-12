@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui",1258058063578
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.bugzilla.core",1258058063609
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.bugzilla.ui",1258058063609
+started,bundle,org.eclipse.mylyn.commons.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.commons.ui",1258058063609
+started,bundle,org.eclipse.mylyn.context.core,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.core",1258058063609
+started,bundle,org.eclipse.mylyn.context.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.ui",1258058063609
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.ui",1258058063609
+started,bundle,org.eclipse.mylyn.team.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.team.ui",1258058063640
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1258058063640
+os,sysinfo,,,"win32",1258058063640
+arch,sysinfo,,,"x86",1258058063640
+ws,sysinfo,,,"win32",1258058063640
+locale,sysinfo,,,"en_US",1258058063640
+processors,sysinfo,,,"2",1258058063640
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1258058063640
+java.runtime.version,sysinfo,,,"1.6.0_16-b01",1258058063640
+java.specification.name,sysinfo,,,"Java Platform API Specification",1258058063640
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1258058063640
+java.specification.version,sysinfo,,,"1.6",1258058063640
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1258058063640
+java.version,sysinfo,,,"1.6.0_16",1258058063640
+java.vm.info,sysinfo,,,"mixed mode",1258058063640
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1258058063640
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1258058063640
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1258058063640

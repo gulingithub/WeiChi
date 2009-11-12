@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_gravity="center" android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:id="@+id/network">
+
+
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/txconnect" android:text="Connecting to the Go server" android:textSize="10pt" android:gravity="center"></TextView>
+
+
+
+<ProgressBar android:layout_height="wrap_content" android:layout_gravity="center" android:layout_width="wrap_content" android:id="@+id/progressbar" android:indeterminate="true" android:indeterminateBehavior="cycle" android:visibility="visible"></ProgressBar>
+</LinearLayout>

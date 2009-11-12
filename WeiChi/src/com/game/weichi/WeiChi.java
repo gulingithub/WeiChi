@@ -23,7 +23,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
- 
+  
 public class WeiChi extends Activity {
 	WeiChiView wcview = new WeiChiView(null);
 	TextView statusText;
