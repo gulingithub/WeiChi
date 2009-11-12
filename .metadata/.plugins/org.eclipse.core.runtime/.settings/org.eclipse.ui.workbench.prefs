@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 #Wed Nov 11 16:19:52 EST 2009
 eclipse.preferences.version=1
 ENABLED_DECORATORS=com.android.ide.eclipse.adt.project.FolderDecorator\:true,org.eclipse.jdt.ui.override.decorator\:true,org.eclipse.jdt.ui.interface.decorator\:false,org.eclipse.jdt.ui.buildpath.decorator\:true,org.eclipse.mylyn.context.ui.decorator.interest\:true,org.eclipse.mylyn.tasks.ui.decorators.task\:true,org.eclipse.mylyn.team.ui.changeset.decorator\:true,org.eclipse.team.cvs.ui.decorator\:true,org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,org.spearce.egit.ui.internal.decorators.GitLightweightDecorator\:true,
+=======
+#Wed Nov 11 16:19:52 EST 2009
+eclipse.preferences.version=1
+ENABLED_DECORATORS=com.android.ide.eclipse.adt.project.FolderDecorator\:true,org.eclipse.jdt.ui.override.decorator\:true,org.eclipse.jdt.ui.interface.decorator\:false,org.eclipse.jdt.ui.buildpath.decorator\:true,org.eclipse.mylyn.context.ui.decorator.interest\:true,org.eclipse.mylyn.tasks.ui.decorators.task\:true,org.eclipse.mylyn.team.ui.changeset.decorator\:true,org.eclipse.team.cvs.ui.decorator\:true,org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,org.spearce.egit.ui.internal.decorators.GitLightweightDecorator\:true,
+>>>>>>> 067ee8410344a7aa25fef82c0fe02a0875430a0b

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Thu Nov 12 16:50:48 EST 2009
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.templates_migrated=true
@@ -16,3 +17,19 @@ spelling_locale_initialized=true
 eclipse.preferences.version=1
 content_assist_proposals_foreground=0,0,0
 fontPropagated=true
+=======
+#Wed Nov 11 16:21:18 EST 2009
+useQuickDiffPrefPage=true
+proposalOrderMigrated=true
+tabWidthPropagated=true
+content_assist_proposals_background=255,255,255
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+useAnnotationsPrefPage=true
+org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=11
+spelling_locale_initialized=true
+eclipse.preferences.version=1
+content_assist_proposals_foreground=0,0,0
+fontPropagated=true
+>>>>>>> 067ee8410344a7aa25fef82c0fe02a0875430a0b

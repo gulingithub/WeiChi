@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>.org.eclipse.jdt.core.external.folders</name>
@@ -16,3 +17,23 @@
 		</link>
 	</linkedResources>
 </projectDescription>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link0</name>
+			<type>2</type>
+			<location>C:/Program Files/android-sdk-windows-1.6_r1/platforms/android-1.6/sources</location>
+		</link>
+	</linkedResources>
+</projectDescription>
+>>>>>>> 067ee8410344a7aa25fef82c0fe02a0875430a0b
