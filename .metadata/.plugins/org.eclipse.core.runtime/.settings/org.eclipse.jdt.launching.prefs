@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-#Wed Nov 11 16:45:13 EST 2009
+#Thu Nov 12 17:26:37 EST 2009
 eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1257975247734" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1257975247734" javadocURL\="http\://java.sun.com/javase/6/docs/api/" name\="jdk1.6.0_16" path\="D\:\\Java\\jdk1.6.0_16"/>\r\n</vmType>\r\n</vmSettings>\r\n
-=======
-#Wed Nov 11 16:20:25 EST 2009
-eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1257974420148">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1257974420148" javadocURL\="http\://java.sun.com/javase/6/docs/api/" name\="jre6" path\="C\:\\Program Files\\Java\\jre6"/>\r\n</vmType>\r\n</vmSettings>\r\n
->>>>>>> 067ee8410344a7aa25fef82c0fe02a0875430a0b
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1258064792048">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1258064792048" javadocURL\="http\://java.sun.com/javase/6/docs/api/" name\="jre6" path\="C\:\\Program Files\\Java\\jre6"/>\r\n</vmType>\r\n</vmSettings>\r\n

@@ -1,24 +1,4 @@
-<<<<<<< HEAD
-#Thu Nov 12 16:50:48 EST 2009
-useQuickDiffPrefPage=true
-org.eclipse.jdt.ui.text.templates_migrated=true
-proposalOrderMigrated=true
-tabWidthPropagated=true
-content_assist_proposals_background=255,255,255
-org.eclipse.jdt.ui.javadoclocations.migrated=true
-useAnnotationsPrefPage=true
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
-org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
-org.eclipse.jdt.ui.editor.tab.width=
-org.eclipse.jdt.ui.formatterprofiles.version=11
-org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_number_of_computers=16
-spelling_locale_initialized=true
-eclipse.preferences.version=1
-content_assist_proposals_foreground=0,0,0
-fontPropagated=true
-=======
-#Wed Nov 11 16:21:18 EST 2009
+#Thu Nov 12 17:27:49 EST 2009
 useQuickDiffPrefPage=true
 proposalOrderMigrated=true
 tabWidthPropagated=true
@@ -32,4 +12,3 @@ spelling_locale_initialized=true
 eclipse.preferences.version=1
 content_assist_proposals_foreground=0,0,0
 fontPropagated=true
->>>>>>> 067ee8410344a7aa25fef82c0fe02a0875430a0b
