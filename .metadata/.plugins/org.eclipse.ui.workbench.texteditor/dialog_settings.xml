@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="243" key="DIALOG_WIDTH"/>
 		<item value="131" key="DIALOG_Y_ORIGIN"/>
-		<item value="362" key="DIALOG_HEIGHT"/>
 		<item value="822" key="DIALOG_X_ORIGIN"/>
+		<item value="362" key="DIALOG_HEIGHT"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
-		<item value="false" key="wholeword"/>
-		<item value="statusText" key="selection"/>
+		<item value="true" key="wholeword"/>
+		<item value="in" key="selection"/>
 		<list key="findhistory">
+			<item value="in"/>
+			<item value="in WeiChiView"/>
+			<item value="in WeiChiView()"/>
+			<item value="INFO"/>
 			<item value="statusView"/>
 			<item value="playmode"/>
 			<item value="canvas"/>
 			<item value="slee"/>
-			<item value="kill"/>
-			<item value="playmove"/>
-			<item value="calculate"/>
-			<item value="undo"/>
 		</list>
 		<list key="replacehistory">
 			<item value="statusText"/>
