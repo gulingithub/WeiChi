@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 
 import android.widget.*;
@@ -27,6 +28,10 @@ import java.net.*;
 
 public class WeiChi extends Activity {
 	WeiChiView wcview = new WeiChiView(null);
+	LinearLayout layout;
+	TextView statusText;
+	private final int WC = ViewGroup.LayoutParams.WRAP_CONTENT;
+	private final int FP = ViewGroup.LayoutParams.FILL_PARENT;
 
 	//	private String[] alert_list_items;
 	//	private Resources app_resources;
@@ -37,6 +42,8 @@ public class WeiChi extends Activity {
 	private static int GRID_SIZE = 25; 
 	private static int GRID_WIDTH = 10; 
 	private static int CHESS_DIAMETER = 5; 
+	 private boolean playComputer =false;
+	private static CharSequence gameStatus = ""; 
 
 	GoPlayer gp;
 	GoGame g; 
@@ -69,83 +76,79 @@ public class WeiChi extends Activity {
 	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case MENU_RESTART:
-		{
-			wcview.restart();
-			Toast.makeText(WeiChi.this, "restart", Toast.LENGTH_SHORT).show();
-			return true;
-		}
+        switch (item.getItemId()) {
+        case MENU_RESTART:
+            {
+            	wcview.restart();
+           	Toast.makeText(WeiChi.this, "restart", Toast.LENGTH_SHORT).show();
+           	 return true;
+            }
+           
+        case MENU_PASS:
+        {
+        	Toast.makeText(WeiChi.this, "pass", Toast.LENGTH_SHORT).show();
+           
+           wcview.pass();
+           return true;
+        }
+        case MENU_UNDO:
+        {
+        	Toast.makeText(WeiChi.this, "undo", Toast.LENGTH_SHORT).show();
+        	 wcview.undo();
+        	 
+               return true;
+        }  
+        case MENU_GAMEINFO:
+        {
+        	
+        	
+        	 AlertDialog.Builder infoAlert=new AlertDialog.Builder(this);
+             
+             infoAlert.setTitle("Score caculation");
+             String b_Score = null;
+             String w_Score = null;
+             if(gp.myCurrentGame.secondPass)       { 
+            	 int black_Score=gp.myCurrentGame.calculateBFinalScore();
+            	 int white_Score=gp.myCurrentGame.calculateWFinalScore(); 
+            	 if(black_Score>white_Score)
+            	 {
+            		 infoAlert.setMessage("Black: " +black_Score+ " points, " + "White: "+white_Score+" points, "+"Black wins");  
+		         }
+            	 else if(black_Score==white_Score) 
+            	 {
+            		 infoAlert.setMessage("Black: " +black_Score+ " points, "+  "White : "+white_Score+" points,"+"You are neck by neck");  
+ 	            	 
+            	 }
+            	 else
+            		 infoAlert.setMessage("Black: " +black_Score+ " points, " + "White: "+white_Score+" points, "+"White wins");  
+	            	
+             }
+             else
+            	 infoAlert.setMessage("You need to finish the game before calculating scores.");  
+            	
+             
+             
 
-		case MENU_PASS:
-		{
-			Toast.makeText(WeiChi.this, "pass", Toast.LENGTH_SHORT).show();
+//           infoAlert.setPositiveButton("exit", this);
+             infoAlert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                        //Put your code in here for a positive response
+                }
+        });
+             infoAlert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                        //Put your code in here for a positive response
+                }
+        });
+        
 
-			wcview.pass();
-			return true;
-		}
-		case MENU_UNDO:
-		{
-			Toast.makeText(WeiChi.this, "undo", Toast.LENGTH_SHORT).show();
-			wcview.undo();
+        	infoAlert.show();
+           return true;
+        }  
+        }
 
-			return true;
-		}  
-		case MENU_GAMEINFO:
-		{
-
-
-			AlertDialog.Builder infoAlert=new AlertDialog.Builder(this);
-
-			infoAlert.setTitle("Game information");
-			String b_Score = null;
-			String w_Score = null;
-			if(gp.myCurrentGame.secondPass)       { 
-				int black_Score=gp.myCurrentGame.calculateBFinalScore();
-				int white_Score=gp.myCurrentGame.calculateWFinalScore(); 
-				if(black_Score>white_Score)
-				{
-					infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by :"+white_Score+"points,"+"White wins");  
-				}
-				else if(black_Score==white_Score) 
-				{
-					infoAlert.setMessage("Black is captured by: " +black_Score+ " points,"+  "White is captured by : "+white_Score+" points,"+"You are neck by neck");  
-
-				}
-				else
-					infoAlert.setMessage("Black is captured by : " +black_Score+ " points, " + "White is captured by : "+white_Score+" points,"+"Black wins");  
-
-			}
-			else
-				infoAlert.setMessage("It is coming soon...");  
-
-
-			//	             infoAlert.setMessage(b_Score);
-
-
-			//           	  infoAlert.setMessage(w_Score);
-
-
-			//	           infoAlert.setPositiveButton("exit", this);
-			infoAlert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-				public void onClick(DialogInterface dialog, int whichButton) {
-					//Put your code in here for a positive response
-				}
-			});
-			infoAlert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-				public void onClick(DialogInterface dialog, int whichButton) {
-					//Put your code in here for a positive response
-				}
-			});
-
-
-			infoAlert.show();
-			return true;
-		}  
-		}
-
-		return false;
-	}
+        return false;
+    }
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -154,10 +157,26 @@ public class WeiChi extends Activity {
 		tvConnect = (TextView)this.findViewById(R.id.txconnect);
 		pbConnect = (ProgressBar)this.findViewById(R.id.progressbar);
 
-
-
+		layout= new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        LinearLayout.LayoutParams param= new LinearLayout.LayoutParams(WC,WC);
+        statusText = new TextView(this);
+       
+        statusText.setHeight(30);
+        statusText.setWidth(500);
+        statusText.setBackgroundColor(Color.GRAY);
+        statusText.setTextColor(Color.YELLOW);
+        statusText.setTextSize(20);
+        statusText.setIncludeFontPadding(true);
+        param = new LinearLayout.LayoutParams(WC,WC);
+        layout.addView(statusText, param);
+        param = new LinearLayout.LayoutParams(FP,FP);
+        layout.addView(wcview, param);
+       
 		Bundle myBundle=this.getIntent().getExtras(); 
 		int boardSize =myBundle.getInt("size");
+		 boolean playmode=myBundle.getBoolean("playmode");
+		playComputer=playmode;
 		if (boardSize<=10)
 		{
 			GRID_SIZE=boardSize+1;
@@ -219,7 +238,7 @@ public class WeiChi extends Activity {
 					if (status2 == Network.NET_MATCHED) {
 						hl.post(new Runnable(){
 							public void run(){
-								setContentView(wcview);
+								setContentView(layout);
 							}
 						});
 						break;
@@ -265,7 +284,7 @@ public class WeiChi extends Activity {
 				isBlack = false;
 				hl.post(new Runnable(){
 					public void run(){
-						setContentView(wcview);
+						setContentView(layout);
 					}
 				});
 				break;
@@ -376,7 +395,17 @@ public class WeiChi extends Activity {
 				if(!playComputer && ( isBlack && gp.myCurrentGame.isBsTurn || !isBlack && !gp.myCurrentGame.isBsTurn))
 				{
 					gp.playOneMoveOnCurrentGame(new GoMove(x,y));
-					
+					 if (gp.myCurrentGame.isBsTurn)
+    	        	 {
+    	        	 Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
+    	        	 gameStatus = "Black's Turn";
+    	           
+    	        	 }
+    	         else
+    	         {
+    	        	 gameStatus="White's Turn";
+    	         }
+    	    		 statusText.setText(gameStatus); 
 					Log.i("INFO", ""+gp.myCurrentGame.isBsTurn);
 					
 					new Thread(new Runnable(){
@@ -387,6 +416,17 @@ public class WeiChi extends Activity {
 							
 							hl.post(new Runnable(){
 								public void run(){
+									 if (gp.myCurrentGame.isBsTurn)
+	                	        	 {
+	                	        	 Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
+	                	        	 gameStatus = "Black's Turn";
+	                	           
+	                	        	 }
+	                	         else
+	                	         {
+	                	        	 gameStatus="White's Turn";
+	                	         }
+	                	    		 statusText.setText(gameStatus); 
 									invalidate();
 								}
 							});
@@ -582,6 +622,17 @@ public class WeiChi extends Activity {
 			//		    	gp.myCurrentGame.board[0][0]=5;
 			boolean currentMove = gp.myCurrentGame.isBsTurn;
 			gp.playMoveOnCurrentGame(GoMove.pass);
+			 if (gp.myCurrentGame.isBsTurn)
+        	 {
+        	 Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
+        	 gameStatus = "Black's Turn";
+           
+        	 }
+         else
+         {
+        	 gameStatus="White's Turn";
+         }
+    		 statusText.setText(gameStatus); 
 			if(currentMove == gp.myCurrentGame.isBsTurn) gp.myCurrentGame.board[-1][0] = 2;
 			this.invalidate();
 			//this.invalidate();
