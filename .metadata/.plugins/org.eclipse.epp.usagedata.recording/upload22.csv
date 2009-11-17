@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388242699
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388251496
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388308310
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388346249
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.newWizard",1258388346280
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1258388348077
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1258388358624
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388360140
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388362093
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.properties",1258388362140
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388374499
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388380218
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1258388382187
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388391547
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388409047
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258388409610
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258388410485
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1258388431016
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258388441892
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258388442501
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1258388509472
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1258388509690
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388517581
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388530503
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.newWizard",1258388530550

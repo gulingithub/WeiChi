@@ -33,7 +33,7 @@ public void onCreate(Bundle savedInstanceState){
          	intent.setClass(Welcome.this, WeiChi.class);
          	Bundle bundle = new Bundle();
          	bundle.putInt("size", size);
-         	bundle.putBoolean("true", gameMode);
+         	bundle.putBoolean("gameMode", false);
          	intent.putExtras(bundle);
          	startActivity(intent);
          }
@@ -49,7 +49,7 @@ public void onCreate(Bundle savedInstanceState){
           	intent.setClass(Welcome.this, WeiChi.class);
           	Bundle bundle = new Bundle();
           	bundle.putInt("size", size);
-          	bundle.putBoolean("false", gameMode);
+          	bundle.putBoolean("gameMode", true);
           	intent.putExtras(bundle);
           	startActivity(intent);
          	

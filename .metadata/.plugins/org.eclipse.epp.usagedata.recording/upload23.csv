@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1258388535910
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388538722
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388552176
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.newWizard",1258388552223
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388581286
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388862027
+error,log,,,"No property tester contributes a property projectPersistentProperty org.eclipse.team.core.repository to type class org.eclipse.core.internal.resources.Project",1258388864356
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388867262
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258388872043
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388872668
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1258388872700
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1258388872700
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388875903
+closed,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258388878200
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388878325
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1258388878356
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388897325
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388898778
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388899685
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388899700
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258388899794
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258389457558
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258389459980
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258389463074
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258389464527

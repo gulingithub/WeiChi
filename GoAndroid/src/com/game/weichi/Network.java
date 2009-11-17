@@ -11,6 +11,9 @@ public class Network {
 	BufferedReader reader;
 	PrintWriter writer;
 	
+	boolean playComputer;
+	int boardSize;
+	
 	static final int NET_FAILED = 0;
 	static final int NET_CONNECTED = 1;
 	static final int NET_MATCHED = 2;
@@ -41,11 +44,17 @@ public class Network {
 			writer = new PrintWriter(sock.getOutputStream());
 			
 			String	msg = reader.readLine();
+			Thread.sleep(5000);
+			writer.println(playComputer+" "+boardSize);
+			writer.flush();
 			
 			Log.i("INFO", msg);
-			if (Integer.parseInt(msg)== NET_CONNECTED)
-				return NET_CONNECTED;
-			else if (Integer.parseInt(msg)==NET_MATCHED)
+			if (Integer.parseInt(msg)== NET_CONNECTED){
+				if(!playComputer)
+					return NET_CONNECTED;
+				else
+					return NET_MATCHED;
+			}else if (Integer.parseInt(msg)==NET_MATCHED)
 				return NET_MATCHED;
 
 		} catch (UnknownHostException e) {
@@ -53,6 +62,9 @@ public class Network {
 			e.printStackTrace();
 
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -98,6 +110,14 @@ public class Network {
 		int x = Integer.parseInt(move[0]);
 		int y = Integer.parseInt(move[1]);
 		return new GoMove(x, y);
+	}
+	
+	public void setPlayMode(boolean pm){
+		playComputer = pm;
+	}
+	
+	public void setBoardSize(int boardsize){
+		boardSize = boardsize;
 	}
 
 }

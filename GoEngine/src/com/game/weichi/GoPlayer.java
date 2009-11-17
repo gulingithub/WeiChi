@@ -22,12 +22,17 @@ public class GoPlayer {
 
 		final Network net = new Network();
 		net.waitConnect();
-		net.go();
-//		new Thread(new Runnable(){
-//			public void run(){
-//				net.go();
-//			}
-//		}).start();
+		if (net.getGameMode()) {
+			GoPlayer myPlayer = new GoPlayer(net.getBoardSize());
+			net.goComputer(myPlayer);
+			//		new Thread(new Runnable(){
+			//			public void run(){
+			//				net.go();
+			//			}
+			//		}).start();
+		}else{
+			net.goPlayer();
+		}
 		
 	}
 
@@ -176,12 +181,13 @@ public class GoPlayer {
 		myCurrentGame = myCurrentGameTreeNode.myGame;
 	}
 
-	public GoMove receiveMoveAndFindBestMove(int x, int y) {
-		playMoveOnCurrentGame(new GoMove(x, y));
+	public GoMove receiveMoveAndFindBestMove(GoMove gm) {
+		playMoveOnCurrentGame(gm);
 		GoMove bestMove = bestMoveSearch();
 		playMoveOnCurrentGame(bestMove);
 		return bestMove;
 	}
+	
 
 	public GoMove bestMoveSearch() {
 		GoGameTreeNode futureGame = new GoGameTreeNode(myCurrentGame);
