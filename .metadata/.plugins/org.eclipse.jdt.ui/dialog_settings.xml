@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="500" key="CallHierarchyViewPart.ratio3"/>
+	<item value="500" key="CallHierarchyViewPart.ratio1"/>
+	<item value="3" key="CallHierarchyViewPart.orientation"/>
+	<item value="1" key="SearchScopeActionGroup.search_scope_type"/>
+	<item value="2" key="CallHierarchyViewPart.field_mode"/>
+	<item value="0" key="CallHierarchyViewPart.call_mode"/>
+	<list key="SearchScopeActionGroup.working_set">
+	</list>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="true" key="group_libraries"/>
 		<item value="false" key="linkWithEditor"/>
@@ -10,5 +18,7 @@
 	<section name="completion_proposal_size">
 	</section>
 	<section name="JavaElementSearchActions">
+	</section>
+	<section name="CallHierarchySearchScope">
 	</section>
 </section>
