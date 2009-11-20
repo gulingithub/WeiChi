@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.equinox.p2.core,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.core",1258666070648
+started,bundle,org.eclipse.equinox.p2.engine,1.0.101.R35x_v20090825,"org.eclipse.equinox.p2.engine",1258666070663
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.0.101.R35x_v20090812,"org.eclipse.equinox.p2.metadata.repository",1258666071320
+started,bundle,org.eclipse.equinox.p2.repository,1.0.1.v20090901-1041,"org.eclipse.equinox.p2.repository",1258666071445
+started,bundle,org.eclipse.help,3.4.1.v20090805_35x,"org.eclipse.help",1258666071507
+started,bundle,org.eclipse.jdt.apt.core,3.3.201.R35x_v20090818-0235,"org.eclipse.jdt.apt.core",1258666071585
+started,bundle,org.eclipse.jdt.core,3.5.1.v_972_R35x,"org.eclipse.jdt.core",1258666071601
+started,bundle,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui",1258666071601
+started,bundle,org.eclipse.jface,3.5.1.M20090826-0800,"org.eclipse.jface",1258666071617
+started,bundle,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui",1258666071695
+started,bundle,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.ide",1258666071757
+started,bundle,org.eclipse.ui.net,1.2.1.r35x_20090812-1200,"org.eclipse.ui.net",1258666071788
+started,bundle,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views",1258666072070
+started,bundle,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"org.eclipse.ui.workbench",1258666072132
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.101.R35x_v20090807-1100,"org.eclipse.equinox.simpleconfigurator",1258666072195
+os,sysinfo,,,"win32",1258666072257
+arch,sysinfo,,,"x86",1258666072257
+ws,sysinfo,,,"win32",1258666072257
+locale,sysinfo,,,"en_US",1258666072257
+processors,sysinfo,,,"2",1258666072257
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1258666072257
+java.runtime.version,sysinfo,,,"1.6.0_15-b03",1258666072257
+java.specification.name,sysinfo,,,"Java Platform API Specification",1258666072257
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1258666072257
+java.specification.version,sysinfo,,,"1.6",1258666072257
