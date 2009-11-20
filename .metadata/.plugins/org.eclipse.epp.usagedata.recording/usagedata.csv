@@ -1,12 +1,6 @@
 what,kind,bundleId,bundleVersion,description,time
-stopped,bundle,org.eclipse.emf.edit.ui,2.5.0.v200906151043,"org.eclipse.emf.edit.ui",1258428520730
-stopped,bundle,org.eclipse.emf.common.ui,2.5.0.v200906151043,"org.eclipse.emf.common.ui",1258428520746
-stopped,bundle,org.eclipse.emf.ecore.edit,2.5.0.v200906151043,"org.eclipse.emf.ecore.edit",1258428520761
-stopped,bundle,org.eclipse.xsd.edit,2.5.0.v200906151043,"org.eclipse.xsd.edit",1258428520793
-stopped,bundle,org.eclipse.emf.edit,2.5.0.v200906151043,"org.eclipse.emf.edit",1258428520840
-stopped,bundle,org.eclipse.emf.ecore.change,2.5.0.v200906151043,"org.eclipse.emf.ecore.change",1258428520871
-stopped,bundle,org.eclipse.wst.common.emf,1.1.301.v200908181930,"org.eclipse.wst.common.emf",1258428520949
-stopped,bundle,org.eclipse.wst.common.frameworks.ui,1.1.301.v200908101600,"org.eclipse.wst.common.frameworks.ui",1258428520996
-stopped,bundle,org.eclipse.wst.common.frameworks,1.1.300.v200904160730,"org.eclipse.wst.common.frameworks",1258428521027
-stopped,bundle,org.eclipse.jem.util,2.0.200.v200905140200,"org.eclipse.jem.util",1258428521058
-stopped,bundle,org.eclipse.emf.ecore.xmi,2.5.0.v200906151043,"org.eclipse.emf.ecore.xmi",1258428521090
+stopped,bundle,org.eclipse.mylyn.java.ui,3.3.0.v20091015-0500-e3x,"org.eclipse.mylyn.java.ui",1258691654803
+stopped,bundle,org.eclipse.jdt.junit,3.5.1.r351_v20090708-0800,"org.eclipse.jdt.junit",1258691654803
+stopped,bundle,org.eclipse.jdt.apt.ui,3.3.200.v20090528-1135,"org.eclipse.jdt.apt.ui",1258691654912
+stopped,bundle,org.eclipse.jdt.debug.ui,3.4.1.v20090811_r351,"org.eclipse.jdt.debug.ui",1258691654912
+stopped,bundle,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui",1258691654912

@@ -46,7 +46,7 @@ public class WeiChi extends Activity {
 	private static CharSequence gameStatus = ""; 
 
 	GoPlayer gp;
-//	GoGame g; 
+	//	GoGame g; 
 
 	boolean isBlack;
 
@@ -203,7 +203,7 @@ public class WeiChi extends Activity {
 		}
 
 		gp = new GoPlayer(GRID_SIZE-1);
-//		g= new GoGame(GRID_SIZE-1); 
+		//		g= new GoGame(GRID_SIZE-1); 
 
 		Log.i("INFO", "in OnCreate");
 		Log.i("INFO", playComputer+"");
@@ -316,7 +316,7 @@ public class WeiChi extends Activity {
 		int mStartX;// 
 		int mStartY;// 
 
-//		private boolean playComputer =false;
+		//		private boolean playComputer =false;
 
 		private final int BLACK=1;
 		private final int WHITE=-1;
@@ -397,7 +397,7 @@ public class WeiChi extends Activity {
 			}
 			if ((x >= 0 && x < GRID_SIZE-1 )
 					&& (y >= 0 && y < GRID_SIZE-1)) {
-				
+
 				Log.i("INFO", ""+gp.myCurrentGame.isBsTurn);
 				Log.i("INFO", ""+playComputer);
 
@@ -405,7 +405,7 @@ public class WeiChi extends Activity {
 				{
 
 					gp.playOneMoveOnCurrentGame(new GoMove(x,y));
-					
+
 					if (gp.myCurrentGame.isBsTurn)
 					{
 						Log.i("ddd",gp.myCurrentGame.isBsTurn+"" );
@@ -423,11 +423,9 @@ public class WeiChi extends Activity {
 						public void run(){
 							net.sendRemoteMove(new GoMove(x, y));//GoMove.pass
 							GoMove gm = net.getRemoteMove();
-							if (gm == GoMove.pass) {
-								gp.playMoveOnCurrentGame(GoMove.pass);
-							}else{
-								gp.playOneMoveOnCurrentGame(gm);
-							}
+
+							gp.playOneMoveOnCurrentGame(gm);
+
 
 							hl.post(new Runnable(){
 								public void run(){
@@ -634,25 +632,25 @@ public class WeiChi extends Activity {
 			Log.i("INFO", "in pass()");
 			Log.i("INFO", ""+gp.myCurrentGame.isBsTurn);
 			Log.i("INFO", ""+playComputer);
-			
-			
+
+
 			if (!playComputer && ( isBlack && gp.myCurrentGame.isBsTurn || !isBlack && !gp.myCurrentGame.isBsTurn)||(playComputer&&gp.myCurrentGame.isBsTurn)) {
 				//		    	System.exit(0);
 				//		    	timesCalled++;
 				//		    	gp.myCurrentGame.board= null;
 				//		    	gp.myCurrentGame.board[0][0]=5;
 				//	boolean currentMove = gp.myCurrentGame.isBsTurn;
-				
-				
-				
-				gp.playMoveOnCurrentGame(GoMove.pass);
+
+
+
+				gp.playOneMoveOnCurrentGame(GoMove.pass);
 				//			if(currentMove == gp.myCurrentGame.isBsTurn)
 				//				gp.myCurrentGame.board[-1][0] = 2;
-				
-				
-				
+
+
+
 				if (gp.myCurrentGame.isBsTurn) {
-					
+
 					gameStatus = "Black's Turn";
 
 				} else {
@@ -660,22 +658,19 @@ public class WeiChi extends Activity {
 				}
 				statusText.setText(gameStatus);
 				Toast.makeText(WeiChi.this, "Waiting for computer's move", Toast.LENGTH_LONG).show();
-				
+
 				new Thread(new Runnable() {
 					public void run() {
 						net.sendRemoteMove(GoMove.pass);//GoMove.pass
 						GoMove gm = net.getRemoteMove();
-						if (gm == GoMove.pass) {
-							gp.playMoveOnCurrentGame(GoMove.pass);
-						} else {
-							gp.playOneMoveOnCurrentGame(gm);
-						}
+						gp.playOneMoveOnCurrentGame(gm);
+
 						hl.post(new Runnable() {
 							public void run() {
 								if (gp.myCurrentGame.isBsTurn) {
 									Log
-											.i("ddd", gp.myCurrentGame.isBsTurn
-													+ "");
+									.i("ddd", gp.myCurrentGame.isBsTurn
+											+ "");
 									gameStatus = "Black's Turn";
 
 								} else {

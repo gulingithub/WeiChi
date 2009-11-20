@@ -65,16 +65,12 @@ public class Network {
 			writer1.flush();
 			
 			String msg = reader1.readLine();
-			System.out.println(msg);
 			String s[]=msg.split(" ");
 			if(s[0].equals("true")){
 				playComputer = true;
 			}else
 				playComputer = false;
 			boardSize = Integer.parseInt(s[1]);
-			
-			System.out.println(""+playComputer);
-			
 			if (!playComputer) {
 				client2 = server.accept();
 				writer2 = new PrintWriter(client2.getOutputStream());

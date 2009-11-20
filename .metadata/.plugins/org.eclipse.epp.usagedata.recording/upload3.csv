@@ -1,26 +1,26 @@
 what,kind,bundleId,bundleVersion,description,time
-started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.101.R35x_v20090807-1100,"org.eclipse.equinox.simpleconfigurator",1258064766984
-os,sysinfo,,,"win32",1258064767016
-arch,sysinfo,,,"x86",1258064767016
-ws,sysinfo,,,"win32",1258064767016
-locale,sysinfo,,,"en_US",1258064767016
-processors,sysinfo,,,"2",1258064767016
-java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1258064767016
-java.runtime.version,sysinfo,,,"1.6.0_15-b03",1258064767016
-java.specification.name,sysinfo,,,"Java Platform API Specification",1258064767016
-java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1258064767016
-java.specification.version,sysinfo,,,"1.6",1258064767016
-java.vendor,sysinfo,,,"Sun Microsystems Inc.",1258064767016
-java.version,sysinfo,,,"1.6.0_15",1258064767016
-java.vm.info,sysinfo,,,"mixed mode, sharing",1258064767016
-java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1258064767016
-java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1258064767016
-java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1258064767016
-java.vm.specification.version,sysinfo,,,"1.0",1258064767016
-java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1258064767016
-java.vm.version,sysinfo,,,"14.1-b02",1258064767016
-activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1258064768813
-activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1258064768860
-closed,view,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.internal.introview",1258064768891
-deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258064774907
-started,bundle,org.eclipse.core.filesystem,1.2.0.v20090507,"org.eclipse.core.filesystem",1258064787720
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.callhierarchy.view",1258678620766
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258678630235
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258678630954
+started,bundle,org.eclipse.jdt.apt.pluggable.core,1.0.201.R35x_v20090818-0225,"org.eclipse.jdt.apt.pluggable.core",1258678631297
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258678632985
+started,bundle,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui",1258678635876
+started,bundle,org.eclipse.jdt.debug,3.5.0.v20090526,"org.eclipse.jdt.debug",1258678636735
+started,bundle,org.eclipse.jdt.debug.ui,3.4.1.v20090811_r351,"org.eclipse.jdt.debug.ui",1258678636938
+opened,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1258678638860
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678642485
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678725659
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1258678727925
+activated,view,com.android.ide.eclipse.ddms,0.9.3.v200909031112-12945,"com.android.ide.eclipse.ddms.views.LogCatView",1258678728894
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1258678730347
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678744378
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678748144
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678755597
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678785364
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678790208
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678806224
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1258678807489
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678822255
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678831115
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678833568
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1258678855397
