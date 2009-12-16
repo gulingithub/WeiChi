@@ -68,4 +68,17 @@ android:layout_toLeftOf="@+id/computer"
 >
 </Button>
 
+<Button
+android:id="@+id/oneplayer"
+android:layout_width="fill_parent"
+android:layout_height="50px"
+android:text="One Player"
+android:textSize="13sp"
+android:gravity="center"
+
+android:layout_below="@+id/player"
+
+>
+</Button>
+
 </RelativeLayout>

@@ -191,7 +191,7 @@ public class GoPlayer {
 
 	public GoMove bestMoveSearch() {
 		GoGameTreeNode futureGame = new GoGameTreeNode(myCurrentGame);
-		int thinkTime = 30;
+		int thinkTime = 10;
 		ArrayList<Thread> myThreads = new ArrayList<Thread>();
 		for (int i = 0; i < 1; ++i) {
 

@@ -1,8 +1,8 @@
-#Mon Nov 16 22:28:39 EST 2009
+#Sun Nov 29 22:51:15 EST 2009
 com.android.ide.eclipse.ddms.logcat.time=124
 com.android.ide.eclipse.ddms.logcat.pid=44
 eclipse.preferences.version=1
-com.android.ide.eclipse.ddms.adb=C\:\\Program Files\\android-sdk-windows-1.6_r1\\tools\\adb.exe
+com.android.ide.eclipse.ddms.adb=F\:\\courses\\Software Engineering\\android-sdk-windows-1.6_r1\\android-sdk-windows-1.6_r1\\tools\\adb.exe
 com.android.ide.eclipse.ddms.logcat.message=1066
 com.android.ide.eclipse.ddms.logcat.level=20
 com.android.ide.eclipse.ddms.logcat.tag=76

@@ -28,6 +28,7 @@ public final class R {
         public static final int computer=0x7f070009;
         public static final int linearlayout=0x7f070005;
         public static final int network=0x7f070001;
+        public static final int oneplayer=0x7f07000b;
         public static final int player=0x7f07000a;
         public static final int progressbar=0x7f070003;
         public static final int textview=0x7f070006;
