@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.18)  17 DEC 2009 07:48
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.18)  17 DEC 2009 08:41
 entering extended mode
 **C:/Users/Michael/seproject/paper/paper.tex
 (C:/Users/Michael/seproject/paper/paper.tex
@@ -90,20 +90,23 @@ LaTeX Font Info:    ... okay on input line 15.
 \MPnumerator=\count92
 \everyMPtoPDFconversion=\toks16
 )
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 27.
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 28.
 
-LaTeX Font Info:    No file OMScmtt.fd. on input line 27.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 28.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 27.
+(Font)              for symbol `textbraceleft' on input line 28.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
 
  []
 
+[1
+
+{C:/Users/Michael/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map}]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -113,14 +116,11 @@ Missing character: There is no ù in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
-
-{C:/Users/Michael/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 55.
+(Font)              <14.4> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 55.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 55.
+(Font)              <7> on input line 49.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 49.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -132,24 +132,27 @@ Missing character: There is no ì in font cmr10!
 <fig/deployment.png, id=18, 551.05875pt x 201.75375pt>
 File: fig/deployment.png Graphic file (type png)
 
-<use fig/deployment.png> <fig/class.png, id=19, 400.49625pt x 439.6425pt>
-File: fig/class.png Graphic file (type png)
+<use fig/deployment.png>
+Underfull \vbox (badness 5726) has occurred while \output is active []
 
-<use fig/class.png> [4] [5 <C:/Users/Michael/seproject/paper/fig/deployment.png
- (PNG copy)>] [6 <C:/Users/Michael/seproject/paper/fig/class.png (PNG copy)>]
+ [4]
+<fig/class.png, id=22, 400.49625pt x 439.6425pt>
+File: fig/class.png Graphic file (type png)
+ <use fig/class.png> [5 <C:/Users/Michael/seproject/paper/fig/deployment.png (P
+NG copy)>] [6 <C:/Users/Michael/seproject/paper/fig/class.png (PNG copy)>]
 (C:\Users\Michael\seproject\paper\paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 1177 strings out of 495285
- 14657 string characters out of 3179871
- 71945 words of memory out of 3000000
- 4411 multiletter control sequences out of 15000+200000
- 7809 words of font info for 30 fonts, out of 3000000 for 9000
+ 1175 strings out of 495285
+ 14640 string characters out of 3179871
+ 69945 words of memory out of 3000000
+ 4410 multiletter control sequences out of 15000+200000
+ 7510 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 25i,5n,21p,1191b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,5n,21p,1185b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
 Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
@@ -157,7 +160,7 @@ ogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (6 pages, 127589 bytes).
+Output written on paper.pdf (6 pages, 128997 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
