@@ -1,23 +1,22 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.8.9)  3 NOV 2009 17:28
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.18)  17 DEC 2009 07:48
 entering extended mode
- %&-line parsing enabled.
-**paper.tex
-(./paper.tex
-LaTeX2e <2005/12/01>
-Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, ukrainian, russian, bulgarian, loaded.
-(./acmtrans2m.cls
+**C:/Users/Michael/seproject/paper/paper.tex
+(C:/Users/Michael/seproject/paper/paper.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+(C:\Users\Michael\seproject\paper\acmtrans2m.cls
 Document Class: acmtrans2m 1996/07/03 ACM Transactions class based on <23 April
  96>
-(/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\latexsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
-Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 
 Using ACM, TOCL's option: 2001/06/01 by Marco Aiello et al.
@@ -39,32 +38,32 @@ Using ACM, TOCL's option: 2001/06/01 by Marco Aiello et al.
 \@keywords=\box30
 \bibhang=\skip41
 \bibindent=\dimen104
-) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+) ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
-Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: dvips.def on input line 90.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen105
 \Gin@req@width=\dimen106
-) (./paper.aux)
-\openout1 = `paper.aux'.
-
+)
+(C:\Users\Michael\seproject\paper\paper.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
@@ -77,6 +76,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen107
+\scratchbox=\box31
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen108
+\MPnumerator=\count92
+\everyMPtoPDFconversion=\toks16
+)
 LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 27.
 
 LaTeX Font Info:    No file OMScmtt.fd. on input line 27.
@@ -91,37 +104,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--27
 
  []
 
-File: fig/deployment.eps Graphic file (type eps)
-<fig/deployment.eps>
-File: fig/class.eps Graphic file (type eps)
- <fig/class.eps>
-File: fig/user_case.eps Graphic file (type eps)
- <fig/user_case.eps>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 
-LaTeX Warning: Empty `thebibliography' environment on input line 107.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[1
+ [1
 
-]
+{C:/Users/Michael/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 109.
+(Font)              <14.4> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 109.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 109.
- (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+(Font)              <7> on input line 55.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 55.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [2] [3] [4] (./paper.aux)
+) [2] [3]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+
+<fig/deployment.png, id=18, 551.05875pt x 201.75375pt>
+File: fig/deployment.png Graphic file (type png)
+
+<use fig/deployment.png> <fig/class.png, id=19, 400.49625pt x 439.6425pt>
+File: fig/class.png Graphic file (type png)
+
+<use fig/class.png> [4] [5 <C:/Users/Michael/seproject/paper/fig/deployment.png
+ (PNG copy)>] [6 <C:/Users/Michael/seproject/paper/fig/class.png (PNG copy)>]
+(C:\Users\Michael\seproject\paper\paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 806 strings out of 94835
- 9208 string characters out of 1179205
- 60392 words of memory out of 1500000
- 4029 multiletter control sequences out of 10000+50000
- 7763 words of font info for 30 fonts, out of 1200000 for 2000
- 212 hyphenation exceptions out of 8191
- 26i,5n,21p,722b,249s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 1177 strings out of 495285
+ 14657 string characters out of 3179871
+ 71945 words of memory out of 3000000
+ 4411 multiletter control sequences out of 15000+200000
+ 7809 words of font info for 30 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 25i,5n,21p,1191b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on paper.pdf (6 pages, 127589 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on paper.dvi (4 pages, 3576 bytes).
