@@ -411,7 +411,6 @@ public class WeiChi extends Activity {
 
 						gp.playOneMoveOnCurrentGame(new GoMove(x, y));
 
-						
 						if (gp.myCurrentGame.isBsTurn) {
 							Log.i("ddd", gp.myCurrentGame.isBsTurn + "");
 							gameStatus = "Black's Turn";

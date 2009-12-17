@@ -45,12 +45,11 @@ public class Network {
 			
 			String	msg = reader.readLine();
 			Thread.sleep(5000);
-			
+			writer.println(playComputer+" "+boardSize);
+			writer.flush();
 			
 			Log.i("INFO", msg);
 			if (Integer.parseInt(msg)== NET_CONNECTED){
-				writer.println(playComputer+" "+boardSize);
-				writer.flush();
 				if(!playComputer)
 					return NET_CONNECTED;
 				else

@@ -49,7 +49,9 @@ android:layout_width="150px"
 android:layout_height="50px"
 android:text="Player vs Computer"
 android:textSize="13sp"
-android:layout_centerHorizontal="true" android:layout_below="@+id/player">
+android:layout_below="@+id/linearlayout"
+android:layout_alignRight="@+id/linearlayout"
+>
 </Button>
 <Button
 android:id="@+id/player"
@@ -59,15 +61,24 @@ android:text="Play vs Player"
 android:textSize="13sp"
 android:gravity="center"
 android:layout_below="@+id/linearlayout"
-android:layout_centerHorizontal="true">
+android:layout_toLeftOf="@+id/computer"
+
+
+
+>
 </Button>
 
 <Button
 android:id="@+id/oneplayer"
+android:layout_width="fill_parent"
 android:layout_height="50px"
 android:text="One Player"
 android:textSize="13sp"
-android:gravity="center" android:layout_below="@+id/computer" android:layout_width="150px" android:layout_centerHorizontal="true">
+android:gravity="center"
+
+android:layout_below="@+id/player"
+
+>
 </Button>
 
 </RelativeLayout>
